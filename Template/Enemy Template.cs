@@ -5,7 +5,7 @@ namespace Crystal_Editor
     public partial class EnemyTemplateForm : Form
     {
         private CoreCommonEvent events;
-        List<ComboBox> Arteboxes = new List<ComboBox>();  //Puts the combo boxes in an array called boxes so i can refernce this array later (to make the code pretty and save time)
+        List<ComboBox> ClassList = new List<ComboBox>();  //Puts the combo boxes in an array called boxes so i can refernce this array later (to make the code pretty and save time)
         string UnitClass;
 
 
@@ -34,20 +34,20 @@ namespace Crystal_Editor
             Tree.Nodes.Add("Ultimate God of Destruction (Post-game)");
 
             //Here is a list of names for a dropdown menu (so people can edit some things by selecting names from a list, instead of using numbers).
-            Arteboxes.Add(comboBoxClass);
-            string[] PlayerArteUserList = new[] {
+            ClassList.Add(comboBoxClass);
+            string[] ClassNameList = new[] {
             "00 None / from another arte",
             "01 Yuri",
             "02 Estelle",
             "03 Karol",
-            //"04 Rita",
+            "04 Rita",
             "05 Raven",
             "06 Judith",
             "07 Repede",
             "08 Flynn",
             "09 Patty"
             };
-            comboBoxClass.Items.AddRange(PlayerArteUserList);
+            comboBoxClass.Items.AddRange(ClassNameList);
 
             TreeNodeCollection nodeCollect = Tree.Nodes;
             Tree.SelectedNode = nodeCollect[0];
@@ -71,27 +71,10 @@ namespace Crystal_Editor
             nameOfFlags(0);
 
             void nameOfFlags(int box_id)
-            {
-                //skillTree.Nodes.Add("Function Is Working!" + VarcomboBoxSkillFlag);
-                //Arteboxes[box_id].SelectedIndex = Arteboxes[box_id].FindStringExact("Unknown Flag");
-                //if (VarSkillFlag == "0") { Arteboxes[box_id].SelectedIndex = Arteboxes[box_id].FindStringExact("00 None / from another arte"); }
-                //if (VarSkillFlag == "1") { Arteboxes[box_id].SelectedIndex = Arteboxes[box_id].FindStringExact("01 Yuri"); }
-                Arteboxes[box_id].SelectedIndex = -1;
+            {                
+                ClassList[box_id].SelectedIndex = -1;
                 comboBoxClass.Text = "Unknown Flag TestDummy";
-
-                Arteboxes[box_id].SelectedIndex = GetIndexForValueOrNeg1IfNonExistent(Arteboxes[box_id], VarByte);
-
-                //if (VarByte == "0") { Arteboxes[box_id].SelectedIndex = 0; }
-                //if (VarByte == "1") { Arteboxes[box_id].SelectedIndex = 1; }
-                //if (VarByte == "2") { Arteboxes[box_id].SelectedIndex = 2; }
-                //if (VarByte == "3") { Arteboxes[box_id].SelectedIndex = 3; }
-                //if (VarByte == "4") { Arteboxes[box_id].SelectedIndex = 4; }
-                ////if (VarByte == "5") { Arteboxes[box_id].SelectedIndex = 5; }
-                //if (VarByte == "5") { Arteboxes[box_id].SelectedValue = GetIndexForValueOrNeg1IfNonExistent }
-                //if (VarByte == "6") { Arteboxes[box_id].SelectedIndex = 6; }
-                //if (VarByte == "7") { Arteboxes[box_id].SelectedIndex = 7; }
-                //if (VarByte == "8") { Arteboxes[box_id].SelectedIndex = 8; }
-                //if (VarByte == "9") { Arteboxes[box_id].SelectedIndex = 9; }
+                ClassList[box_id].SelectedIndex = GetIndexForValueOrNeg1IfNonExistent(ClassList[box_id], VarByte);
             }
             UnitClass = VarByte;
         }
