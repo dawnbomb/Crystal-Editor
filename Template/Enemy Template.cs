@@ -56,7 +56,7 @@ namespace Crystal_Editor
         private int GetIndexForValueOrNeg1IfNonExistent(ComboBox comboBox, string value)
         {
             for (int x = 0; x < comboBox.Items.Count; x++)
-                if (comboBox.Items[x].ToString().Contains(value))
+                if (comboBox.Items[x].ToString()?.Split(' ')[0].Contains(value) ?? false)
                     return x;
             return -1;
         }
