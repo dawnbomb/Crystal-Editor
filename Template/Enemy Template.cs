@@ -53,6 +53,14 @@ namespace Crystal_Editor
             Tree.SelectedNode = nodeCollect[0];
         }
 
+        private int GetIndexForValueOrNeg1IfNonExistent(ComboBox comboBox, string value)
+        {
+            for (int x = 0; x < comboBox.Items.Count; x++)
+                if (comboBox.Items[x].ToString().Contains(value))
+                    return x;
+            return -1;
+        }
+
         private void Tree_AfterSelect(object sender, TreeViewEventArgs e)
         {
             Editor(MoveRequest.Load);
@@ -70,20 +78,20 @@ namespace Crystal_Editor
                 //if (VarSkillFlag == "1") { Arteboxes[box_id].SelectedIndex = Arteboxes[box_id].FindStringExact("01 Yuri"); }
                 Arteboxes[box_id].SelectedIndex = -1;
                 comboBoxClass.Text = "Unknown Flag TestDummy";
-                if (VarByte == "0") { Arteboxes[box_id].SelectedIndex = 0; }
-                if (VarByte == "1") { Arteboxes[box_id].SelectedIndex = 1; }
-                if (VarByte == "2") { Arteboxes[box_id].SelectedIndex = 2; }
-                if (VarByte == "3") { Arteboxes[box_id].SelectedIndex = 3; }
-                if (VarByte == "4") { Arteboxes[box_id].SelectedIndex = 4; }
-                //if (VarByte == "5") { Arteboxes[box_id].SelectedIndex = 5; }
-                if (VarByte == "5") { Arteboxes[box_id].SelectedValue = Arteboxes[0].Items.First(_ => _.Contains("05")); ; }
-                if (VarByte == "6") { Arteboxes[box_id].SelectedIndex = 6; }
-                if (VarByte == "7") { Arteboxes[box_id].SelectedIndex = 7; }
-                if (VarByte == "8") { Arteboxes[box_id].SelectedIndex = 8; }
+
+                Arteboxes[box_id].SelectedIndex = GetIndexForValueOrNeg1IfNonExistent(Arteboxes[box_id], VarByte);
+
+                //if (VarByte == "0") { Arteboxes[box_id].SelectedIndex = 0; }
+                //if (VarByte == "1") { Arteboxes[box_id].SelectedIndex = 1; }
+                //if (VarByte == "2") { Arteboxes[box_id].SelectedIndex = 2; }
+                //if (VarByte == "3") { Arteboxes[box_id].SelectedIndex = 3; }
+                //if (VarByte == "4") { Arteboxes[box_id].SelectedIndex = 4; }
+                ////if (VarByte == "5") { Arteboxes[box_id].SelectedIndex = 5; }
+                //if (VarByte == "5") { Arteboxes[box_id].SelectedValue = GetIndexForValueOrNeg1IfNonExistent }
+                //if (VarByte == "6") { Arteboxes[box_id].SelectedIndex = 6; }
+                //if (VarByte == "7") { Arteboxes[box_id].SelectedIndex = 7; }
+                //if (VarByte == "8") { Arteboxes[box_id].SelectedIndex = 8; }
                 //if (VarByte == "9") { Arteboxes[box_id].SelectedIndex = 9; }
-
-
-
             }
             UnitClass = VarByte;
         }
