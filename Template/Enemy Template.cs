@@ -53,31 +53,25 @@ namespace Crystal_Editor
             Tree.SelectedNode = nodeCollect[0];
         }
 
-        private int GetIndexForValueOrNeg1IfNonExistent(ComboBox comboBox, string value)
-        {
-            for (int x = 0; x < comboBox.Items.Count; x++)
-                if (comboBox.Items[x].ToString()?.Split(' ')[0].Contains(value) ?? false)
-                    return x;
-            return -1;
-        }
+        
 
         private void Tree_AfterSelect(object sender, TreeViewEventArgs e)
         {
             Editor(MoveRequest.Load);
-
+                        
             
-
-            string VarByte = BitConverter.ToUInt32(events.data_array, 37 + (Tree.SelectedNode.Index * 38) + 1).ToString("D"); //We put the hex into this string, and if the string is read, we make the text appear in the combo box.
+            //string comboBox1Hex = BitConverter.ToUInt32(events.data_array, 37 + (Tree.SelectedNode.Index * 38) + 1).ToString("D"); //We put the hex into this string, and if the string is read, we make the text appear in the combo box.
             nameOfFlags(0);
 
             void nameOfFlags(int box_id)
-            {                
-                ClassList[box_id].SelectedIndex = -1;
-                comboBoxClass.Text = "Unknown Flag TestDummy";
-                ClassList[box_id].SelectedIndex = GetIndexForValueOrNeg1IfNonExistent(ClassList[box_id], VarByte);
+            {
+                events.DisplayComboboxIndex(ClassList, comboBoxClass, box_id, events.comboBox1Hex, column: 1);
             }
-            UnitClass = VarByte;
+            UnitClass = events.comboBox1Hex;
         }
+
+        
+
         private void Button6_Click(object sender, EventArgs e) //Load Button
         {
             Editor(MoveRequest.Load);
@@ -90,7 +84,7 @@ namespace Crystal_Editor
             if (comboBoxClass.Text == "01 Yuri") { UnitClass = "1"; }
             if (comboBoxClass.Text == "02 Estelle") { UnitClass = "2"; }
             if (comboBoxClass.Text == "03 Karol") { UnitClass = "3"; }
-            //if (comboBoxClass.Text == "04 Rita") { UnitClass = "4"; }
+            if (comboBoxClass.Text == "04 Rita") { UnitClass = "4"; }
             if (comboBoxClass.Text == "05 Raven") { UnitClass = "5"; }
             if (comboBoxClass.Text == "06 Judith") { UnitClass = "6"; }
             if (comboBoxClass.Text == "07 Repede") { UnitClass = "7"; }
@@ -108,12 +102,14 @@ namespace Crystal_Editor
             //Numbers start from Left and read to right Right (normal?) Endianese.
             //Final number is the column the data is from / how many bytes into a row the data is from. The first byte is byte 1 not byte 0.
 
+            events.MoveData(textName: "comboBoxClass", column: 1, requestType); //1 Byte
             events.MoveData(textName: "richTextBoxID", column: 1, requestType); //1 Byte
             events.MoveData(textName: "richTextBoxStr", column: 17, requestType); //4 Byte
             events.MoveData(textName: "richTextBoxMag", column: 21, requestType); //4 Byte
             events.MoveData(textName: "richTextBoxDef", column: 25, requestType); //2 Byte
             events.MoveData(textName: "richTextBoxRes", column: 27, requestType); //2 Byte
             events.MoveData(textName: "richTextBoxTP", column: 15, requestType); //1 Byte
+            
 
             events.MoveDataReverse(textName: "richTextBoxRev4", column: 2, requestType, length: 4); //4R Byte
             events.MoveDataReverse(textName: "richTextBoxRev2", column: 10, requestType, length: 2); //2R Byte

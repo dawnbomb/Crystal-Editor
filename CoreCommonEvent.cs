@@ -13,6 +13,7 @@
         private int Row = 0; //Leagth of a row of data. The first byte is #1 not #0, so if a row starts at column 0 and is 29 long, then input 30.  This is used in every load and save of data to the array.
         private TreeView Tree;
         private Control.ControlCollection Controls;
+        public string comboBox1Hex;
         //private ComboBox ComboA;
 
         public CoreCommonEvent(string fileLocation, int start, int row, TreeView tree, Control.ControlCollection controls)//ComboBox comboA
@@ -35,9 +36,14 @@
                     break;
                 case MoveRequest.Load:
                     SetText(textName, this.data_array[Start + (Tree.SelectedNode.Index * Row) + column].ToString("D"));
+                    if (textName == "comboBoxClass") { comboBox1Hex = BitConverter.ToUInt32(data_array, Start + (Tree.SelectedNode.Index * Row) + column).ToString("D"); } ; //We put the hex into this string, and if the string is read, we make the text appear in the combo box.
                     break;
+                
+                    
             }
         }
+
+
 
         public void MoveDataReverse(string textName, int column, MoveRequest requestType, int length)
         {
@@ -54,6 +60,13 @@
                     Array.Reverse(data_array, Start + (Tree.SelectedNode.Index * Row) + column, length);
                     break;
             }
+        }
+
+        public void DisplayComboboxIndex(List<ComboBox> anyComboBoxList, ComboBox anyComboBoxName, int box_id, string anyComboBoxHexByte, int column)
+        {
+            anyComboBoxList[box_id].SelectedIndex = -1;
+            anyComboBoxName.Text = "Unknown Flag TestDummy";
+            anyComboBoxList[box_id].SelectedIndex = GetIndexForValueOrNeg1IfNonExistent(anyComboBoxList[box_id], anyComboBoxHexByte);
         }
 
         //The following must be here, it was made by some guy on stackoverflow,  then modififed by starkelp in twitch chat :)
@@ -73,6 +86,15 @@
                 var control2 = Controls[name];
                 control2.Text = text;
             }
+        }
+              
+
+        public int GetIndexForValueOrNeg1IfNonExistent(ComboBox comboBox, string value)
+        {
+            for (int x = 0; x < comboBox.Items.Count; x++)
+                if (comboBox.Items[x].ToString()?.Split(' ')[0].Contains(value) ?? false)
+                    return x;
+            return -1;
         }
     }
 }
