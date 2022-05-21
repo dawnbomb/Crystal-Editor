@@ -198,12 +198,25 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label87 = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // Tree
@@ -215,24 +228,24 @@
             this.Tree.Margin = new System.Windows.Forms.Padding(4);
             this.Tree.Name = "Tree";
             this.Tree.ShowRootLines = false;
-            this.Tree.Size = new System.Drawing.Size(280, 824);
+            this.Tree.Size = new System.Drawing.Size(297, 824);
             this.Tree.TabIndex = 0;
             this.Tree.BeforeSelect += new System.Windows.Forms.TreeViewCancelEventHandler(this.Tree_BeforeSelect);
             this.Tree.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.Tree_AfterSelect);
             // 
             // richTextBoxID
             // 
-            this.richTextBoxID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.richTextBoxID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxID.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBoxID.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBoxID.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxID.Location = new System.Drawing.Point(417, 268);
+            this.richTextBoxID.Location = new System.Drawing.Point(407, 153);
             this.richTextBoxID.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxID.MaxLength = 10;
             this.richTextBoxID.Multiline = false;
             this.richTextBoxID.Name = "richTextBoxID";
             this.richTextBoxID.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBoxID.Size = new System.Drawing.Size(104, 25);
+            this.richTextBoxID.Size = new System.Drawing.Size(118, 25);
             this.richTextBoxID.TabIndex = 1;
             this.richTextBoxID.Text = "";
             this.richTextBoxID.WordWrap = false;
@@ -242,7 +255,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label1.Location = new System.Drawing.Point(315, 270);
+            this.label1.Location = new System.Drawing.Point(305, 155);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(94, 23);
@@ -254,7 +267,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label2.Location = new System.Drawing.Point(655, 169);
+            this.label2.Location = new System.Drawing.Point(652, 120);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(52, 23);
@@ -263,17 +276,17 @@
             // 
             // richTextBoxRev4
             // 
-            this.richTextBoxRev4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.richTextBoxRev4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxRev4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBoxRev4.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBoxRev4.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxRev4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxRev4.Location = new System.Drawing.Point(712, 164);
+            this.richTextBoxRev4.Location = new System.Drawing.Point(709, 115);
             this.richTextBoxRev4.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxRev4.MaxLength = 10;
             this.richTextBoxRev4.Multiline = false;
             this.richTextBoxRev4.Name = "richTextBoxRev4";
             this.richTextBoxRev4.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBoxRev4.Size = new System.Drawing.Size(104, 25);
+            this.richTextBoxRev4.Size = new System.Drawing.Size(118, 25);
             this.richTextBoxRev4.TabIndex = 3;
             this.richTextBoxRev4.Text = "";
             this.richTextBoxRev4.WordWrap = false;
@@ -281,9 +294,10 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label3.Location = new System.Drawing.Point(440, 418);
+            this.label3.Location = new System.Drawing.Point(143, 62);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(37, 23);
@@ -292,17 +306,17 @@
             // 
             // richTextBoxHP
             // 
-            this.richTextBoxHP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.richTextBoxHP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxHP.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBoxHP.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBoxHP.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxHP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxHP.Location = new System.Drawing.Point(485, 420);
+            this.richTextBoxHP.Location = new System.Drawing.Point(188, 64);
             this.richTextBoxHP.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxHP.MaxLength = 10;
             this.richTextBoxHP.Multiline = false;
             this.richTextBoxHP.Name = "richTextBoxHP";
             this.richTextBoxHP.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBoxHP.Size = new System.Drawing.Size(104, 25);
+            this.richTextBoxHP.Size = new System.Drawing.Size(118, 25);
             this.richTextBoxHP.TabIndex = 5;
             this.richTextBoxHP.Text = "";
             this.richTextBoxHP.WordWrap = false;
@@ -310,9 +324,10 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label4.Location = new System.Drawing.Point(606, 419);
+            this.label4.Location = new System.Drawing.Point(321, 30);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(40, 23);
@@ -321,17 +336,17 @@
             // 
             // richTextBoxMP
             // 
-            this.richTextBoxMP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.richTextBoxMP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxMP.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBoxMP.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBoxMP.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxMP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxMP.Location = new System.Drawing.Point(655, 420);
+            this.richTextBoxMP.Location = new System.Drawing.Point(310, 64);
             this.richTextBoxMP.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxMP.MaxLength = 10;
             this.richTextBoxMP.Multiline = false;
             this.richTextBoxMP.Name = "richTextBoxMP";
             this.richTextBoxMP.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBoxMP.Size = new System.Drawing.Size(104, 25);
+            this.richTextBoxMP.Size = new System.Drawing.Size(118, 25);
             this.richTextBoxMP.TabIndex = 7;
             this.richTextBoxMP.Text = "";
             this.richTextBoxMP.WordWrap = false;
@@ -341,7 +356,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label7.Location = new System.Drawing.Point(820, 164);
+            this.label7.Location = new System.Drawing.Point(835, 117);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(133, 23);
@@ -351,9 +366,10 @@
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label9.Location = new System.Drawing.Point(777, 422);
+            this.label9.Location = new System.Drawing.Point(480, 66);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(34, 23);
@@ -362,17 +378,17 @@
             // 
             // richTextBoxTP
             // 
-            this.richTextBoxTP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.richTextBoxTP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxTP.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBoxTP.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBoxTP.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxTP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxTP.Location = new System.Drawing.Point(819, 420);
+            this.richTextBoxTP.Location = new System.Drawing.Point(522, 64);
             this.richTextBoxTP.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxTP.MaxLength = 10;
             this.richTextBoxTP.Multiline = false;
             this.richTextBoxTP.Name = "richTextBoxTP";
             this.richTextBoxTP.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBoxTP.Size = new System.Drawing.Size(104, 25);
+            this.richTextBoxTP.Size = new System.Drawing.Size(118, 25);
             this.richTextBoxTP.TabIndex = 13;
             this.richTextBoxTP.Text = "";
             this.richTextBoxTP.WordWrap = false;
@@ -381,7 +397,7 @@
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Location = new System.Drawing.Point(283, 1);
+            this.button3.Location = new System.Drawing.Point(297, 0);
             this.button3.Margin = new System.Windows.Forms.Padding(1);
             this.button3.Name = "button3";
             this.button3.Padding = new System.Windows.Forms.Padding(2);
@@ -394,7 +410,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(409, 1);
+            this.button1.Location = new System.Drawing.Point(423, 0);
             this.button1.Margin = new System.Windows.Forms.Padding(1);
             this.button1.Name = "button1";
             this.button1.Padding = new System.Windows.Forms.Padding(2);
@@ -407,7 +423,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(535, 1);
+            this.button2.Location = new System.Drawing.Point(549, 0);
             this.button2.Margin = new System.Windows.Forms.Padding(1);
             this.button2.Name = "button2";
             this.button2.Padding = new System.Windows.Forms.Padding(2);
@@ -420,7 +436,7 @@
             // 
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Location = new System.Drawing.Point(661, 1);
+            this.button4.Location = new System.Drawing.Point(675, 0);
             this.button4.Margin = new System.Windows.Forms.Padding(1);
             this.button4.Name = "button4";
             this.button4.Padding = new System.Windows.Forms.Padding(2);
@@ -432,9 +448,9 @@
             // richTextBox1
             // 
             this.richTextBox1.BackColor = System.Drawing.Color.Gray;
-            this.richTextBox1.Location = new System.Drawing.Point(283, 725);
+            this.richTextBox1.Location = new System.Drawing.Point(300, 728);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(280, 96);
+            this.richTextBox1.Size = new System.Drawing.Size(378, 96);
             this.richTextBox1.TabIndex = 20;
             this.richTextBox1.Text = "";
             // 
@@ -442,11 +458,11 @@
             // 
             this.SaveButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
             this.SaveButton.ForeColor = System.Drawing.Color.Black;
-            this.SaveButton.Location = new System.Drawing.Point(283, 662);
+            this.SaveButton.Location = new System.Drawing.Point(682, 728);
             this.SaveButton.Margin = new System.Windows.Forms.Padding(1);
             this.SaveButton.Name = "SaveButton";
             this.SaveButton.Padding = new System.Windows.Forms.Padding(2);
-            this.SaveButton.Size = new System.Drawing.Size(138, 59);
+            this.SaveButton.Size = new System.Drawing.Size(138, 93);
             this.SaveButton.TabIndex = 21;
             this.SaveButton.Text = "Save";
             this.SaveButton.UseVisualStyleBackColor = false;
@@ -456,11 +472,11 @@
             // 
             this.LoadButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
             this.LoadButton.ForeColor = System.Drawing.Color.Black;
-            this.LoadButton.Location = new System.Drawing.Point(567, 762);
+            this.LoadButton.Location = new System.Drawing.Point(964, 728);
             this.LoadButton.Margin = new System.Windows.Forms.Padding(1);
             this.LoadButton.Name = "LoadButton";
             this.LoadButton.Padding = new System.Windows.Forms.Padding(2);
-            this.LoadButton.Size = new System.Drawing.Size(137, 59);
+            this.LoadButton.Size = new System.Drawing.Size(137, 93);
             this.LoadButton.TabIndex = 22;
             this.LoadButton.Text = "Load";
             this.LoadButton.UseVisualStyleBackColor = false;
@@ -471,7 +487,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label11.Location = new System.Drawing.Point(338, 125);
+            this.label11.Location = new System.Drawing.Point(333, 76);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(183, 23);
@@ -483,7 +499,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label12.Location = new System.Drawing.Point(664, 125);
+            this.label12.Location = new System.Drawing.Point(661, 76);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(253, 23);
@@ -495,7 +511,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label13.Location = new System.Drawing.Point(310, 232);
+            this.label13.Location = new System.Drawing.Point(300, 117);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(30, 23);
@@ -504,17 +520,17 @@
             // 
             // richTextBoxLv
             // 
-            this.richTextBoxLv.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.richTextBoxLv.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxLv.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBoxLv.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBoxLv.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxLv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxLv.Location = new System.Drawing.Point(349, 230);
+            this.richTextBoxLv.Location = new System.Drawing.Point(339, 115);
             this.richTextBoxLv.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxLv.MaxLength = 10;
             this.richTextBoxLv.Multiline = false;
             this.richTextBoxLv.Name = "richTextBoxLv";
             this.richTextBoxLv.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBoxLv.Size = new System.Drawing.Size(104, 25);
+            this.richTextBoxLv.Size = new System.Drawing.Size(118, 25);
             this.richTextBoxLv.TabIndex = 25;
             this.richTextBoxLv.Text = "";
             this.richTextBoxLv.WordWrap = false;
@@ -522,9 +538,10 @@
             // label14
             // 
             this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label14.Location = new System.Drawing.Point(777, 388);
+            this.label14.Location = new System.Drawing.Point(480, 32);
             this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(33, 23);
@@ -533,17 +550,17 @@
             // 
             // richTextBoxSP
             // 
-            this.richTextBoxSP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.richTextBoxSP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxSP.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBoxSP.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBoxSP.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxSP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxSP.Location = new System.Drawing.Point(819, 386);
+            this.richTextBoxSP.Location = new System.Drawing.Point(522, 30);
             this.richTextBoxSP.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxSP.MaxLength = 10;
             this.richTextBoxSP.Multiline = false;
             this.richTextBoxSP.Name = "richTextBoxSP";
             this.richTextBoxSP.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBoxSP.Size = new System.Drawing.Size(104, 25);
+            this.richTextBoxSP.Size = new System.Drawing.Size(118, 25);
             this.richTextBoxSP.TabIndex = 27;
             this.richTextBoxSP.Text = "";
             this.richTextBoxSP.WordWrap = false;
@@ -553,7 +570,7 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label15.Location = new System.Drawing.Point(469, 232);
+            this.label15.Location = new System.Drawing.Point(459, 117);
             this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(43, 23);
@@ -562,17 +579,17 @@
             // 
             // richTextBoxExp
             // 
-            this.richTextBoxExp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.richTextBoxExp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxExp.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBoxExp.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBoxExp.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxExp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxExp.Location = new System.Drawing.Point(517, 230);
+            this.richTextBoxExp.Location = new System.Drawing.Point(507, 115);
             this.richTextBoxExp.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxExp.MaxLength = 10;
             this.richTextBoxExp.Multiline = false;
             this.richTextBoxExp.Name = "richTextBoxExp";
             this.richTextBoxExp.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBoxExp.Size = new System.Drawing.Size(104, 25);
+            this.richTextBoxExp.Size = new System.Drawing.Size(118, 25);
             this.richTextBoxExp.TabIndex = 29;
             this.richTextBoxExp.Text = "";
             this.richTextBoxExp.WordWrap = false;
@@ -582,7 +599,7 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label16.Location = new System.Drawing.Point(1145, 352);
+            this.label16.Location = new System.Drawing.Point(1136, 353);
             this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(40, 23);
@@ -594,7 +611,7 @@
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label17.Location = new System.Drawing.Point(1134, 386);
+            this.label17.Location = new System.Drawing.Point(1125, 387);
             this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(51, 23);
@@ -618,7 +635,7 @@
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label19.Location = new System.Drawing.Point(1122, 419);
+            this.label19.Location = new System.Drawing.Point(1113, 420);
             this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(63, 23);
@@ -628,9 +645,10 @@
             // label20
             // 
             this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.Transparent;
             this.label20.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label20.Location = new System.Drawing.Point(1393, 171);
+            this.label20.Location = new System.Drawing.Point(191, 40);
             this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(44, 23);
@@ -640,9 +658,10 @@
             // label21
             // 
             this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.Color.Transparent;
             this.label21.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label21.Location = new System.Drawing.Point(1516, 174);
+            this.label21.Location = new System.Drawing.Point(123, 71);
             this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(35, 23);
@@ -677,15 +696,15 @@
             // 
             this.richTextBoxCut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxCut.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBoxCut.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBoxCut.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxCut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxCut.Location = new System.Drawing.Point(1193, 350);
+            this.richTextBoxCut.Location = new System.Drawing.Point(1184, 351);
             this.richTextBoxCut.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxCut.MaxLength = 10;
             this.richTextBoxCut.Multiline = false;
             this.richTextBoxCut.Name = "richTextBoxCut";
             this.richTextBoxCut.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBoxCut.Size = new System.Drawing.Size(104, 25);
+            this.richTextBoxCut.Size = new System.Drawing.Size(118, 25);
             this.richTextBoxCut.TabIndex = 39;
             this.richTextBoxCut.Text = "";
             this.richTextBoxCut.WordWrap = false;
@@ -694,15 +713,15 @@
             // 
             this.richTextBoxBash.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxBash.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBoxBash.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBoxBash.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxBash.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxBash.Location = new System.Drawing.Point(1193, 384);
+            this.richTextBoxBash.Location = new System.Drawing.Point(1184, 385);
             this.richTextBoxBash.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxBash.MaxLength = 10;
             this.richTextBoxBash.Multiline = false;
             this.richTextBoxBash.Name = "richTextBoxBash";
             this.richTextBoxBash.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBoxBash.Size = new System.Drawing.Size(104, 25);
+            this.richTextBoxBash.Size = new System.Drawing.Size(118, 25);
             this.richTextBoxBash.TabIndex = 40;
             this.richTextBoxBash.Text = "";
             this.richTextBoxBash.WordWrap = false;
@@ -711,7 +730,7 @@
             // 
             this.richTextBoxSlash.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxSlash.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBoxSlash.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBoxSlash.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxSlash.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
             this.richTextBoxSlash.Location = new System.Drawing.Point(1392, 351);
             this.richTextBoxSlash.Margin = new System.Windows.Forms.Padding(4);
@@ -719,7 +738,7 @@
             this.richTextBoxSlash.Multiline = false;
             this.richTextBoxSlash.Name = "richTextBoxSlash";
             this.richTextBoxSlash.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBoxSlash.Size = new System.Drawing.Size(104, 25);
+            this.richTextBoxSlash.Size = new System.Drawing.Size(118, 25);
             this.richTextBoxSlash.TabIndex = 41;
             this.richTextBoxSlash.Text = "";
             this.richTextBoxSlash.WordWrap = false;
@@ -728,49 +747,49 @@
             // 
             this.richTextBoxPierce.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxPierce.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBoxPierce.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBoxPierce.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxPierce.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxPierce.Location = new System.Drawing.Point(1193, 417);
+            this.richTextBoxPierce.Location = new System.Drawing.Point(1184, 418);
             this.richTextBoxPierce.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxPierce.MaxLength = 10;
             this.richTextBoxPierce.Multiline = false;
             this.richTextBoxPierce.Name = "richTextBoxPierce";
             this.richTextBoxPierce.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBoxPierce.Size = new System.Drawing.Size(104, 25);
+            this.richTextBoxPierce.Size = new System.Drawing.Size(118, 25);
             this.richTextBoxPierce.TabIndex = 42;
             this.richTextBoxPierce.Text = "";
             this.richTextBoxPierce.WordWrap = false;
             // 
             // richTextBoxFire
             // 
-            this.richTextBoxFire.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.richTextBoxFire.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(0)))));
             this.richTextBoxFire.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBoxFire.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBoxFire.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxFire.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxFire.Location = new System.Drawing.Point(1364, 203);
+            this.richTextBoxFire.Location = new System.Drawing.Point(299, 32);
             this.richTextBoxFire.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxFire.MaxLength = 10;
             this.richTextBoxFire.Multiline = false;
             this.richTextBoxFire.Name = "richTextBoxFire";
             this.richTextBoxFire.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBoxFire.Size = new System.Drawing.Size(104, 25);
+            this.richTextBoxFire.Size = new System.Drawing.Size(118, 25);
             this.richTextBoxFire.TabIndex = 43;
             this.richTextBoxFire.Text = "";
             this.richTextBoxFire.WordWrap = false;
             // 
             // richTextBoxIce
             // 
-            this.richTextBoxIce.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.richTextBoxIce.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(0)))));
             this.richTextBoxIce.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBoxIce.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBoxIce.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxIce.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxIce.Location = new System.Drawing.Point(1488, 227);
+            this.richTextBoxIce.Location = new System.Drawing.Point(308, 69);
             this.richTextBoxIce.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxIce.MaxLength = 10;
             this.richTextBoxIce.Multiline = false;
             this.richTextBoxIce.Name = "richTextBoxIce";
             this.richTextBoxIce.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBoxIce.Size = new System.Drawing.Size(104, 25);
+            this.richTextBoxIce.Size = new System.Drawing.Size(118, 25);
             this.richTextBoxIce.TabIndex = 44;
             this.richTextBoxIce.Text = "";
             this.richTextBoxIce.WordWrap = false;
@@ -779,7 +798,7 @@
             // 
             this.richTextBoxWater.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxWater.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBoxWater.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBoxWater.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxWater.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
             this.richTextBoxWater.Location = new System.Drawing.Point(1392, 526);
             this.richTextBoxWater.Margin = new System.Windows.Forms.Padding(4);
@@ -787,7 +806,7 @@
             this.richTextBoxWater.Multiline = false;
             this.richTextBoxWater.Name = "richTextBoxWater";
             this.richTextBoxWater.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBoxWater.Size = new System.Drawing.Size(104, 25);
+            this.richTextBoxWater.Size = new System.Drawing.Size(118, 25);
             this.richTextBoxWater.TabIndex = 45;
             this.richTextBoxWater.Text = "";
             this.richTextBoxWater.WordWrap = false;
@@ -796,7 +815,7 @@
             // 
             this.richTextBoxFlame.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxFlame.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBoxFlame.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBoxFlame.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxFlame.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
             this.richTextBoxFlame.Location = new System.Drawing.Point(1392, 490);
             this.richTextBoxFlame.Margin = new System.Windows.Forms.Padding(4);
@@ -804,7 +823,7 @@
             this.richTextBoxFlame.Multiline = false;
             this.richTextBoxFlame.Name = "richTextBoxFlame";
             this.richTextBoxFlame.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBoxFlame.Size = new System.Drawing.Size(104, 25);
+            this.richTextBoxFlame.Size = new System.Drawing.Size(118, 25);
             this.richTextBoxFlame.TabIndex = 46;
             this.richTextBoxFlame.Text = "";
             this.richTextBoxFlame.WordWrap = false;
@@ -812,9 +831,10 @@
             // label24
             // 
             this.label24.AutoSize = true;
+            this.label24.BackColor = System.Drawing.Color.Transparent;
             this.label24.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label24.Location = new System.Drawing.Point(1599, 203);
+            this.label24.Location = new System.Drawing.Point(70, 138);
             this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(57, 23);
@@ -824,9 +844,10 @@
             // label25
             // 
             this.label25.AutoSize = true;
+            this.label25.BackColor = System.Drawing.Color.Transparent;
             this.label25.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label25.Location = new System.Drawing.Point(1611, 237);
+            this.label25.Location = new System.Drawing.Point(198, 165);
             this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(45, 23);
@@ -838,7 +859,7 @@
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label26.Location = new System.Drawing.Point(1148, 633);
+            this.label26.Location = new System.Drawing.Point(1136, 633);
             this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(58, 23);
@@ -850,7 +871,7 @@
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label27.Location = new System.Drawing.Point(1150, 703);
+            this.label27.Location = new System.Drawing.Point(1138, 703);
             this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(55, 23);
@@ -862,7 +883,7 @@
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label28.Location = new System.Drawing.Point(1153, 739);
+            this.label28.Location = new System.Drawing.Point(1141, 739);
             this.label28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(52, 23);
@@ -871,34 +892,34 @@
             // 
             // richTextBoxElec
             // 
-            this.richTextBoxElec.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.richTextBoxElec.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(0)))));
             this.richTextBoxElec.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBoxElec.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBoxElec.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxElec.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxElec.Location = new System.Drawing.Point(1766, 235);
+            this.richTextBoxElec.Location = new System.Drawing.Point(338, 148);
             this.richTextBoxElec.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxElec.MaxLength = 10;
             this.richTextBoxElec.Multiline = false;
             this.richTextBoxElec.Name = "richTextBoxElec";
             this.richTextBoxElec.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBoxElec.Size = new System.Drawing.Size(104, 25);
+            this.richTextBoxElec.Size = new System.Drawing.Size(118, 25);
             this.richTextBoxElec.TabIndex = 53;
             this.richTextBoxElec.Text = "";
             this.richTextBoxElec.WordWrap = false;
             // 
             // richTextBoxWind
             // 
-            this.richTextBoxWind.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.richTextBoxWind.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(0)))));
             this.richTextBoxWind.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBoxWind.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBoxWind.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxWind.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxWind.Location = new System.Drawing.Point(1661, 203);
+            this.richTextBoxWind.Location = new System.Drawing.Point(315, 110);
             this.richTextBoxWind.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxWind.MaxLength = 10;
             this.richTextBoxWind.Multiline = false;
             this.richTextBoxWind.Name = "richTextBoxWind";
             this.richTextBoxWind.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBoxWind.Size = new System.Drawing.Size(104, 25);
+            this.richTextBoxWind.Size = new System.Drawing.Size(118, 25);
             this.richTextBoxWind.TabIndex = 52;
             this.richTextBoxWind.Text = "";
             this.richTextBoxWind.WordWrap = false;
@@ -907,15 +928,15 @@
             // 
             this.richTextBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox4.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBox4.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBox4.Location = new System.Drawing.Point(1215, 666);
+            this.richTextBox4.Location = new System.Drawing.Point(1203, 666);
             this.richTextBox4.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBox4.MaxLength = 10;
             this.richTextBox4.Multiline = false;
             this.richTextBox4.Name = "richTextBox4";
             this.richTextBox4.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBox4.Size = new System.Drawing.Size(104, 25);
+            this.richTextBox4.Size = new System.Drawing.Size(118, 25);
             this.richTextBox4.TabIndex = 55;
             this.richTextBox4.Text = "";
             this.richTextBox4.WordWrap = false;
@@ -924,15 +945,15 @@
             // 
             this.richTextBoxEarth.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxEarth.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBoxEarth.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBoxEarth.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxEarth.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxEarth.Location = new System.Drawing.Point(1215, 633);
+            this.richTextBoxEarth.Location = new System.Drawing.Point(1203, 633);
             this.richTextBoxEarth.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxEarth.MaxLength = 10;
             this.richTextBoxEarth.Multiline = false;
             this.richTextBoxEarth.Name = "richTextBoxEarth";
             this.richTextBoxEarth.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBoxEarth.Size = new System.Drawing.Size(104, 25);
+            this.richTextBoxEarth.Size = new System.Drawing.Size(118, 25);
             this.richTextBoxEarth.TabIndex = 54;
             this.richTextBoxEarth.Text = "";
             this.richTextBoxEarth.WordWrap = false;
@@ -941,15 +962,15 @@
             // 
             this.richTextBoxDark.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxDark.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBoxDark.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBoxDark.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxDark.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxDark.Location = new System.Drawing.Point(1215, 735);
+            this.richTextBoxDark.Location = new System.Drawing.Point(1203, 735);
             this.richTextBoxDark.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxDark.MaxLength = 10;
             this.richTextBoxDark.Multiline = false;
             this.richTextBoxDark.Name = "richTextBoxDark";
             this.richTextBoxDark.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBoxDark.Size = new System.Drawing.Size(104, 25);
+            this.richTextBoxDark.Size = new System.Drawing.Size(118, 25);
             this.richTextBoxDark.TabIndex = 57;
             this.richTextBoxDark.Text = "";
             this.richTextBoxDark.WordWrap = false;
@@ -958,15 +979,15 @@
             // 
             this.richTextBoxLight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxLight.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBoxLight.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBoxLight.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxLight.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxLight.Location = new System.Drawing.Point(1215, 699);
+            this.richTextBoxLight.Location = new System.Drawing.Point(1203, 699);
             this.richTextBoxLight.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxLight.MaxLength = 10;
             this.richTextBoxLight.Multiline = false;
             this.richTextBoxLight.Name = "richTextBoxLight";
             this.richTextBoxLight.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBoxLight.Size = new System.Drawing.Size(104, 25);
+            this.richTextBoxLight.Size = new System.Drawing.Size(118, 25);
             this.richTextBoxLight.TabIndex = 56;
             this.richTextBoxLight.Text = "";
             this.richTextBoxLight.WordWrap = false;
@@ -976,7 +997,7 @@
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label29.Location = new System.Drawing.Point(1169, 668);
+            this.label29.Location = new System.Drawing.Point(1157, 668);
             this.label29.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(37, 23);
@@ -988,7 +1009,7 @@
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label30.Location = new System.Drawing.Point(1147, 771);
+            this.label30.Location = new System.Drawing.Point(1135, 771);
             this.label30.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(50, 23);
@@ -999,15 +1020,15 @@
             // 
             this.richTextBoxVoid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxVoid.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBoxVoid.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBoxVoid.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxVoid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxVoid.Location = new System.Drawing.Point(1215, 768);
+            this.richTextBoxVoid.Location = new System.Drawing.Point(1203, 768);
             this.richTextBoxVoid.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxVoid.MaxLength = 10;
             this.richTextBoxVoid.Multiline = false;
             this.richTextBoxVoid.Name = "richTextBoxVoid";
             this.richTextBoxVoid.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBoxVoid.Size = new System.Drawing.Size(104, 25);
+            this.richTextBoxVoid.Size = new System.Drawing.Size(118, 25);
             this.richTextBoxVoid.TabIndex = 60;
             this.richTextBoxVoid.Text = "";
             this.richTextBoxVoid.WordWrap = false;
@@ -1016,7 +1037,7 @@
             // 
             this.richTextBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox9.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBox9.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBox9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
             this.richTextBox9.Location = new System.Drawing.Point(1393, 768);
             this.richTextBox9.Margin = new System.Windows.Forms.Padding(4);
@@ -1024,7 +1045,7 @@
             this.richTextBox9.Multiline = false;
             this.richTextBox9.Name = "richTextBox9";
             this.richTextBox9.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBox9.Size = new System.Drawing.Size(104, 25);
+            this.richTextBox9.Size = new System.Drawing.Size(118, 25);
             this.richTextBox9.TabIndex = 67;
             this.richTextBox9.Text = "";
             this.richTextBox9.WordWrap = false;
@@ -1033,7 +1054,7 @@
             // 
             this.richTextBoxEvil.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxEvil.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBoxEvil.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBoxEvil.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxEvil.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
             this.richTextBoxEvil.Location = new System.Drawing.Point(1393, 735);
             this.richTextBoxEvil.Margin = new System.Windows.Forms.Padding(4);
@@ -1041,7 +1062,7 @@
             this.richTextBoxEvil.Multiline = false;
             this.richTextBoxEvil.Name = "richTextBoxEvil";
             this.richTextBoxEvil.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBoxEvil.Size = new System.Drawing.Size(104, 25);
+            this.richTextBoxEvil.Size = new System.Drawing.Size(118, 25);
             this.richTextBoxEvil.TabIndex = 66;
             this.richTextBoxEvil.Text = "";
             this.richTextBoxEvil.WordWrap = false;
@@ -1050,7 +1071,7 @@
             // 
             this.richTextBoxHoly.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxHoly.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBoxHoly.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBoxHoly.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxHoly.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
             this.richTextBoxHoly.Location = new System.Drawing.Point(1393, 699);
             this.richTextBoxHoly.Margin = new System.Windows.Forms.Padding(4);
@@ -1058,7 +1079,7 @@
             this.richTextBoxHoly.Multiline = false;
             this.richTextBoxHoly.Name = "richTextBoxHoly";
             this.richTextBoxHoly.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBoxHoly.Size = new System.Drawing.Size(104, 25);
+            this.richTextBoxHoly.Size = new System.Drawing.Size(118, 25);
             this.richTextBoxHoly.TabIndex = 65;
             this.richTextBoxHoly.Text = "";
             this.richTextBoxHoly.WordWrap = false;
@@ -1067,7 +1088,7 @@
             // 
             this.richTextBox12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox12.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBox12.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBox12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
             this.richTextBox12.Location = new System.Drawing.Point(1393, 666);
             this.richTextBox12.Margin = new System.Windows.Forms.Padding(4);
@@ -1075,7 +1096,7 @@
             this.richTextBox12.Multiline = false;
             this.richTextBox12.Name = "richTextBox12";
             this.richTextBox12.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBox12.Size = new System.Drawing.Size(104, 25);
+            this.richTextBox12.Size = new System.Drawing.Size(118, 25);
             this.richTextBox12.TabIndex = 64;
             this.richTextBox12.Text = "";
             this.richTextBox12.WordWrap = false;
@@ -1084,7 +1105,7 @@
             // 
             this.richTextBoxStone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxStone.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBoxStone.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBoxStone.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxStone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
             this.richTextBoxStone.Location = new System.Drawing.Point(1393, 633);
             this.richTextBoxStone.Margin = new System.Windows.Forms.Padding(4);
@@ -1092,7 +1113,7 @@
             this.richTextBoxStone.Multiline = false;
             this.richTextBoxStone.Name = "richTextBoxStone";
             this.richTextBoxStone.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBoxStone.Size = new System.Drawing.Size(104, 25);
+            this.richTextBoxStone.Size = new System.Drawing.Size(118, 25);
             this.richTextBoxStone.TabIndex = 63;
             this.richTextBoxStone.Text = "";
             this.richTextBoxStone.WordWrap = false;
@@ -1101,7 +1122,7 @@
             // 
             this.richTextBoxVolt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxVolt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBoxVolt.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBoxVolt.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxVolt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
             this.richTextBoxVolt.Location = new System.Drawing.Point(1393, 595);
             this.richTextBoxVolt.Margin = new System.Windows.Forms.Padding(4);
@@ -1109,7 +1130,7 @@
             this.richTextBoxVolt.Multiline = false;
             this.richTextBoxVolt.Name = "richTextBoxVolt";
             this.richTextBoxVolt.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBoxVolt.Size = new System.Drawing.Size(104, 25);
+            this.richTextBoxVolt.Size = new System.Drawing.Size(118, 25);
             this.richTextBoxVolt.TabIndex = 62;
             this.richTextBoxVolt.Text = "";
             this.richTextBoxVolt.WordWrap = false;
@@ -1118,7 +1139,7 @@
             // 
             this.richTextBoxNature.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxNature.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBoxNature.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBoxNature.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxNature.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
             this.richTextBoxNature.Location = new System.Drawing.Point(1392, 562);
             this.richTextBoxNature.Margin = new System.Windows.Forms.Padding(4);
@@ -1126,7 +1147,7 @@
             this.richTextBoxNature.Multiline = false;
             this.richTextBoxNature.Name = "richTextBoxNature";
             this.richTextBoxNature.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBoxNature.Size = new System.Drawing.Size(104, 25);
+            this.richTextBoxNature.Size = new System.Drawing.Size(118, 25);
             this.richTextBoxNature.TabIndex = 61;
             this.richTextBoxNature.Text = "";
             this.richTextBoxNature.WordWrap = false;
@@ -1219,15 +1240,15 @@
             // 
             this.richTextBoxPhys.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxPhys.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBoxPhys.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBoxPhys.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxPhys.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxPhys.Location = new System.Drawing.Point(1193, 456);
+            this.richTextBoxPhys.Location = new System.Drawing.Point(1184, 457);
             this.richTextBoxPhys.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxPhys.MaxLength = 10;
             this.richTextBoxPhys.Multiline = false;
             this.richTextBoxPhys.Name = "richTextBoxPhys";
             this.richTextBoxPhys.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBoxPhys.Size = new System.Drawing.Size(104, 25);
+            this.richTextBoxPhys.Size = new System.Drawing.Size(118, 25);
             this.richTextBoxPhys.TabIndex = 76;
             this.richTextBoxPhys.Text = "";
             this.richTextBoxPhys.WordWrap = false;
@@ -1237,7 +1258,7 @@
             this.label38.AutoSize = true;
             this.label38.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label38.Location = new System.Drawing.Point(1125, 459);
+            this.label38.Location = new System.Drawing.Point(1116, 460);
             this.label38.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(50, 23);
@@ -1248,7 +1269,7 @@
             // 
             this.richTextBoxMagic.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxMagic.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBoxMagic.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBoxMagic.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxMagic.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
             this.richTextBoxMagic.Location = new System.Drawing.Point(1392, 457);
             this.richTextBoxMagic.Margin = new System.Windows.Forms.Padding(4);
@@ -1256,7 +1277,7 @@
             this.richTextBoxMagic.Multiline = false;
             this.richTextBoxMagic.Name = "richTextBoxMagic";
             this.richTextBoxMagic.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBoxMagic.Size = new System.Drawing.Size(104, 25);
+            this.richTextBoxMagic.Size = new System.Drawing.Size(118, 25);
             this.richTextBoxMagic.TabIndex = 78;
             this.richTextBoxMagic.Text = "";
             this.richTextBoxMagic.WordWrap = false;
@@ -1277,7 +1298,7 @@
             // 
             this.richTextBoxGun.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxGun.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBoxGun.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBoxGun.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxGun.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
             this.richTextBoxGun.Location = new System.Drawing.Point(1392, 418);
             this.richTextBoxGun.Margin = new System.Windows.Forms.Padding(4);
@@ -1285,7 +1306,7 @@
             this.richTextBoxGun.Multiline = false;
             this.richTextBoxGun.Name = "richTextBoxGun";
             this.richTextBoxGun.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBoxGun.Size = new System.Drawing.Size(104, 25);
+            this.richTextBoxGun.Size = new System.Drawing.Size(118, 25);
             this.richTextBoxGun.TabIndex = 80;
             this.richTextBoxGun.Text = "";
             this.richTextBoxGun.WordWrap = false;
@@ -1306,7 +1327,7 @@
             // 
             this.richTextBoxBlunt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxBlunt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBoxBlunt.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBoxBlunt.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxBlunt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
             this.richTextBoxBlunt.Location = new System.Drawing.Point(1392, 384);
             this.richTextBoxBlunt.Margin = new System.Windows.Forms.Padding(4);
@@ -1314,7 +1335,7 @@
             this.richTextBoxBlunt.Multiline = false;
             this.richTextBoxBlunt.Name = "richTextBoxBlunt";
             this.richTextBoxBlunt.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBoxBlunt.Size = new System.Drawing.Size(104, 25);
+            this.richTextBoxBlunt.Size = new System.Drawing.Size(118, 25);
             this.richTextBoxBlunt.TabIndex = 82;
             this.richTextBoxBlunt.Text = "";
             this.richTextBoxBlunt.WordWrap = false;
@@ -1336,7 +1357,7 @@
             this.label42.AutoSize = true;
             this.label42.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label42.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label42.Location = new System.Drawing.Point(933, 599);
+            this.label42.Location = new System.Drawing.Point(1044, 563);
             this.label42.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(93, 23);
@@ -1345,34 +1366,34 @@
             // 
             // richTextBoxLightning
             // 
-            this.richTextBoxLightning.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.richTextBoxLightning.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxLightning.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBoxLightning.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBoxLightning.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxLightning.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxLightning.Location = new System.Drawing.Point(1034, 595);
+            this.richTextBoxLightning.Location = new System.Drawing.Point(1145, 559);
             this.richTextBoxLightning.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxLightning.MaxLength = 10;
             this.richTextBoxLightning.Multiline = false;
             this.richTextBoxLightning.Name = "richTextBoxLightning";
             this.richTextBoxLightning.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBoxLightning.Size = new System.Drawing.Size(104, 25);
+            this.richTextBoxLightning.Size = new System.Drawing.Size(118, 25);
             this.richTextBoxLightning.TabIndex = 83;
             this.richTextBoxLightning.Text = "";
             this.richTextBoxLightning.WordWrap = false;
             // 
             // richTextBoxPoison
             // 
-            this.richTextBoxPoison.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.richTextBoxPoison.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxPoison.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBoxPoison.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBoxPoison.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxPoison.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxPoison.Location = new System.Drawing.Point(1590, 348);
+            this.richTextBoxPoison.Location = new System.Drawing.Point(540, 39);
             this.richTextBoxPoison.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxPoison.MaxLength = 10;
             this.richTextBoxPoison.Multiline = false;
             this.richTextBoxPoison.Name = "richTextBoxPoison";
             this.richTextBoxPoison.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBoxPoison.Size = new System.Drawing.Size(104, 25);
+            this.richTextBoxPoison.Size = new System.Drawing.Size(118, 25);
             this.richTextBoxPoison.TabIndex = 86;
             this.richTextBoxPoison.Text = "";
             this.richTextBoxPoison.WordWrap = false;
@@ -1382,7 +1403,7 @@
             this.label43.AutoSize = true;
             this.label43.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label43.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label43.Location = new System.Drawing.Point(1515, 350);
+            this.label43.Location = new System.Drawing.Point(465, 41);
             this.label43.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(67, 23);
@@ -1391,17 +1412,17 @@
             // 
             // richTextBoxConfuse
             // 
-            this.richTextBoxConfuse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.richTextBoxConfuse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxConfuse.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBoxConfuse.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBoxConfuse.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxConfuse.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxConfuse.Location = new System.Drawing.Point(1590, 382);
+            this.richTextBoxConfuse.Location = new System.Drawing.Point(540, 73);
             this.richTextBoxConfuse.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxConfuse.MaxLength = 10;
             this.richTextBoxConfuse.Multiline = false;
             this.richTextBoxConfuse.Name = "richTextBoxConfuse";
             this.richTextBoxConfuse.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBoxConfuse.Size = new System.Drawing.Size(104, 25);
+            this.richTextBoxConfuse.Size = new System.Drawing.Size(118, 25);
             this.richTextBoxConfuse.TabIndex = 88;
             this.richTextBoxConfuse.Text = "";
             this.richTextBoxConfuse.WordWrap = false;
@@ -1411,7 +1432,7 @@
             this.label44.AutoSize = true;
             this.label44.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label44.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label44.Location = new System.Drawing.Point(1502, 384);
+            this.label44.Location = new System.Drawing.Point(452, 75);
             this.label44.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(77, 23);
@@ -1420,17 +1441,17 @@
             // 
             // richTextBoxSilence
             // 
-            this.richTextBoxSilence.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.richTextBoxSilence.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxSilence.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBoxSilence.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBoxSilence.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxSilence.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxSilence.Location = new System.Drawing.Point(1590, 415);
+            this.richTextBoxSilence.Location = new System.Drawing.Point(540, 106);
             this.richTextBoxSilence.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxSilence.MaxLength = 10;
             this.richTextBoxSilence.Multiline = false;
             this.richTextBoxSilence.Name = "richTextBoxSilence";
             this.richTextBoxSilence.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBoxSilence.Size = new System.Drawing.Size(104, 25);
+            this.richTextBoxSilence.Size = new System.Drawing.Size(118, 25);
             this.richTextBoxSilence.TabIndex = 90;
             this.richTextBoxSilence.Text = "";
             this.richTextBoxSilence.WordWrap = false;
@@ -1440,7 +1461,7 @@
             this.label45.AutoSize = true;
             this.label45.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label45.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label45.Location = new System.Drawing.Point(1509, 417);
+            this.label45.Location = new System.Drawing.Point(459, 108);
             this.label45.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(70, 23);
@@ -1449,17 +1470,17 @@
             // 
             // richTextBoxSleep
             // 
-            this.richTextBoxSleep.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.richTextBoxSleep.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxSleep.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBoxSleep.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBoxSleep.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxSleep.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxSleep.Location = new System.Drawing.Point(1590, 448);
+            this.richTextBoxSleep.Location = new System.Drawing.Point(540, 139);
             this.richTextBoxSleep.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxSleep.MaxLength = 10;
             this.richTextBoxSleep.Multiline = false;
             this.richTextBoxSleep.Name = "richTextBoxSleep";
             this.richTextBoxSleep.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBoxSleep.Size = new System.Drawing.Size(104, 25);
+            this.richTextBoxSleep.Size = new System.Drawing.Size(118, 25);
             this.richTextBoxSleep.TabIndex = 92;
             this.richTextBoxSleep.Text = "";
             this.richTextBoxSleep.WordWrap = false;
@@ -1469,7 +1490,7 @@
             this.label46.AutoSize = true;
             this.label46.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label46.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label46.Location = new System.Drawing.Point(1524, 450);
+            this.label46.Location = new System.Drawing.Point(474, 141);
             this.label46.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(55, 23);
@@ -1478,11 +1499,11 @@
             // 
             // richTextBoxSlow
             // 
-            this.richTextBoxSlow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.richTextBoxSlow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxSlow.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBoxSlow.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxSlow.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxSlow.Location = new System.Drawing.Point(1590, 547);
+            this.richTextBoxSlow.Location = new System.Drawing.Point(1602, 547);
             this.richTextBoxSlow.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxSlow.MaxLength = 10;
             this.richTextBoxSlow.Multiline = false;
@@ -1498,7 +1519,7 @@
             this.label47.AutoSize = true;
             this.label47.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label47.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label47.Location = new System.Drawing.Point(1524, 549);
+            this.label47.Location = new System.Drawing.Point(1536, 549);
             this.label47.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label47.Name = "label47";
             this.label47.Size = new System.Drawing.Size(50, 23);
@@ -1507,11 +1528,11 @@
             // 
             // richTextBoxFreeze
             // 
-            this.richTextBoxFreeze.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.richTextBoxFreeze.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxFreeze.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBoxFreeze.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxFreeze.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxFreeze.Location = new System.Drawing.Point(1590, 514);
+            this.richTextBoxFreeze.Location = new System.Drawing.Point(1602, 514);
             this.richTextBoxFreeze.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxFreeze.MaxLength = 10;
             this.richTextBoxFreeze.Multiline = false;
@@ -1527,7 +1548,7 @@
             this.label48.AutoSize = true;
             this.label48.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label48.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label48.Location = new System.Drawing.Point(1512, 516);
+            this.label48.Location = new System.Drawing.Point(1524, 516);
             this.label48.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label48.Name = "label48";
             this.label48.Size = new System.Drawing.Size(64, 23);
@@ -1536,11 +1557,11 @@
             // 
             // richTextBoxBurn
             // 
-            this.richTextBoxBurn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.richTextBoxBurn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxBurn.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBoxBurn.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxBurn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxBurn.Location = new System.Drawing.Point(1590, 481);
+            this.richTextBoxBurn.Location = new System.Drawing.Point(1602, 481);
             this.richTextBoxBurn.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxBurn.MaxLength = 10;
             this.richTextBoxBurn.Multiline = false;
@@ -1556,7 +1577,7 @@
             this.label49.AutoSize = true;
             this.label49.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label49.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label49.Location = new System.Drawing.Point(1524, 483);
+            this.label49.Location = new System.Drawing.Point(1536, 483);
             this.label49.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label49.Name = "label49";
             this.label49.Size = new System.Drawing.Size(52, 23);
@@ -1565,11 +1586,11 @@
             // 
             // richTextBoxStun
             // 
-            this.richTextBoxStun.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.richTextBoxStun.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxStun.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBoxStun.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxStun.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxStun.Location = new System.Drawing.Point(1590, 646);
+            this.richTextBoxStun.Location = new System.Drawing.Point(1602, 646);
             this.richTextBoxStun.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxStun.MaxLength = 10;
             this.richTextBoxStun.Multiline = false;
@@ -1585,7 +1606,7 @@
             this.labelStun.AutoSize = true;
             this.labelStun.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelStun.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.labelStun.Location = new System.Drawing.Point(1524, 648);
+            this.labelStun.Location = new System.Drawing.Point(1536, 648);
             this.labelStun.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelStun.Name = "labelStun";
             this.labelStun.Size = new System.Drawing.Size(50, 23);
@@ -1594,11 +1615,11 @@
             // 
             // richTextBoxPetrify
             // 
-            this.richTextBoxPetrify.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.richTextBoxPetrify.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxPetrify.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBoxPetrify.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxPetrify.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxPetrify.Location = new System.Drawing.Point(1590, 613);
+            this.richTextBoxPetrify.Location = new System.Drawing.Point(1602, 613);
             this.richTextBoxPetrify.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxPetrify.MaxLength = 10;
             this.richTextBoxPetrify.Multiline = false;
@@ -1614,7 +1635,7 @@
             this.label51.AutoSize = true;
             this.label51.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label51.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label51.Location = new System.Drawing.Point(1509, 615);
+            this.label51.Location = new System.Drawing.Point(1521, 615);
             this.label51.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label51.Name = "label51";
             this.label51.Size = new System.Drawing.Size(67, 23);
@@ -1623,11 +1644,11 @@
             // 
             // richTextBoxParalyze
             // 
-            this.richTextBoxParalyze.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.richTextBoxParalyze.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxParalyze.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBoxParalyze.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxParalyze.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxParalyze.Location = new System.Drawing.Point(1590, 580);
+            this.richTextBoxParalyze.Location = new System.Drawing.Point(1602, 580);
             this.richTextBoxParalyze.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxParalyze.MaxLength = 10;
             this.richTextBoxParalyze.Multiline = false;
@@ -1643,7 +1664,7 @@
             this.label52.AutoSize = true;
             this.label52.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label52.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label52.Location = new System.Drawing.Point(1498, 582);
+            this.label52.Location = new System.Drawing.Point(1510, 582);
             this.label52.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label52.Name = "label52";
             this.label52.Size = new System.Drawing.Size(81, 23);
@@ -1652,11 +1673,11 @@
             // 
             // richTextBoxFear
             // 
-            this.richTextBoxFear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.richTextBoxFear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxFear.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBoxFear.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxFear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxFear.Location = new System.Drawing.Point(1590, 745);
+            this.richTextBoxFear.Location = new System.Drawing.Point(1602, 745);
             this.richTextBoxFear.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxFear.MaxLength = 10;
             this.richTextBoxFear.Multiline = false;
@@ -1672,7 +1693,7 @@
             this.label53.AutoSize = true;
             this.label53.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label53.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label53.Location = new System.Drawing.Point(1524, 747);
+            this.label53.Location = new System.Drawing.Point(1536, 747);
             this.label53.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label53.Name = "label53";
             this.label53.Size = new System.Drawing.Size(48, 23);
@@ -1681,11 +1702,11 @@
             // 
             // richTextBoxBlind
             // 
-            this.richTextBoxBlind.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.richTextBoxBlind.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxBlind.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBoxBlind.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxBlind.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxBlind.Location = new System.Drawing.Point(1590, 712);
+            this.richTextBoxBlind.Location = new System.Drawing.Point(1602, 712);
             this.richTextBoxBlind.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxBlind.MaxLength = 10;
             this.richTextBoxBlind.Multiline = false;
@@ -1701,7 +1722,7 @@
             this.label54.AutoSize = true;
             this.label54.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label54.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label54.Location = new System.Drawing.Point(1524, 714);
+            this.label54.Location = new System.Drawing.Point(1536, 714);
             this.label54.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label54.Name = "label54";
             this.label54.Size = new System.Drawing.Size(55, 23);
@@ -1710,11 +1731,11 @@
             // 
             // richTextBoxRage
             // 
-            this.richTextBoxRage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.richTextBoxRage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxRage.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBoxRage.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxRage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxRage.Location = new System.Drawing.Point(1590, 679);
+            this.richTextBoxRage.Location = new System.Drawing.Point(1602, 679);
             this.richTextBoxRage.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxRage.MaxLength = 10;
             this.richTextBoxRage.Multiline = false;
@@ -1730,7 +1751,7 @@
             this.label55.AutoSize = true;
             this.label55.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label55.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label55.Location = new System.Drawing.Point(1524, 681);
+            this.label55.Location = new System.Drawing.Point(1536, 681);
             this.label55.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label55.Name = "label55";
             this.label55.Size = new System.Drawing.Size(52, 23);
@@ -1739,11 +1760,11 @@
             // 
             // richTextBoxDespair
             // 
-            this.richTextBoxDespair.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.richTextBoxDespair.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxDespair.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBoxDespair.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxDespair.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxDespair.Location = new System.Drawing.Point(1782, 745);
+            this.richTextBoxDespair.Location = new System.Drawing.Point(1793, 745);
             this.richTextBoxDespair.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxDespair.MaxLength = 10;
             this.richTextBoxDespair.Multiline = false;
@@ -1759,7 +1780,7 @@
             this.label56.AutoSize = true;
             this.label56.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label56.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label56.Location = new System.Drawing.Point(1695, 747);
+            this.label56.Location = new System.Drawing.Point(1706, 747);
             this.label56.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label56.Name = "label56";
             this.label56.Size = new System.Drawing.Size(76, 23);
@@ -1768,11 +1789,11 @@
             // 
             // richTextBoxCurse
             // 
-            this.richTextBoxCurse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.richTextBoxCurse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxCurse.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBoxCurse.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxCurse.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxCurse.Location = new System.Drawing.Point(1782, 712);
+            this.richTextBoxCurse.Location = new System.Drawing.Point(1793, 712);
             this.richTextBoxCurse.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxCurse.MaxLength = 10;
             this.richTextBoxCurse.Multiline = false;
@@ -1788,7 +1809,7 @@
             this.label57.AutoSize = true;
             this.label57.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label57.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label57.Location = new System.Drawing.Point(1710, 714);
+            this.label57.Location = new System.Drawing.Point(1721, 714);
             this.label57.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label57.Name = "label57";
             this.label57.Size = new System.Drawing.Size(58, 23);
@@ -1797,11 +1818,11 @@
             // 
             // richTextBoxBerserk
             // 
-            this.richTextBoxBerserk.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.richTextBoxBerserk.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxBerserk.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBoxBerserk.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxBerserk.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxBerserk.Location = new System.Drawing.Point(1782, 679);
+            this.richTextBoxBerserk.Location = new System.Drawing.Point(1793, 679);
             this.richTextBoxBerserk.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxBerserk.MaxLength = 10;
             this.richTextBoxBerserk.Multiline = false;
@@ -1817,7 +1838,7 @@
             this.label58.AutoSize = true;
             this.label58.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label58.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label58.Location = new System.Drawing.Point(1697, 681);
+            this.label58.Location = new System.Drawing.Point(1708, 681);
             this.label58.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label58.Name = "label58";
             this.label58.Size = new System.Drawing.Size(74, 23);
@@ -1826,11 +1847,11 @@
             // 
             // richTextBoxDown
             // 
-            this.richTextBoxDown.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.richTextBoxDown.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxDown.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBoxDown.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxDown.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxDown.Location = new System.Drawing.Point(1782, 646);
+            this.richTextBoxDown.Location = new System.Drawing.Point(1793, 646);
             this.richTextBoxDown.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxDown.MaxLength = 10;
             this.richTextBoxDown.Multiline = false;
@@ -1846,7 +1867,7 @@
             this.label59.AutoSize = true;
             this.label59.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label59.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label59.Location = new System.Drawing.Point(1716, 648);
+            this.label59.Location = new System.Drawing.Point(1727, 648);
             this.label59.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label59.Name = "label59";
             this.label59.Size = new System.Drawing.Size(59, 23);
@@ -1855,11 +1876,11 @@
             // 
             // richTextBox22
             // 
-            this.richTextBox22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.richTextBox22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBox22.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox22.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBox22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBox22.Location = new System.Drawing.Point(1782, 613);
+            this.richTextBox22.Location = new System.Drawing.Point(1793, 613);
             this.richTextBox22.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBox22.MaxLength = 10;
             this.richTextBox22.Multiline = false;
@@ -1875,7 +1896,7 @@
             this.label60.AutoSize = true;
             this.label60.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label60.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label60.Location = new System.Drawing.Point(1716, 615);
+            this.label60.Location = new System.Drawing.Point(1727, 615);
             this.label60.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label60.Name = "label60";
             this.label60.Size = new System.Drawing.Size(46, 23);
@@ -1884,11 +1905,11 @@
             // 
             // richTextBoxShock
             // 
-            this.richTextBoxShock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.richTextBoxShock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxShock.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBoxShock.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxShock.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxShock.Location = new System.Drawing.Point(1782, 580);
+            this.richTextBoxShock.Location = new System.Drawing.Point(1793, 580);
             this.richTextBoxShock.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxShock.MaxLength = 10;
             this.richTextBoxShock.Multiline = false;
@@ -1904,7 +1925,7 @@
             this.label61.AutoSize = true;
             this.label61.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label61.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label61.Location = new System.Drawing.Point(1710, 582);
+            this.label61.Location = new System.Drawing.Point(1721, 582);
             this.label61.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label61.Name = "label61";
             this.label61.Size = new System.Drawing.Size(61, 23);
@@ -1913,11 +1934,11 @@
             // 
             // richTextBoxHeavy
             // 
-            this.richTextBoxHeavy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.richTextBoxHeavy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxHeavy.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBoxHeavy.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxHeavy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxHeavy.Location = new System.Drawing.Point(1782, 547);
+            this.richTextBoxHeavy.Location = new System.Drawing.Point(1793, 547);
             this.richTextBoxHeavy.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxHeavy.MaxLength = 10;
             this.richTextBoxHeavy.Multiline = false;
@@ -1933,7 +1954,7 @@
             this.label62.AutoSize = true;
             this.label62.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label62.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label62.Location = new System.Drawing.Point(1709, 549);
+            this.label62.Location = new System.Drawing.Point(1720, 549);
             this.label62.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label62.Name = "label62";
             this.label62.Size = new System.Drawing.Size(62, 23);
@@ -1942,11 +1963,11 @@
             // 
             // richTextBoxFrozen
             // 
-            this.richTextBoxFrozen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.richTextBoxFrozen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxFrozen.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBoxFrozen.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxFrozen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxFrozen.Location = new System.Drawing.Point(1782, 514);
+            this.richTextBoxFrozen.Location = new System.Drawing.Point(1793, 514);
             this.richTextBoxFrozen.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxFrozen.MaxLength = 10;
             this.richTextBoxFrozen.Multiline = false;
@@ -1962,7 +1983,7 @@
             this.label63.AutoSize = true;
             this.label63.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label63.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label63.Location = new System.Drawing.Point(1704, 516);
+            this.label63.Location = new System.Drawing.Point(1715, 516);
             this.label63.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label63.Name = "label63";
             this.label63.Size = new System.Drawing.Size(67, 23);
@@ -1971,11 +1992,11 @@
             // 
             // richTextBox26
             // 
-            this.richTextBox26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.richTextBox26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBox26.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox26.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBox26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBox26.Location = new System.Drawing.Point(1782, 481);
+            this.richTextBox26.Location = new System.Drawing.Point(1793, 481);
             this.richTextBox26.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBox26.MaxLength = 10;
             this.richTextBox26.Multiline = false;
@@ -1991,7 +2012,7 @@
             this.label64.AutoSize = true;
             this.label64.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label64.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label64.Location = new System.Drawing.Point(1716, 483);
+            this.label64.Location = new System.Drawing.Point(1727, 483);
             this.label64.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label64.Name = "label64";
             this.label64.Size = new System.Drawing.Size(46, 23);
@@ -2000,11 +2021,11 @@
             // 
             // richTextBoxRest
             // 
-            this.richTextBoxRest.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.richTextBoxRest.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxRest.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBoxRest.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxRest.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxRest.Location = new System.Drawing.Point(1782, 448);
+            this.richTextBoxRest.Location = new System.Drawing.Point(1793, 448);
             this.richTextBoxRest.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxRest.MaxLength = 10;
             this.richTextBoxRest.Multiline = false;
@@ -2020,7 +2041,7 @@
             this.label65.AutoSize = true;
             this.label65.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label65.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label65.Location = new System.Drawing.Point(1716, 450);
+            this.label65.Location = new System.Drawing.Point(1727, 450);
             this.label65.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label65.Name = "label65";
             this.label65.Size = new System.Drawing.Size(47, 23);
@@ -2029,11 +2050,11 @@
             // 
             // richTextBoxMute
             // 
-            this.richTextBoxMute.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.richTextBoxMute.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxMute.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBoxMute.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxMute.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxMute.Location = new System.Drawing.Point(1782, 415);
+            this.richTextBoxMute.Location = new System.Drawing.Point(1793, 415);
             this.richTextBoxMute.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxMute.MaxLength = 10;
             this.richTextBoxMute.Multiline = false;
@@ -2049,7 +2070,7 @@
             this.label66.AutoSize = true;
             this.label66.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label66.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label66.Location = new System.Drawing.Point(1716, 417);
+            this.label66.Location = new System.Drawing.Point(1727, 417);
             this.label66.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label66.Name = "label66";
             this.label66.Size = new System.Drawing.Size(55, 23);
@@ -2058,11 +2079,11 @@
             // 
             // richTextBoxPanic
             // 
-            this.richTextBoxPanic.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.richTextBoxPanic.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxPanic.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBoxPanic.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxPanic.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxPanic.Location = new System.Drawing.Point(1782, 382);
+            this.richTextBoxPanic.Location = new System.Drawing.Point(1793, 382);
             this.richTextBoxPanic.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxPanic.MaxLength = 10;
             this.richTextBoxPanic.Multiline = false;
@@ -2078,7 +2099,7 @@
             this.label67.AutoSize = true;
             this.label67.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label67.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label67.Location = new System.Drawing.Point(1716, 384);
+            this.label67.Location = new System.Drawing.Point(1727, 384);
             this.label67.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label67.Name = "label67";
             this.label67.Size = new System.Drawing.Size(58, 23);
@@ -2087,11 +2108,11 @@
             // 
             // richTextBoxToxic
             // 
-            this.richTextBoxToxic.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.richTextBoxToxic.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxToxic.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBoxToxic.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxToxic.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxToxic.Location = new System.Drawing.Point(1782, 348);
+            this.richTextBoxToxic.Location = new System.Drawing.Point(1793, 348);
             this.richTextBoxToxic.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxToxic.MaxLength = 10;
             this.richTextBoxToxic.Multiline = false;
@@ -2107,7 +2128,7 @@
             this.label68.AutoSize = true;
             this.label68.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label68.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label68.Location = new System.Drawing.Point(1714, 350);
+            this.label68.Location = new System.Drawing.Point(1725, 350);
             this.label68.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label68.Name = "label68";
             this.label68.Size = new System.Drawing.Size(57, 23);
@@ -2116,11 +2137,11 @@
             // 
             // richTextBoxDeath
             // 
-            this.richTextBoxDeath.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.richTextBoxDeath.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxDeath.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBoxDeath.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxDeath.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxDeath.Location = new System.Drawing.Point(1590, 778);
+            this.richTextBoxDeath.Location = new System.Drawing.Point(1602, 778);
             this.richTextBoxDeath.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxDeath.MaxLength = 10;
             this.richTextBoxDeath.Multiline = false;
@@ -2136,7 +2157,7 @@
             this.label69.AutoSize = true;
             this.label69.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label69.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label69.Location = new System.Drawing.Point(1515, 780);
+            this.label69.Location = new System.Drawing.Point(1527, 780);
             this.label69.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label69.Name = "label69";
             this.label69.Size = new System.Drawing.Size(61, 23);
@@ -2145,17 +2166,17 @@
             // 
             // richTextBoxHead
             // 
-            this.richTextBoxHead.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.richTextBoxHead.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(30)))), ((int)(((byte)(0)))));
             this.richTextBoxHead.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBoxHead.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBoxHead.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxHead.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxHead.Location = new System.Drawing.Point(1165, 199);
+            this.richTextBoxHead.Location = new System.Drawing.Point(1134, 218);
             this.richTextBoxHead.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxHead.MaxLength = 10;
             this.richTextBoxHead.Multiline = false;
             this.richTextBoxHead.Name = "richTextBoxHead";
             this.richTextBoxHead.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBoxHead.Size = new System.Drawing.Size(104, 25);
+            this.richTextBoxHead.Size = new System.Drawing.Size(118, 25);
             this.richTextBoxHead.TabIndex = 140;
             this.richTextBoxHead.Text = "";
             this.richTextBoxHead.WordWrap = false;
@@ -2165,7 +2186,7 @@
             this.label70.AutoSize = true;
             this.label70.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label70.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label70.Location = new System.Drawing.Point(1093, 201);
+            this.label70.Location = new System.Drawing.Point(1062, 220);
             this.label70.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label70.Name = "label70";
             this.label70.Size = new System.Drawing.Size(55, 23);
@@ -2174,17 +2195,17 @@
             // 
             // richTextBoxArm
             // 
-            this.richTextBoxArm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.richTextBoxArm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(30)))), ((int)(((byte)(0)))));
             this.richTextBoxArm.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBoxArm.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBoxArm.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxArm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxArm.Location = new System.Drawing.Point(1165, 232);
+            this.richTextBoxArm.Location = new System.Drawing.Point(1134, 251);
             this.richTextBoxArm.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxArm.MaxLength = 10;
             this.richTextBoxArm.Multiline = false;
             this.richTextBoxArm.Name = "richTextBoxArm";
             this.richTextBoxArm.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBoxArm.Size = new System.Drawing.Size(104, 25);
+            this.richTextBoxArm.Size = new System.Drawing.Size(118, 25);
             this.richTextBoxArm.TabIndex = 142;
             this.richTextBoxArm.Text = "";
             this.richTextBoxArm.WordWrap = false;
@@ -2194,7 +2215,7 @@
             this.label71.AutoSize = true;
             this.label71.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label71.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label71.Location = new System.Drawing.Point(1102, 234);
+            this.label71.Location = new System.Drawing.Point(1071, 253);
             this.label71.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label71.Name = "label71";
             this.label71.Size = new System.Drawing.Size(48, 23);
@@ -2203,17 +2224,17 @@
             // 
             // richTextBoxLeg
             // 
-            this.richTextBoxLeg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.richTextBoxLeg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(30)))), ((int)(((byte)(0)))));
             this.richTextBoxLeg.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBoxLeg.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBoxLeg.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxLeg.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxLeg.Location = new System.Drawing.Point(1165, 298);
+            this.richTextBoxLeg.Location = new System.Drawing.Point(1134, 317);
             this.richTextBoxLeg.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxLeg.MaxLength = 10;
             this.richTextBoxLeg.Multiline = false;
             this.richTextBoxLeg.Name = "richTextBoxLeg";
             this.richTextBoxLeg.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBoxLeg.Size = new System.Drawing.Size(104, 25);
+            this.richTextBoxLeg.Size = new System.Drawing.Size(118, 25);
             this.richTextBoxLeg.TabIndex = 144;
             this.richTextBoxLeg.Text = "";
             this.richTextBoxLeg.WordWrap = false;
@@ -2223,7 +2244,7 @@
             this.label72.AutoSize = true;
             this.label72.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label72.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label72.Location = new System.Drawing.Point(1109, 300);
+            this.label72.Location = new System.Drawing.Point(1078, 319);
             this.label72.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label72.Name = "label72";
             this.label72.Size = new System.Drawing.Size(40, 23);
@@ -2232,17 +2253,17 @@
             // 
             // richTextBoxBody
             // 
-            this.richTextBoxBody.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.richTextBoxBody.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(30)))), ((int)(((byte)(0)))));
             this.richTextBoxBody.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBoxBody.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBoxBody.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxBody.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxBody.Location = new System.Drawing.Point(1165, 265);
+            this.richTextBoxBody.Location = new System.Drawing.Point(1134, 284);
             this.richTextBoxBody.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxBody.MaxLength = 10;
             this.richTextBoxBody.Multiline = false;
             this.richTextBoxBody.Name = "richTextBoxBody";
             this.richTextBoxBody.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBoxBody.Size = new System.Drawing.Size(104, 25);
+            this.richTextBoxBody.Size = new System.Drawing.Size(118, 25);
             this.richTextBoxBody.TabIndex = 146;
             this.richTextBoxBody.Text = "";
             this.richTextBoxBody.WordWrap = false;
@@ -2252,7 +2273,7 @@
             this.label73.AutoSize = true;
             this.label73.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label73.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label73.Location = new System.Drawing.Point(1097, 267);
+            this.label73.Location = new System.Drawing.Point(1066, 286);
             this.label73.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label73.Name = "label73";
             this.label73.Size = new System.Drawing.Size(52, 23);
@@ -2261,17 +2282,17 @@
             // 
             // richTextBoxZan
             // 
-            this.richTextBoxZan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.richTextBoxZan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxZan.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBoxZan.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBoxZan.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxZan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxZan.Location = new System.Drawing.Point(1034, 558);
+            this.richTextBoxZan.Location = new System.Drawing.Point(1145, 526);
             this.richTextBoxZan.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxZan.MaxLength = 10;
             this.richTextBoxZan.Multiline = false;
             this.richTextBoxZan.Name = "richTextBoxZan";
             this.richTextBoxZan.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBoxZan.Size = new System.Drawing.Size(104, 25);
+            this.richTextBoxZan.Size = new System.Drawing.Size(118, 25);
             this.richTextBoxZan.TabIndex = 148;
             this.richTextBoxZan.Text = "";
             this.richTextBoxZan.WordWrap = false;
@@ -2281,7 +2302,7 @@
             this.label74.AutoSize = true;
             this.label74.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label74.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label74.Location = new System.Drawing.Point(969, 558);
+            this.label74.Location = new System.Drawing.Point(1080, 526);
             this.label74.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label74.Name = "label74";
             this.label74.Size = new System.Drawing.Size(42, 23);
@@ -2293,7 +2314,7 @@
             this.label50.AutoSize = true;
             this.label50.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label50.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label50.Location = new System.Drawing.Point(820, 201);
+            this.label50.Location = new System.Drawing.Point(835, 154);
             this.label50.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label50.Name = "label50";
             this.label50.Size = new System.Drawing.Size(133, 23);
@@ -2305,7 +2326,7 @@
             this.label75.AutoSize = true;
             this.label75.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label75.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label75.Location = new System.Drawing.Point(636, 199);
+            this.label75.Location = new System.Drawing.Point(633, 150);
             this.label75.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label75.Name = "label75";
             this.label75.Size = new System.Drawing.Size(68, 23);
@@ -2314,17 +2335,17 @@
             // 
             // richTextBoxRev4_2
             // 
-            this.richTextBoxRev4_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.richTextBoxRev4_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxRev4_2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBoxRev4_2.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBoxRev4_2.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxRev4_2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxRev4_2.Location = new System.Drawing.Point(712, 197);
+            this.richTextBoxRev4_2.Location = new System.Drawing.Point(709, 148);
             this.richTextBoxRev4_2.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxRev4_2.MaxLength = 10;
             this.richTextBoxRev4_2.Multiline = false;
             this.richTextBoxRev4_2.Name = "richTextBoxRev4_2";
             this.richTextBoxRev4_2.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBoxRev4_2.Size = new System.Drawing.Size(104, 25);
+            this.richTextBoxRev4_2.Size = new System.Drawing.Size(118, 25);
             this.richTextBoxRev4_2.TabIndex = 149;
             this.richTextBoxRev4_2.Text = "";
             this.richTextBoxRev4_2.WordWrap = false;
@@ -2334,7 +2355,7 @@
             this.label76.AutoSize = true;
             this.label76.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label76.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label76.Location = new System.Drawing.Point(820, 230);
+            this.label76.Location = new System.Drawing.Point(835, 183);
             this.label76.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label76.Name = "label76";
             this.label76.Size = new System.Drawing.Size(133, 23);
@@ -2346,7 +2367,7 @@
             this.label77.AutoSize = true;
             this.label77.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label77.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label77.Location = new System.Drawing.Point(655, 235);
+            this.label77.Location = new System.Drawing.Point(652, 186);
             this.label77.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label77.Name = "label77";
             this.label77.Size = new System.Drawing.Size(52, 23);
@@ -2355,17 +2376,17 @@
             // 
             // richTextBoxRev2
             // 
-            this.richTextBoxRev2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.richTextBoxRev2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxRev2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBoxRev2.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBoxRev2.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxRev2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxRev2.Location = new System.Drawing.Point(712, 230);
+            this.richTextBoxRev2.Location = new System.Drawing.Point(709, 181);
             this.richTextBoxRev2.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxRev2.MaxLength = 10;
             this.richTextBoxRev2.Multiline = false;
             this.richTextBoxRev2.Name = "richTextBoxRev2";
             this.richTextBoxRev2.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBoxRev2.Size = new System.Drawing.Size(104, 25);
+            this.richTextBoxRev2.Size = new System.Drawing.Size(118, 25);
             this.richTextBoxRev2.TabIndex = 152;
             this.richTextBoxRev2.Text = "";
             this.richTextBoxRev2.WordWrap = false;
@@ -2375,7 +2396,7 @@
             this.label78.AutoSize = true;
             this.label78.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label78.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label78.Location = new System.Drawing.Point(820, 264);
+            this.label78.Location = new System.Drawing.Point(835, 217);
             this.label78.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label78.Name = "label78";
             this.label78.Size = new System.Drawing.Size(133, 23);
@@ -2387,7 +2408,7 @@
             this.label79.AutoSize = true;
             this.label79.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label79.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label79.Location = new System.Drawing.Point(636, 268);
+            this.label79.Location = new System.Drawing.Point(633, 219);
             this.label79.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label79.Name = "label79";
             this.label79.Size = new System.Drawing.Size(68, 23);
@@ -2396,17 +2417,17 @@
             // 
             // richTextBoxRev2_2
             // 
-            this.richTextBoxRev2_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.richTextBoxRev2_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxRev2_2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBoxRev2_2.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBoxRev2_2.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxRev2_2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxRev2_2.Location = new System.Drawing.Point(712, 264);
+            this.richTextBoxRev2_2.Location = new System.Drawing.Point(709, 215);
             this.richTextBoxRev2_2.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxRev2_2.MaxLength = 10;
             this.richTextBoxRev2_2.Multiline = false;
             this.richTextBoxRev2_2.Name = "richTextBoxRev2_2";
             this.richTextBoxRev2_2.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBoxRev2_2.Size = new System.Drawing.Size(104, 25);
+            this.richTextBoxRev2_2.Size = new System.Drawing.Size(118, 25);
             this.richTextBoxRev2_2.TabIndex = 155;
             this.richTextBoxRev2_2.Text = "";
             this.richTextBoxRev2_2.WordWrap = false;
@@ -2414,9 +2435,10 @@
             // label80
             // 
             this.label80.AutoSize = true;
+            this.label80.BackColor = System.Drawing.Color.Transparent;
             this.label80.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label80.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label80.Location = new System.Drawing.Point(455, 462);
+            this.label80.Location = new System.Drawing.Point(145, 103);
             this.label80.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label80.Name = "label80";
             this.label80.Size = new System.Drawing.Size(36, 23);
@@ -2425,17 +2447,17 @@
             // 
             // richTextBoxStr
             // 
-            this.richTextBoxStr.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.richTextBoxStr.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxStr.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBoxStr.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBoxStr.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxStr.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxStr.Location = new System.Drawing.Point(512, 460);
+            this.richTextBoxStr.Location = new System.Drawing.Point(188, 101);
             this.richTextBoxStr.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxStr.MaxLength = 10;
             this.richTextBoxStr.Multiline = false;
             this.richTextBoxStr.Name = "richTextBoxStr";
             this.richTextBoxStr.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBoxStr.Size = new System.Drawing.Size(104, 25);
+            this.richTextBoxStr.Size = new System.Drawing.Size(118, 25);
             this.richTextBoxStr.TabIndex = 158;
             this.richTextBoxStr.Text = "";
             this.richTextBoxStr.WordWrap = false;
@@ -2443,9 +2465,10 @@
             // label81
             // 
             this.label81.AutoSize = true;
+            this.label81.BackColor = System.Drawing.Color.Transparent;
             this.label81.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label81.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label81.Location = new System.Drawing.Point(636, 464);
+            this.label81.Location = new System.Drawing.Point(339, 108);
             this.label81.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label81.Name = "label81";
             this.label81.Size = new System.Drawing.Size(48, 23);
@@ -2454,17 +2477,17 @@
             // 
             // richTextBoxMag
             // 
-            this.richTextBoxMag.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.richTextBoxMag.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxMag.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBoxMag.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBoxMag.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxMag.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxMag.Location = new System.Drawing.Point(693, 462);
+            this.richTextBoxMag.Location = new System.Drawing.Point(396, 106);
             this.richTextBoxMag.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxMag.MaxLength = 10;
             this.richTextBoxMag.Multiline = false;
             this.richTextBoxMag.Name = "richTextBoxMag";
             this.richTextBoxMag.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBoxMag.Size = new System.Drawing.Size(104, 25);
+            this.richTextBoxMag.Size = new System.Drawing.Size(118, 25);
             this.richTextBoxMag.TabIndex = 160;
             this.richTextBoxMag.Text = "";
             this.richTextBoxMag.WordWrap = false;
@@ -2472,9 +2495,10 @@
             // label82
             // 
             this.label82.AutoSize = true;
+            this.label82.BackColor = System.Drawing.Color.Transparent;
             this.label82.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label82.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label82.Location = new System.Drawing.Point(455, 492);
+            this.label82.Location = new System.Drawing.Point(158, 136);
             this.label82.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label82.Name = "label82";
             this.label82.Size = new System.Drawing.Size(39, 23);
@@ -2483,17 +2507,17 @@
             // 
             // richTextBoxDef
             // 
-            this.richTextBoxDef.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.richTextBoxDef.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxDef.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBoxDef.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBoxDef.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxDef.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxDef.Location = new System.Drawing.Point(512, 490);
+            this.richTextBoxDef.Location = new System.Drawing.Point(215, 134);
             this.richTextBoxDef.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxDef.MaxLength = 10;
             this.richTextBoxDef.Multiline = false;
             this.richTextBoxDef.Name = "richTextBoxDef";
             this.richTextBoxDef.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBoxDef.Size = new System.Drawing.Size(104, 25);
+            this.richTextBoxDef.Size = new System.Drawing.Size(118, 25);
             this.richTextBoxDef.TabIndex = 162;
             this.richTextBoxDef.Text = "";
             this.richTextBoxDef.WordWrap = false;
@@ -2501,9 +2525,10 @@
             // label83
             // 
             this.label83.AutoSize = true;
+            this.label83.BackColor = System.Drawing.Color.Transparent;
             this.label83.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label83.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label83.Location = new System.Drawing.Point(636, 492);
+            this.label83.Location = new System.Drawing.Point(339, 136);
             this.label83.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label83.Name = "label83";
             this.label83.Size = new System.Drawing.Size(40, 23);
@@ -2512,34 +2537,34 @@
             // 
             // richTextBoxRes
             // 
-            this.richTextBoxRes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.richTextBoxRes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBoxRes.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBoxRes.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBoxRes.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBoxRes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBoxRes.Location = new System.Drawing.Point(693, 490);
+            this.richTextBoxRes.Location = new System.Drawing.Point(396, 134);
             this.richTextBoxRes.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxRes.MaxLength = 10;
             this.richTextBoxRes.Multiline = false;
             this.richTextBoxRes.Name = "richTextBoxRes";
             this.richTextBoxRes.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBoxRes.Size = new System.Drawing.Size(104, 25);
+            this.richTextBoxRes.Size = new System.Drawing.Size(118, 25);
             this.richTextBoxRes.TabIndex = 164;
             this.richTextBoxRes.Text = "";
             this.richTextBoxRes.WordWrap = false;
             // 
             // richTextBox
             // 
-            this.richTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.richTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.richTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBox.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.richTextBox.Location = new System.Drawing.Point(928, 420);
+            this.richTextBox.Location = new System.Drawing.Point(620, 97);
             this.richTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBox.MaxLength = 10;
             this.richTextBox.Multiline = false;
             this.richTextBox.Name = "richTextBox";
             this.richTextBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBox.Size = new System.Drawing.Size(104, 25);
+            this.richTextBox.Size = new System.Drawing.Size(118, 25);
             this.richTextBox.TabIndex = 166;
             this.richTextBox.Text = "";
             this.richTextBox.WordWrap = false;
@@ -2548,11 +2573,11 @@
             // 
             this.SaveAllButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
             this.SaveAllButton.ForeColor = System.Drawing.Color.Black;
-            this.SaveAllButton.Location = new System.Drawing.Point(425, 662);
+            this.SaveAllButton.Location = new System.Drawing.Point(824, 728);
             this.SaveAllButton.Margin = new System.Windows.Forms.Padding(1);
             this.SaveAllButton.Name = "SaveAllButton";
             this.SaveAllButton.Padding = new System.Windows.Forms.Padding(2);
-            this.SaveAllButton.Size = new System.Drawing.Size(138, 59);
+            this.SaveAllButton.Size = new System.Drawing.Size(138, 93);
             this.SaveAllButton.TabIndex = 167;
             this.SaveAllButton.Text = "Save ALL";
             this.SaveAllButton.UseVisualStyleBackColor = false;
@@ -2560,14 +2585,14 @@
             // 
             // comboBoxClass
             // 
-            this.comboBoxClass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.comboBoxClass.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.comboBoxClass.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.comboBoxClass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(25)))), ((int)(((byte)(0)))));
+            this.comboBoxClass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxClass.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.comboBoxClass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
             this.comboBoxClass.FormattingEnabled = true;
-            this.comboBoxClass.Location = new System.Drawing.Point(1094, 102);
+            this.comboBoxClass.Location = new System.Drawing.Point(1464, 265);
             this.comboBoxClass.Name = "comboBoxClass";
-            this.comboBoxClass.Size = new System.Drawing.Size(322, 31);
+            this.comboBoxClass.Size = new System.Drawing.Size(322, 33);
             this.comboBoxClass.TabIndex = 168;
             // 
             // label84
@@ -2575,7 +2600,7 @@
             this.label84.AutoSize = true;
             this.label84.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label84.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.label84.Location = new System.Drawing.Point(1034, 105);
+            this.label84.Location = new System.Drawing.Point(1404, 268);
             this.label84.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label84.Name = "label84";
             this.label84.Size = new System.Drawing.Size(53, 23);
@@ -2585,7 +2610,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Crystal_Editor.Properties.Resources.P5_Icon_Fire_Origonal;
-            this.pictureBox1.Location = new System.Drawing.Point(1364, 229);
+            this.pictureBox1.Location = new System.Drawing.Point(117, 28);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(104, 25);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -2595,7 +2620,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Crystal_Editor.Properties.Resources.P5_Icon_Elec_Origonal;
-            this.pictureBox2.Location = new System.Drawing.Point(1661, 235);
+            this.pictureBox2.Location = new System.Drawing.Point(127, 153);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(104, 25);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -2605,7 +2630,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Crystal_Editor.Properties.Resources.P5_Icon_Ice_Origonal;
-            this.pictureBox3.Location = new System.Drawing.Point(1488, 203);
+            this.pictureBox3.Location = new System.Drawing.Point(45, 61);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(104, 25);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -2615,22 +2640,151 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::Crystal_Editor.Properties.Resources.P5_Icon_Wind_Origonal;
-            this.pictureBox4.Location = new System.Drawing.Point(1766, 201);
+            this.pictureBox4.Location = new System.Drawing.Point(15, 130);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(104, 25);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 173;
             this.pictureBox4.TabStop = false;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Georgia", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
+            this.label5.Location = new System.Drawing.Point(34, 83);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(85, 29);
+            this.label5.TabIndex = 176;
+            this.label5.Text = "STATS";
+            // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = global::Crystal_Editor.Properties.Resources.Gradient_10;
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.richTextBoxDef);
+            this.panel1.Controls.Add(this.richTextBoxHP);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.richTextBoxMP);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.richTextBoxTP);
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.richTextBoxSP);
+            this.panel1.Controls.Add(this.label14);
+            this.panel1.Controls.Add(this.richTextBox);
+            this.panel1.Controls.Add(this.richTextBoxStr);
+            this.panel1.Controls.Add(this.label83);
+            this.panel1.Controls.Add(this.label80);
+            this.panel1.Controls.Add(this.richTextBoxRes);
+            this.panel1.Controls.Add(this.richTextBoxMag);
+            this.panel1.Controls.Add(this.label82);
+            this.panel1.Controls.Add(this.label81);
+            this.panel1.Location = new System.Drawing.Point(293, 245);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(750, 200);
+            this.panel1.TabIndex = 178;
+            // 
+            // panel2
+            // 
+            this.panel2.BackgroundImage = global::Crystal_Editor.Properties.Resources.Gradient_10;
+            this.panel2.Controls.Add(this.label21);
+            this.panel2.Controls.Add(this.label24);
+            this.panel2.Controls.Add(this.label25);
+            this.panel2.Controls.Add(this.label20);
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Controls.Add(this.pictureBox4);
+            this.panel2.Controls.Add(this.richTextBoxFire);
+            this.panel2.Controls.Add(this.pictureBox3);
+            this.panel2.Controls.Add(this.richTextBoxIce);
+            this.panel2.Controls.Add(this.richTextBoxWind);
+            this.panel2.Controls.Add(this.richTextBoxElec);
+            this.panel2.Controls.Add(this.richTextBoxSleep);
+            this.panel2.Controls.Add(this.label43);
+            this.panel2.Controls.Add(this.richTextBoxPoison);
+            this.panel2.Controls.Add(this.label44);
+            this.panel2.Controls.Add(this.richTextBoxConfuse);
+            this.panel2.Controls.Add(this.label45);
+            this.panel2.Controls.Add(this.richTextBoxSilence);
+            this.panel2.Controls.Add(this.label46);
+            this.panel2.Controls.Add(this.pictureBox5);
+            this.panel2.Controls.Add(this.pictureBox6);
+            this.panel2.Controls.Add(this.pictureBox7);
+            this.panel2.Location = new System.Drawing.Point(294, 457);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(749, 196);
+            this.panel2.TabIndex = 179;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Georgia", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
+            this.label6.Location = new System.Drawing.Point(6, 89);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(174, 29);
+            this.label6.TabIndex = 177;
+            this.label6.Text = "RESISTANCES";
+            // 
             // pictureBox5
             // 
-            this.pictureBox5.Image = global::Crystal_Editor.Properties.Resources.Gradient_10;
-            this.pictureBox5.Location = new System.Drawing.Point(270, 359);
+            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox5.BackgroundImage = global::Crystal_Editor.Properties.Resources.HUD_Blue_1;
+            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox5.Location = new System.Drawing.Point(245, 26);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(817, 180);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 175;
+            this.pictureBox5.Size = new System.Drawing.Size(179, 37);
+            this.pictureBox5.TabIndex = 181;
             this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox6.BackgroundImage = global::Crystal_Editor.Properties.Resources.HUD_Blue_2;
+            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox6.Location = new System.Drawing.Point(253, 63);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(179, 37);
+            this.pictureBox6.TabIndex = 182;
+            this.pictureBox6.TabStop = false;
+            // 
+            // panel3
+            // 
+            this.panel3.BackgroundImage = global::Crystal_Editor.Properties.Resources.Gradient_10;
+            this.panel3.Controls.Add(this.label87);
+            this.panel3.Location = new System.Drawing.Point(1158, 13);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(749, 196);
+            this.panel3.TabIndex = 180;
+            // 
+            // label87
+            // 
+            this.label87.AutoSize = true;
+            this.label87.BackColor = System.Drawing.Color.Transparent;
+            this.label87.Font = new System.Drawing.Font("Georgia", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label87.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
+            this.label87.Location = new System.Drawing.Point(6, 89);
+            this.label87.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label87.Name = "label87";
+            this.label87.Size = new System.Drawing.Size(181, 29);
+            this.label87.TabIndex = 177;
+            this.label87.Text = "Unknown Bytes";
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox7.BackgroundImage = global::Crystal_Editor.Properties.Resources.HUD_Blue_3;
+            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox7.Location = new System.Drawing.Point(249, 104);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(189, 37);
+            this.pictureBox7.TabIndex = 183;
+            this.pictureBox7.TabStop = false;
             // 
             // EnemyTemplateForm
             // 
@@ -2638,22 +2792,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ClientSize = new System.Drawing.Size(1904, 824);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.richTextBoxZan);
+            this.Controls.Add(this.label74);
             this.Controls.Add(this.label84);
             this.Controls.Add(this.comboBoxClass);
             this.Controls.Add(this.SaveAllButton);
-            this.Controls.Add(this.richTextBox);
-            this.Controls.Add(this.label83);
-            this.Controls.Add(this.richTextBoxRes);
-            this.Controls.Add(this.label82);
-            this.Controls.Add(this.richTextBoxDef);
-            this.Controls.Add(this.label81);
-            this.Controls.Add(this.richTextBoxMag);
-            this.Controls.Add(this.label80);
-            this.Controls.Add(this.richTextBoxStr);
             this.Controls.Add(this.label78);
             this.Controls.Add(this.label79);
             this.Controls.Add(this.richTextBoxRev2_2);
@@ -2663,8 +2807,6 @@
             this.Controls.Add(this.label50);
             this.Controls.Add(this.label75);
             this.Controls.Add(this.richTextBoxRev4_2);
-            this.Controls.Add(this.richTextBoxZan);
-            this.Controls.Add(this.label74);
             this.Controls.Add(this.richTextBoxBody);
             this.Controls.Add(this.label73);
             this.Controls.Add(this.richTextBoxLeg);
@@ -2719,14 +2861,6 @@
             this.Controls.Add(this.label48);
             this.Controls.Add(this.richTextBoxBurn);
             this.Controls.Add(this.label49);
-            this.Controls.Add(this.richTextBoxSleep);
-            this.Controls.Add(this.label46);
-            this.Controls.Add(this.richTextBoxSilence);
-            this.Controls.Add(this.label45);
-            this.Controls.Add(this.richTextBoxConfuse);
-            this.Controls.Add(this.label44);
-            this.Controls.Add(this.richTextBoxPoison);
-            this.Controls.Add(this.label43);
             this.Controls.Add(this.label42);
             this.Controls.Add(this.richTextBoxLightning);
             this.Controls.Add(this.richTextBoxBlunt);
@@ -2758,33 +2892,23 @@
             this.Controls.Add(this.richTextBoxLight);
             this.Controls.Add(this.richTextBox4);
             this.Controls.Add(this.richTextBoxEarth);
-            this.Controls.Add(this.richTextBoxElec);
-            this.Controls.Add(this.richTextBoxWind);
             this.Controls.Add(this.label28);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.label26);
-            this.Controls.Add(this.label25);
-            this.Controls.Add(this.label24);
             this.Controls.Add(this.richTextBoxFlame);
             this.Controls.Add(this.richTextBoxWater);
-            this.Controls.Add(this.richTextBoxIce);
-            this.Controls.Add(this.richTextBoxFire);
             this.Controls.Add(this.richTextBoxPierce);
             this.Controls.Add(this.richTextBoxSlash);
             this.Controls.Add(this.richTextBoxBash);
             this.Controls.Add(this.richTextBoxCut);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.label22);
-            this.Controls.Add(this.label21);
-            this.Controls.Add(this.label20);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.richTextBoxExp);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.richTextBoxSP);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.richTextBoxLv);
             this.Controls.Add(this.label12);
@@ -2796,19 +2920,14 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.richTextBoxTP);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.richTextBoxMP);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.richTextBoxHP);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.richTextBoxRev4);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.richTextBoxID);
             this.Controls.Add(this.Tree);
-            this.Controls.Add(this.pictureBox5);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
             this.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -2819,7 +2938,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2997,6 +3124,14 @@
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
         private PictureBox pictureBox4;
+        private Label label5;
+        private Panel panel1;
+        private Panel panel2;
+        private Label label6;
+        private Panel panel3;
+        private Label label87;
         private PictureBox pictureBox5;
+        private PictureBox pictureBox6;
+        private PictureBox pictureBox7;
     }
 }

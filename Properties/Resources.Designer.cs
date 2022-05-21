@@ -163,6 +163,36 @@ namespace Crystal_Editor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap HUD_Blue_1 {
+            get {
+                object obj = ResourceManager.GetObject("HUD_Blue_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap HUD_Blue_2 {
+            get {
+                object obj = ResourceManager.GetObject("HUD_Blue_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap HUD_Blue_3 {
+            get {
+                object obj = ResourceManager.GetObject("HUD_Blue_3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap P5_Icon_Accessory_Origonal {
             get {
                 object obj = ResourceManager.GetObject("P5 Icon Accessory Origonal", resourceCulture);
