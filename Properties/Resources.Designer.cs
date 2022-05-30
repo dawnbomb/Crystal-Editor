@@ -63,16 +63,6 @@ namespace Crystal_Editor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Gradient_1 {
-            get {
-                object obj = ResourceManager.GetObject("Gradient_1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Gradient_10 {
             get {
                 object obj = ResourceManager.GetObject("Gradient_10", resourceCulture);
@@ -83,9 +73,9 @@ namespace Crystal_Editor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Gradient_2 {
+        internal static System.Drawing.Bitmap HUD_Blue_9_4 {
             get {
-                object obj = ResourceManager.GetObject("Gradient_2", resourceCulture);
+                object obj = ResourceManager.GetObject("HUD_Blue_9_4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +83,9 @@ namespace Crystal_Editor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Gradient_3 {
+        internal static System.Drawing.Bitmap ICON_PSN {
             get {
-                object obj = ResourceManager.GetObject("Gradient_3", resourceCulture);
+                object obj = ResourceManager.GetObject("ICON_PSN", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +93,9 @@ namespace Crystal_Editor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Gradient_4 {
+        internal static System.Drawing.Bitmap MISC_ICON_MAG {
             get {
-                object obj = ResourceManager.GetObject("Gradient_4", resourceCulture);
+                object obj = ResourceManager.GetObject("MISC_ICON_MAG", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +103,9 @@ namespace Crystal_Editor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Gradient_5 {
+        internal static System.Drawing.Bitmap MISC_ICON_PHYS {
             get {
-                object obj = ResourceManager.GetObject("Gradient_5", resourceCulture);
+                object obj = ResourceManager.GetObject("MISC_ICON_PHYS", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +113,9 @@ namespace Crystal_Editor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Gradient_6 {
+        internal static System.Drawing.Bitmap Resist_Icon_ARM {
             get {
-                object obj = ResourceManager.GetObject("Gradient_6", resourceCulture);
+                object obj = ResourceManager.GetObject("Resist_Icon_ARM", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,9 +123,9 @@ namespace Crystal_Editor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Gradient_7 {
+        internal static System.Drawing.Bitmap Resist_Icon_BLND {
             get {
-                object obj = ResourceManager.GetObject("Gradient_7", resourceCulture);
+                object obj = ResourceManager.GetObject("Resist_Icon_BLND", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,9 +133,9 @@ namespace Crystal_Editor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Gradient_8 {
+        internal static System.Drawing.Bitmap Resist_Icon_BURN {
             get {
-                object obj = ResourceManager.GetObject("Gradient_8", resourceCulture);
+                object obj = ResourceManager.GetObject("Resist_Icon_BURN", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,9 +143,9 @@ namespace Crystal_Editor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Gradient_9 {
+        internal static System.Drawing.Bitmap Resist_Icon_CHRM {
             get {
-                object obj = ResourceManager.GetObject("Gradient_9", resourceCulture);
+                object obj = ResourceManager.GetObject("Resist_Icon_CHRM", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,9 +153,9 @@ namespace Crystal_Editor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap HUD_Blue_1 {
+        internal static System.Drawing.Bitmap Resist_Icon_CNFS {
             get {
-                object obj = ResourceManager.GetObject("HUD_Blue_1", resourceCulture);
+                object obj = ResourceManager.GetObject("Resist_Icon_CNFS", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,9 +163,9 @@ namespace Crystal_Editor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap HUD_Blue_2 {
+        internal static System.Drawing.Bitmap Resist_Icon_DARK {
             get {
-                object obj = ResourceManager.GetObject("HUD_Blue_2", resourceCulture);
+                object obj = ResourceManager.GetObject("Resist_Icon_DARK", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -183,9 +173,9 @@ namespace Crystal_Editor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap HUD_Blue_3 {
+        internal static System.Drawing.Bitmap Resist_Icon_DTH {
             get {
-                object obj = ResourceManager.GetObject("HUD_Blue_3", resourceCulture);
+                object obj = ResourceManager.GetObject("Resist_Icon_DTH", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -193,9 +183,9 @@ namespace Crystal_Editor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap P5_Icon_Accessory_Origonal {
+        internal static System.Drawing.Bitmap Resist_Icon_ELEC {
             get {
-                object obj = ResourceManager.GetObject("P5 Icon Accessory Origonal", resourceCulture);
+                object obj = ResourceManager.GetObject("Resist_Icon_ELEC", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -203,9 +193,9 @@ namespace Crystal_Editor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap P5_Icon_Ailment_Origonal {
+        internal static System.Drawing.Bitmap Resist_Icon_FIRE {
             get {
-                object obj = ResourceManager.GetObject("P5 Icon Ailment Origonal", resourceCulture);
+                object obj = ResourceManager.GetObject("Resist_Icon_FIRE", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -213,9 +203,9 @@ namespace Crystal_Editor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap P5_Icon_Almighty_Origonal {
+        internal static System.Drawing.Bitmap Resist_Icon_FRZ {
             get {
-                object obj = ResourceManager.GetObject("P5 Icon Almighty Origonal", resourceCulture);
+                object obj = ResourceManager.GetObject("Resist_Icon_FRZ", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -223,9 +213,9 @@ namespace Crystal_Editor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap P5_Icon_ArmorAny_Origonal {
+        internal static System.Drawing.Bitmap Resist_Icon_HEAD {
             get {
-                object obj = ResourceManager.GetObject("P5 Icon ArmorAny Origonal", resourceCulture);
+                object obj = ResourceManager.GetObject("Resist_Icon_HEAD", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -233,9 +223,9 @@ namespace Crystal_Editor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap P5_Icon_ArmorF_Origonal {
+        internal static System.Drawing.Bitmap Resist_Icon_HOLY {
             get {
-                object obj = ResourceManager.GetObject("P5 Icon ArmorF Origonal", resourceCulture);
+                object obj = ResourceManager.GetObject("Resist_Icon_HOLY", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -243,9 +233,9 @@ namespace Crystal_Editor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap P5_Icon_ArmorFurry_Origonal {
+        internal static System.Drawing.Bitmap Resist_Icon_ICE {
             get {
-                object obj = ResourceManager.GetObject("P5 Icon ArmorFurry Origonal", resourceCulture);
+                object obj = ResourceManager.GetObject("Resist_Icon_ICE", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -253,9 +243,9 @@ namespace Crystal_Editor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap P5_Icon_ArmorM_Origonal {
+        internal static System.Drawing.Bitmap Resist_Icon_LEG {
             get {
-                object obj = ResourceManager.GetObject("P5 Icon ArmorM Origonal", resourceCulture);
+                object obj = ResourceManager.GetObject("Resist_Icon_LEG", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -263,9 +253,9 @@ namespace Crystal_Editor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap P5_Icon_Axes_Origonal {
+        internal static System.Drawing.Bitmap Resist_Icon_PAR {
             get {
-                object obj = ResourceManager.GetObject("P5 Icon Axes Origonal", resourceCulture);
+                object obj = ResourceManager.GetObject("Resist_Icon_PAR", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -273,9 +263,9 @@ namespace Crystal_Editor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap P5_Icon_Daggers_Origonal {
+        internal static System.Drawing.Bitmap Resist_Icon_PSN {
             get {
-                object obj = ResourceManager.GetObject("P5 Icon Daggers Origonal", resourceCulture);
+                object obj = ResourceManager.GetObject("Resist_Icon_PSN", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -283,9 +273,9 @@ namespace Crystal_Editor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap P5_Icon_Dark_Origonal {
+        internal static System.Drawing.Bitmap Resist_Icon_RAGE {
             get {
-                object obj = ResourceManager.GetObject("P5 Icon Dark Origonal", resourceCulture);
+                object obj = ResourceManager.GetObject("Resist_Icon_RAGE", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -293,9 +283,9 @@ namespace Crystal_Editor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap P5_Icon_DuelSwords_Origonal {
+        internal static System.Drawing.Bitmap Resist_Icon_SIL {
             get {
-                object obj = ResourceManager.GetObject("P5 Icon DuelSwords Origonal", resourceCulture);
+                object obj = ResourceManager.GetObject("Resist_Icon_SIL", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -303,9 +293,9 @@ namespace Crystal_Editor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap P5_Icon_Elec_Origonal {
+        internal static System.Drawing.Bitmap Resist_Icon_SLOW {
             get {
-                object obj = ResourceManager.GetObject("P5 Icon Elec Origonal", resourceCulture);
+                object obj = ResourceManager.GetObject("Resist_Icon_SLOW", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -313,9 +303,9 @@ namespace Crystal_Editor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap P5_Icon_Fire_Origonal {
+        internal static System.Drawing.Bitmap Resist_Icon_SLP {
             get {
-                object obj = ResourceManager.GetObject("P5 Icon Fire Origonal", resourceCulture);
+                object obj = ResourceManager.GetObject("Resist_Icon_SLP", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -323,9 +313,9 @@ namespace Crystal_Editor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap P5_Icon_Gun_Origonal {
+        internal static System.Drawing.Bitmap Resist_Icon_STN {
             get {
-                object obj = ResourceManager.GetObject("P5 Icon Gun Origonal", resourceCulture);
+                object obj = ResourceManager.GetObject("Resist_Icon_STN", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -333,9 +323,9 @@ namespace Crystal_Editor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap P5_Icon_Guns_Origonal {
+        internal static System.Drawing.Bitmap Resist_Icon_STUN {
             get {
-                object obj = ResourceManager.GetObject("P5 Icon Guns Origonal", resourceCulture);
+                object obj = ResourceManager.GetObject("Resist_Icon_STUN", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -343,9 +333,9 @@ namespace Crystal_Editor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap P5_Icon_Holy_Origonal {
+        internal static System.Drawing.Bitmap Resist_Icon_WIND {
             get {
-                object obj = ResourceManager.GetObject("P5 Icon Holy Origonal", resourceCulture);
+                object obj = ResourceManager.GetObject("Resist_Icon_WIND", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -353,9 +343,9 @@ namespace Crystal_Editor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap P5_Icon_Ice_Origonal {
+        internal static System.Drawing.Bitmap STAT_ICON_ATK {
             get {
-                object obj = ResourceManager.GetObject("P5 Icon Ice Origonal", resourceCulture);
+                object obj = ResourceManager.GetObject("STAT_ICON_ATK", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -363,9 +353,9 @@ namespace Crystal_Editor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap P5_Icon_Nuke_Origonal {
+        internal static System.Drawing.Bitmap STAT_ICON_DEF {
             get {
-                object obj = ResourceManager.GetObject("P5 Icon Nuke Origonal", resourceCulture);
+                object obj = ResourceManager.GetObject("STAT_ICON_DEF", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -373,9 +363,9 @@ namespace Crystal_Editor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap P5_Icon_Passive_Origonal {
+        internal static System.Drawing.Bitmap STAT_ICON_EXP {
             get {
-                object obj = ResourceManager.GetObject("P5 Icon Passive Origonal", resourceCulture);
+                object obj = ResourceManager.GetObject("STAT_ICON_EXP", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -383,9 +373,9 @@ namespace Crystal_Editor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap P5_Icon_Phys_Origonal {
+        internal static System.Drawing.Bitmap STAT_ICON_HP {
             get {
-                object obj = ResourceManager.GetObject("P5 Icon Phys Origonal", resourceCulture);
+                object obj = ResourceManager.GetObject("STAT_ICON_HP", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -393,9 +383,9 @@ namespace Crystal_Editor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap P5_Icon_Psi_Origonal {
+        internal static System.Drawing.Bitmap STAT_ICON_LV {
             get {
-                object obj = ResourceManager.GetObject("P5 Icon Psi Origonal", resourceCulture);
+                object obj = ResourceManager.GetObject("STAT_ICON_LV", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -403,9 +393,9 @@ namespace Crystal_Editor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap P5_Icon_Whips_Origonal {
+        internal static System.Drawing.Bitmap STAT_ICON_MAG {
             get {
-                object obj = ResourceManager.GetObject("P5 Icon Whips Origonal", resourceCulture);
+                object obj = ResourceManager.GetObject("STAT_ICON_MAG", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -413,9 +403,39 @@ namespace Crystal_Editor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap P5_Icon_Wind_Origonal {
+        internal static System.Drawing.Bitmap STAT_ICON_MP {
             get {
-                object obj = ResourceManager.GetObject("P5 Icon Wind Origonal", resourceCulture);
+                object obj = ResourceManager.GetObject("STAT_ICON_MP", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap STAT_ICON_RES {
+            get {
+                object obj = ResourceManager.GetObject("STAT_ICON_RES", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap STAT_ICON_SP {
+            get {
+                object obj = ResourceManager.GetObject("STAT_ICON_SP", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap STAT_ICON_TP {
+            get {
+                object obj = ResourceManager.GetObject("STAT_ICON_TP", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

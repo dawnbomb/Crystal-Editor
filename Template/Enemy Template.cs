@@ -2,6 +2,8 @@
 
 namespace Crystal_Editor
 {
+    
+
     public partial class EnemyTemplateForm : Form
     {
         private CoreCommonEvent events;
@@ -14,6 +16,11 @@ namespace Crystal_Editor
         {
             InitializeComponent();
             events = new CoreCommonEvent(fileLocation: Properties.Settings.Default.SpotTemplateFolder + "\\Template Editor\\EnemyTemplate", start: 37, row: 38, tree: Tree, controls: Controls);
+
+            picTrans();
+                       
+            
+            
 
             //Here is a list of names for what this editor is primarily editing.
             Tree.Nodes.Add("Goblin");
@@ -53,7 +60,77 @@ namespace Crystal_Editor
             Tree.SelectedNode = nodeCollect[0];
         }
 
-        
+        public void picTrans()
+        {
+            //pictureBoxIconOne.Location = pictureBoxMainOne.PointToClient(pictureBoxIconOne.PointToScreen(Point.Empty));
+            //pictureBoxIconOne.Parent = pictureBoxMainOne;
+
+            pictureBoxIconLV.Location = pictureBoxMainLV.PointToClient(pictureBoxIconLV.PointToScreen(Point.Empty));
+            pictureBoxIconLV.Parent = pictureBoxMainLV;
+            pictureBoxIconEXP.Location = pictureBoxMainEXP.PointToClient(pictureBoxIconEXP.PointToScreen(Point.Empty));
+            pictureBoxIconEXP.Parent = pictureBoxMainEXP;
+
+            pictureBoxIconHP.Location = pictureBoxMainHP.PointToClient(pictureBoxIconHP.PointToScreen(Point.Empty));
+            pictureBoxIconHP.Parent = pictureBoxMainHP;
+            pictureBoxIconMP.Location = pictureBoxMainMP.PointToClient(pictureBoxIconMP.PointToScreen(Point.Empty));
+            pictureBoxIconMP.Parent = pictureBoxMainMP;
+            pictureBoxIconTP.Location = pictureBoxMainTP.PointToClient(pictureBoxIconTP.PointToScreen(Point.Empty));
+            pictureBoxIconTP.Parent = pictureBoxMainTP;
+            pictureBoxIconATK.Location = pictureBoxMainATK.PointToClient(pictureBoxIconATK.PointToScreen(Point.Empty));
+            pictureBoxIconATK.Parent = pictureBoxMainATK;
+            pictureBoxIconDEF.Location = pictureBoxMainDEF.PointToClient(pictureBoxIconDEF.PointToScreen(Point.Empty));
+            pictureBoxIconDEF.Parent = pictureBoxMainDEF;
+            pictureBoxIconMAG.Location = pictureBoxMainMAG.PointToClient(pictureBoxIconMAG.PointToScreen(Point.Empty));
+            pictureBoxIconMAG.Parent = pictureBoxMainMAG;
+            pictureBoxIconRES.Location = pictureBoxMainRES.PointToClient(pictureBoxIconRES.PointToScreen(Point.Empty));
+            pictureBoxIconRES.Parent = pictureBoxMainRES;
+
+
+            pictureBoxIconFire.Location = pictureBoxMainFire.PointToClient(pictureBoxIconFire.PointToScreen(Point.Empty));
+            pictureBoxIconFire.Parent = pictureBoxMainFire;             
+            pictureBoxIconIce.Location = pictureBoxMainIce.PointToClient(pictureBoxIconIce.PointToScreen(Point.Empty));
+            pictureBoxIconIce.Parent = pictureBoxMainIce;
+            pictureBoxIconWind.Location = pictureBoxMainWind.PointToClient(pictureBoxIconWind.PointToScreen(Point.Empty));
+            pictureBoxIconWind.Parent = pictureBoxMainWind;
+            pictureBoxIconElec.Location = pictureBoxMainElec.PointToClient(pictureBoxIconElec.PointToScreen(Point.Empty));
+            pictureBoxIconElec.Parent = pictureBoxMainElec;
+            pictureBoxIconHoly.Location = pictureBoxMainHoly.PointToClient(pictureBoxIconHoly.PointToScreen(Point.Empty));
+            pictureBoxIconHoly.Parent = pictureBoxMainHoly;
+            pictureBoxIconDark.Location = pictureBoxMainDark.PointToClient(pictureBoxIconDark.PointToScreen(Point.Empty));
+            pictureBoxIconDark.Parent = pictureBoxMainDark;
+
+            pictureBoxIconPsn.Location = pictureBoxMainPsn.PointToClient(pictureBoxIconPsn.PointToScreen(Point.Empty));
+            pictureBoxIconPsn.Parent = pictureBoxMainPsn;
+            pictureBoxIconSlp.Location = pictureBoxMainSlp.PointToClient(pictureBoxIconSlp.PointToScreen(Point.Empty));
+            pictureBoxIconSlp.Parent = pictureBoxMainSlp;
+            pictureBoxIconCnfs.Location = pictureBoxMainCnfs.PointToClient(pictureBoxIconCnfs.PointToScreen(Point.Empty));
+            pictureBoxIconCnfs.Parent = pictureBoxMainCnfs;
+            pictureBoxIconBurn.Location = pictureBoxMainBurn.PointToClient(pictureBoxIconBurn.PointToScreen(Point.Empty));
+            pictureBoxIconBurn.Parent = pictureBoxMainBurn;
+            pictureBoxIconChrm.Location = pictureBoxMainChrm.PointToClient(pictureBoxIconChrm.PointToScreen(Point.Empty));
+            pictureBoxIconChrm.Parent = pictureBoxMainChrm;
+
+            pictureBoxIconBLND.Location = pictureBoxMainBLND.PointToClient(pictureBoxIconBLND.PointToScreen(Point.Empty));
+            pictureBoxIconBLND.Parent = pictureBoxMainBLND;
+            pictureBoxIconPAR.Location = pictureBoxMainPAR.PointToClient(pictureBoxIconPAR.PointToScreen(Point.Empty));
+            pictureBoxIconPAR.Parent = pictureBoxMainPAR;
+            pictureBoxIconSTN.Location = pictureBoxMainSTN.PointToClient(pictureBoxIconSTN.PointToScreen(Point.Empty));
+            pictureBoxIconSTN.Parent = pictureBoxMainSTN;
+
+            pictureBoxIconSIL.Location = pictureBoxMainSIL.PointToClient(pictureBoxIconSIL.PointToScreen(Point.Empty));
+            pictureBoxIconSIL.Parent = pictureBoxMainSIL;
+            pictureBoxIconFRZ.Location = pictureBoxMainFRZ.PointToClient(pictureBoxIconFRZ.PointToScreen(Point.Empty));
+            pictureBoxIconFRZ.Parent = pictureBoxMainFRZ;
+            pictureBoxIconRAGE.Location = pictureBoxMainRAGE.PointToClient(pictureBoxIconRAGE.PointToScreen(Point.Empty));
+            pictureBoxIconRAGE.Parent = pictureBoxMainRAGE;
+
+            pictureBoxIconHEAD.Location = pictureBoxMainHEAD.PointToClient(pictureBoxIconHEAD.PointToScreen(Point.Empty));
+            pictureBoxIconHEAD.Parent = pictureBoxMainHEAD;
+            pictureBoxIconARM.Location = pictureBoxMainARM.PointToClient(pictureBoxIconARM.PointToScreen(Point.Empty));
+            pictureBoxIconARM.Parent = pictureBoxMainARM;
+            pictureBoxIconLEG.Location = pictureBoxMainLEG.PointToClient(pictureBoxIconLEG.PointToScreen(Point.Empty));
+            pictureBoxIconLEG.Parent = pictureBoxMainLEG;
+        }
 
         private void Tree_AfterSelect(object sender, TreeViewEventArgs e)
         {

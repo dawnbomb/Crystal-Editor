@@ -118,112 +118,118 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Gradient_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Gradient 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Gradient_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Gradient 10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Gradient_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Gradient 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="HUD_Blue_9_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HUD_Blue_9-4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Gradient_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Gradient 3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ICON_PSN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ICON PSN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Gradient_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Gradient 4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="MISC_ICON_MAG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MISC ICON MAG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Gradient_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Gradient 5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="MISC_ICON_PHYS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MISC ICON PHYS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Gradient_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Gradient 6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Resist_Icon_ARM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Resist Icon ARM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Gradient_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Gradient 7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Resist_Icon_BLND" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HUD ICON BLND.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Gradient_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Gradient 8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Resist_Icon_BURN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Resist Icon BURN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Gradient_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Gradient 9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Resist_Icon_CHRM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Resist Icon CHRM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="HUD_Blue_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\HUD_Blue_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Resist_Icon_CNFS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Resist Icon CNFS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="HUD_Blue_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\HUD_Blue_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Resist_Icon_DARK" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Resist Icon DARK.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="HUD_Blue_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\HUD_Blue_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Resist_Icon_DTH" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Resist Icon DTH.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="P5 Icon Accessory Origonal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\P5 Icon Accessory Origonal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Resist_Icon_ELEC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Resist Icon ELEC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="P5 Icon Ailment Origonal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\P5 Icon Ailment Origonal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Resist_Icon_FIRE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Resist Icon FIRE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="P5 Icon Almighty Origonal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\P5 Icon Almighty Origonal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Resist_Icon_FRZ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Resist Icon FRZ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="P5 Icon ArmorAny Origonal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\P5 Icon ArmorAny Origonal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Resist_Icon_HEAD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Resist Icon HEAD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="P5 Icon ArmorF Origonal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\P5 Icon ArmorF Origonal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Resist_Icon_HOLY" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Resist Icon HOLY.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="P5 Icon ArmorFurry Origonal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\P5 Icon ArmorFurry Origonal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Resist_Icon_ICE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Resist Icon ICE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="P5 Icon ArmorM Origonal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\P5 Icon ArmorM Origonal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Resist_Icon_LEG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Resist Icon LEG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="P5 Icon Axes Origonal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\P5 Icon Axes Origonal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Resist_Icon_PAR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Resist Icon PAR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="P5 Icon Daggers Origonal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\P5 Icon Daggers Origonal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Resist_Icon_PSN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Resist Icon PSN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="P5 Icon Dark Origonal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\P5 Icon Dark Origonal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Resist_Icon_RAGE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Resist Icon RAGE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="P5 Icon DuelSwords Origonal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\P5 Icon DuelSwords Origonal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Resist_Icon_SIL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Resist Icon SIL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="P5 Icon Elec Origonal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\P5 Icon Elec Origonal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Resist_Icon_SLOW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Resist Icon SLOW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="P5 Icon Fire Origonal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\P5 Icon Fire Origonal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Resist_Icon_SLP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Resist Icon SLP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="P5 Icon Gun Origonal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\P5 Icon Gun Origonal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Resist_Icon_STN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Resist Icon STN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="P5 Icon Guns Origonal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\P5 Icon Guns Origonal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Resist_Icon_STUN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Resist Icon STUN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="P5 Icon Holy Origonal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\P5 Icon Holy Origonal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Resist_Icon_WIND" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Resist Icon WIND.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="P5 Icon Ice Origonal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\P5 Icon Ice Origonal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="STAT_ICON_ATK" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\STAT ICON ATK.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="P5 Icon Nuke Origonal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\P5 Icon Nuke Origonal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="STAT_ICON_DEF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\STAT ICON DEF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="P5 Icon Passive Origonal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\P5 Icon Passive Origonal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="STAT_ICON_EXP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\STAT ICON EXP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="P5 Icon Phys Origonal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\P5 Icon Phys Origonal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="STAT_ICON_HP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\STAT ICON HP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="P5 Icon Psi Origonal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\P5 Icon Psi Origonal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="STAT_ICON_LV" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\STAT ICON LV.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="P5 Icon Whips Origonal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\P5 Icon Whips Origonal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="STAT_ICON_MAG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\STAT ICON MAG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="P5 Icon Wind Origonal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\P5 Icon Wind Origonal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="STAT_ICON_MP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\STAT ICON MP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="STAT_ICON_RES" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\STAT ICON RES.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="STAT_ICON_SP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\STAT ICON SP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="STAT_ICON_TP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\STAT ICON TP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
