@@ -1,0 +1,107 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:properties="clr-namespace:Crystal_Editor.Properties">
+
+
+
+    <Style TargetType="{x:Type DockPanel}" >
+        <Style.Triggers>
+            <!-- Light Mode -->
+            <DataTrigger Binding="{Binding Source={x:Static properties:Settings.Default}, Path=ColorTheme}" Value="Light">
+                <Setter Property="Background" Value="{StaticResource ResourceKey=LightMode_Middle}"/>
+
+            </DataTrigger>
+
+            <!-- Dark Mode -->
+            <DataTrigger Binding="{Binding Source={x:Static properties:Settings.Default}, Path=ColorTheme}" Value="Dark">
+                <Setter Property="Background" Value="{StaticResource ResourceKey=DarkMode_Middle}"/>
+
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+
+    <Style TargetType="{x:Type DockPanel}" x:Key="PageStyle">
+        <Style.Triggers>
+            <!-- Light Mode -->
+            <DataTrigger Binding="{Binding Source={x:Static properties:Settings.Default}, Path=ColorTheme}" Value="Light">
+                <Setter Property="Background" Value="{StaticResource ResourceKey=LightMode_Far}"/>
+                
+            </DataTrigger>
+
+            <!-- Dark Mode -->
+            <DataTrigger Binding="{Binding Source={x:Static properties:Settings.Default}, Path=ColorTheme}" Value="Dark">
+                <Setter Property="Background" Value="{StaticResource ResourceKey=DarkMode_Far}"/>
+                
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style TargetType="{x:Type DockPanel}" x:Key="RowStyle">
+        <Style.Triggers>
+            <!-- Light Mode -->
+            <DataTrigger Binding="{Binding Source={x:Static properties:Settings.Default}, Path=ColorTheme}" Value="Light">
+                <Setter Property="Background" Value="{StaticResource ResourceKey=LightMode_Middle}"/>
+
+            </DataTrigger>
+
+            <!-- Dark Mode -->
+            <DataTrigger Binding="{Binding Source={x:Static properties:Settings.Default}, Path=ColorTheme}" Value="Dark">
+                <Setter Property="Background" Value="{StaticResource ResourceKey=DarkMode_Middle}"/>
+
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+
+    <Style TargetType="{x:Type DockPanel}" x:Key="ColumnStyle">
+        <Style.Triggers>
+            <!-- Light Mode -->
+            <DataTrigger Binding="{Binding Source={x:Static properties:Settings.Default}, Path=ColorTheme}" Value="Light">
+                <Setter Property="Background" Value="{StaticResource ResourceKey=LightMode_Front}"/>
+
+            </DataTrigger>
+
+            <!-- Dark Mode -->
+            <DataTrigger Binding="{Binding Source={x:Static properties:Settings.Default}, Path=ColorTheme}" Value="Dark">
+                <Setter Property="Background" Value="{StaticResource ResourceKey=DarkMode_Front}"/>
+
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style TargetType="{x:Type DockPanel}" x:Key="EntryStyle">
+        <Style.Triggers>
+            <!-- Light Mode -->
+            <DataTrigger Binding="{Binding Source={x:Static properties:Settings.Default}, Path=ColorTheme}" Value="Light">
+                <Setter Property="Background" Value="{StaticResource ResourceKey=LightMode_Panel}"/>
+
+            </DataTrigger>
+
+            <!-- Dark Mode -->
+            <DataTrigger Binding="{Binding Source={x:Static properties:Settings.Default}, Path=ColorTheme}" Value="Dark">
+                <Setter Property="Background" Value="{StaticResource ResourceKey=Transparent}"/>
+
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style TargetType="{x:Type DockPanel}" x:Key="EntryNoSaveStyle">
+        <Style.Triggers>
+            <!-- Light Mode -->
+            <DataTrigger Binding="{Binding Source={x:Static properties:Settings.Default}, Path=ColorTheme}" Value="Light">
+                <Setter Property="Background" Value="{StaticResource ResourceKey=LightMode_Red}"/>
+
+            </DataTrigger>
+
+            <!-- Dark Mode -->
+            <DataTrigger Binding="{Binding Source={x:Static properties:Settings.Default}, Path=ColorTheme}" Value="Dark">
+                <Setter Property="Background" Value="{StaticResource ResourceKey=DarkMode_Red}"/>
+
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+
+
+</ResourceDictionary>

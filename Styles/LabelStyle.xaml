@@ -1,0 +1,23 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:properties="clr-namespace:Crystal_Editor.Properties">
+
+
+    <Style TargetType="{x:Type Label}">
+        <Setter Property="FontSize" Value="16" />
+        <Style.Triggers>
+            <!--Light Mode-->
+            <DataTrigger Binding="{Binding Source={x:Static properties:Settings.Default}, Path=ColorTheme}" Value="Light">
+                <Setter Property="Foreground" Value="{StaticResource ResourceKey= Black}"/>
+            </DataTrigger>
+
+            <!--Dark Mode-->
+            <DataTrigger Binding="{Binding Source={x:Static properties:Settings.Default}, Path=ColorTheme}" Value="Dark">
+                <Setter Property="Foreground" Value="{StaticResource ResourceKey= Light}"/>
+                <!--<Setter Property="BorderThickness" Value="4,1,1,1"/>-->
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+
+</ResourceDictionary>

@@ -1,0 +1,39 @@
+﻿<Window x:Class="Crystal_Editor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Crystal_Editor"
+        mc:Ignorable="d"
+        Title="Beta Test Window" Height="450" Width="800">
+    <Grid Background="#FF6F6C6C">
+        <DockPanel LastChildFill="False" Background="#FF2D4A5F">
+            <DockPanel x:Name="DockA" LastChildFill="False" Width="100" Background="#FF3B7969" Drop="Dock_Drop" AllowDrop="True">
+                <Grid Width="100" Height="50" DockPanel.Dock="Top"/>
+
+                <Grid Width="100" Height="50" DockPanel.Dock="Top" Background="#FF3D3D6B">
+                    <Label x:Name="BetaLabel" Content="Beta Label" DockPanel.Dock="Top"  MouseMove="BetaLabel_MouseMove"  />
+                </Grid>
+                <Grid Width="100" Height="50" DockPanel.Dock="Top" Background="#FF653171">
+                    <Label x:Name="TLabel" Content="Theta Label" DockPanel.Dock="Top"  MouseMove="BetaLabel_MouseMove"  />
+                </Grid>
+                <Grid Width="100" Height="50" DockPanel.Dock="Top" Background="#FF007B29">
+                    <Label x:Name="LLabel" Content="Lambda Label" DockPanel.Dock="Top"  MouseMove="BetaLabel_MouseMove"  />
+                </Grid>
+                <Grid Width="100" Height="50" DockPanel.Dock="Top" Background="#FF5D5D5D">
+                    <Label x:Name="XLabel" Content="C Label" DockPanel.Dock="Top"  MouseMove="BetaLabel_MouseMove"  />
+                </Grid>
+                <Grid Width="100" Height="50" DockPanel.Dock="Top"/>
+            </DockPanel>
+            <DockPanel x:Name="DockB" LastChildFill="False" Width="100" Background="#FF843838" Drop="Dock_Drop" AllowDrop="True">
+                <Grid Width="100" Height="50" DockPanel.Dock="Top" Background="#FF114661">
+                    <Label x:Name="ALabel" Content="Alpha Label" DockPanel.Dock="Top" MouseMove="BetaLabel_MouseMove"  />
+                </Grid>
+            </DockPanel>
+            <DockPanel x:Name="DockC" LastChildFill="False" Width="100" Background="#FF542477" Drop="Dock_Drop" AllowDrop="True">
+                <TextBox DockPanel.Dock="Top" TextWrapping="Wrap" Text="Alpha" Width="100" Height="56"/>
+                <TextBox DockPanel.Dock="Top" TextWrapping="Wrap" Text="Beta" Width="100" Height="56"/>
+            </DockPanel>
+        </DockPanel>
+    </Grid>
+</Window>

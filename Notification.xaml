@@ -1,0 +1,19 @@
+﻿<Window x:Class="Crystal_Editor.Notification"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Crystal_Editor"
+        mc:Ignorable="d"
+        Title="Notification" Height="750" Width="900">
+    <Grid>
+        <Button x:Name="ButtonOK" Content="OK" HorizontalAlignment="Center" Margin="0,681,0,0" VerticalAlignment="Top" Height="43" Width="136" Click="ButtonOK_Click"/>
+        <RichTextBox Margin="48,37,48,0" Background="{x:Null}" BorderBrush="{x:Null}" SelectionTextBrush="{x:Null}" FontSize="18" Height="639" VerticalAlignment="Top">
+            <FlowDocument>
+                <Paragraph>
+                    <Run x:Name="MessageBox" Text="RichTextBox"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+    </Grid>
+</Window>

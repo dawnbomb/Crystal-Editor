@@ -1,0 +1,352 @@
+﻿<Window x:Class="Crystal_Editor.GameLibrary"
+        
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Crystal_Editor"
+        mc:Ignorable="d"
+        Title="Crystal Editor    Version: Etrian HD Demo 1" Height="870" Width="1610"
+        
+        xmlns:theme="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero2">
+    <Window.Resources>
+        <local:LocationToColorConverter x:Key="LocationToColorConverter"/>
+    </Window.Resources>    
+    <Grid>
+        
+        <DockPanel Background="{DynamicResource DarkMode_1Background}" >
+
+            <DockPanel DockPanel.Dock="Top" Height="50" VerticalAlignment="Top" Background="{DynamicResource DarkMode_1Midground}" >
+                <DockPanel Margin="5,10,5,0" Background="{DynamicResource DarkMode_1Midground}">
+                    <Button DockPanel.Dock="Left" x:Name="ButtonHome" Content="Home" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="73" Height="35" Click="ButtonHome_Click" FontSize="15"/>
+                    <Button DockPanel.Dock="left"  Content="Tools Setup" Width="100" Height="35" VerticalAlignment="Top"/>
+                    <Button DockPanel.Dock="Left" x:Name="ButtonCreateWorkshop" Content="New Workshop" HorizontalAlignment="Left"  VerticalAlignment="Top" Height="35" Width="126" Click="ButtonCreateWorkshop_Click" FontSize="15" />
+                    <Button DockPanel.Dock="Left" x:Name="ButtonEditWorkshop" Content="Edit Workshop" HorizontalAlignment="Left" VerticalAlignment="Top" Height="35" Width="126" Click="ButtonEditWorkshop_Click" FontSize="15"/>                    
+                    <local:SharedMenus x:Name="MenusForToolsAndEvents" />
+                    <Button DockPanel.Dock="Right" x:Name="HUDButtonDiscord" Content="Discord" HorizontalAlignment="Left" VerticalAlignment="Top"  Width="84" Height="35" Click="HUDButtonDiscord_Click" Background="#FF500188" FontSize="15" />
+                    <Button DockPanel.Dock="Right"  Style="{DynamicResource ButtonError}" x:Name="ButtonTutorial" Content="Modding Wiki"   VerticalAlignment="Top" Height="35" Width="120" Click="ButtonTutorial_Click" FontSize="15"/>                    
+                    <Button x:Name="ButtonLaunchWorkshop"  HorizontalAlignment="Left" Margin="100,0,0,0" Content="Launch Workshop" DockPanel.Dock="Top" Height="39" Width="183" Click="ButtonLaunchWorkshop_Click" FontSize="16"/>
+                    <Button x:Name="ButtonLaunchPreview" HorizontalAlignment="Left" Margin="300,-40,0,0" Content="Preview This Workshop" DockPanel.Dock="Top" Height="39" Width="183" Click="LaunchWorkshopPreviewMode" FontSize="16"/>
+                    
+
+
+                </DockPanel>
+            </DockPanel>
+            <DockPanel>
+                <DockPanel DockPanel.Dock="Left" Width="430" HorizontalAlignment="Left">
+                    <TreeView  x:Name="LibraryTreeOfWorkshops"  SelectedItemChanged="LibraryTreeOfWorkshops_SelectedItemChanged" FontSize="16"/>
+                </DockPanel>
+
+
+
+                <DockPanel DockPanel.Dock="Right" >
+                    <DockPanel x:Name="TopMain" DockPanel.Dock="Top" >
+                        <DockPanel DockPanel.Dock="Left">
+
+                            <!--<Button Content="Create New Project" DockPanel.Dock="Top" Height="40" Click="ButtonCreateNewProject"/>
+                            <Button Content="Change Project Info" DockPanel.Dock="Top" Height="40" Click="ModifyProject"/>-->
+
+                        </DockPanel>
+                        <DockPanel>
+                            <DataGrid x:Name="ProjectsSelector" AutoGenerateColumns="True" DockPanel.Dock="Top" VerticalAlignment="Stretch" SelectionChanged="ProjectsSelector_SelectionChanged">
+                                <DataGrid.Columns>
+
+                                </DataGrid.Columns>
+                                <DataGrid.ContextMenu>
+                                    <ContextMenu>
+                                        <MenuItem Header="Project Settings" Click="ModifyProject" />
+                                        <MenuItem Header="Delete Project" Click="DeleteProject" />
+                                    </ContextMenu>
+                                </DataGrid.ContextMenu>
+                            </DataGrid>
+
+                        </DockPanel>
+
+
+                    </DockPanel>
+                    <Grid x:Name="TopProjects" DockPanel.Dock="Top" >
+                        <Label Content="Name: " HorizontalAlignment="Left" Margin="19,32,0,0" VerticalAlignment="Top"/>
+                        <Label Content="Description: " HorizontalAlignment="Left" Margin="19,60,0,0" VerticalAlignment="Top"/>
+                        <Label Content="Input Directory: " HorizontalAlignment="Left" Margin="19,88,0,0" VerticalAlignment="Top"/>
+                        <Label Content="Output Directory: " HorizontalAlignment="Left" Margin="16,114,0,0" VerticalAlignment="Top"/>
+                        <TextBox x:Name="TextBoxInputDirectory" HorizontalAlignment="Left" Margin="153,92,0,0" Text="Required to launch the workshop. Relax, If you pick the wrong folder you get notified :)" VerticalAlignment="Top" Width="676" IsEnabled="False"/>
+                        <Button x:Name="ButtonSelectInputDirectory" Content="Change " HorizontalAlignment="Left" Margin="834,92,0,0" VerticalAlignment="Top" Width="124" Click="ButtonSelectInputDirectory_Click" />
+                        <TextBox x:Name="TextBoxOutputDirectory" HorizontalAlignment="Left" Margin="153,120,0,0" Text="If not set, defaults to the Input Directory. This is where files get saved to. (Demo disabled)" VerticalAlignment="Top" Width="676" IsEnabled="False" />
+                        <Button Style="{DynamicResource ButtonError}" x:Name="ButtonSelectOutputDirectory" Content="Change " HorizontalAlignment="Left" Margin="834,126,0,0" VerticalAlignment="Top" Width="124" Click="ButtonSelectOutputDirectory_Click" />
+                        <TextBox x:Name="ProjectNameTextbox" HorizontalAlignment="Left" Margin="153,36,0,0" TextWrapping="Wrap" Text="Project Name" VerticalAlignment="Top" Width="676"/>
+                        <TextBox x:Name="ProjectDescriptionTextBox" HorizontalAlignment="Left" Margin="153,64,0,0" TextWrapping="Wrap" Text="Project Description" VerticalAlignment="Top" Width="676"/>
+                        <Button Content="Save Project Information" HorizontalAlignment="Left" Margin="203,251,0,0" VerticalAlignment="Top" Height="47" Width="208" Click="SaveProjectInfo"/>
+                        <Button Content="Cancel" HorizontalAlignment="Left" Margin="534,251,0,0" VerticalAlignment="Top" Height="47" Width="118" Click="CancelProject"/>
+                        <Label Content="Project Information." HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                        <Label Content="*The Output Directory is where things are usually saved to.&#xD;&#xA;If output is not set, it will just default to saving over the files in the Input Directory.&#xD;&#xA;Note that the optional feature &quot;Automation&quot;  can ignore the output directory if a user enables that feature.&#xD;&#xA;It allows users to basically program something new to occur instead of only saving to a default location. " HorizontalAlignment="Left" Margin="153,156,0,0" VerticalAlignment="Top"/>
+
+                    </Grid>
+
+
+                </DockPanel>
+            </DockPanel>
+        </DockPanel>
+
+
+        <Image x:Name="ImageLibraryBanner" HorizontalAlignment="Left" Width="0" Height="200" Margin="439,8,0,0" VerticalAlignment="Top" />
+
+
+
+        <TabControl x:Name="TabControlWorkshopInfo" Margin="440,402,0,0" Height="441" VerticalAlignment="Top" HorizontalAlignment="Left" Width="960" >
+
+            <TabItem x:Name="TabHome" Header="TabHome">
+                <Grid Background="#FFE5E5E5">
+                    <Grid>
+                        <Label x:Name="DebugText" Content="Welcome to Crystal Editor!" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="22"/>
+                        <ComboBox x:Name="ColorModeComboBox" Margin="995,336,0,0" DropDownClosed="ColorModeComboBox_DropDownClosed" HorizontalAlignment="Left" Width="120" Height="24" VerticalAlignment="Top">
+                            <ComboBoxItem Content="Light Mode"/>
+                            <ComboBoxItem Content="Dark Mode"/>
+                            <ComboBoxItem Content="Thing"/>
+                        </ComboBox>
+                        <Label Content="Welcome to the early demo of Crystal Editor for the etrian odyssey community. My attempt to create the worlds &#xA;best game modding tool. In this demo, users can edit game files and save them using pre-made editors, but not&#xA; create new editors yourself. This is due to upcoming features that will not be backwards compatible. When that happens, &#xA;i will personally remake these editors so they are not lost to time.  &#xA; &#xA;As for what this tool does, it makes it ridiculously easy to generate fully functional game editors in seconds. and &#xA;easily share them with communities over discord. Aside from being the best and only game editor maker, It also provides &#xA;major third party romhacking tools instead of making you fetch them from google. In the future, tool selection will&#xA;be provided based on workshop information such as game console, and allow users to include game specific tools. .&#xA;&#xD;&#xA;Also, this is my first public demo so, save often in case of crash. If you do crash, please report it :(&#xD;&#xA; &#xA;PS: If this program interests you and you want to help, reach out to me on discord (Link top left). &#xA;Lets lower the complexity and burden of game modding, and simplify it enough for everyone to create mods!&#xA;This tool is made in C# / WPF / .net 7. If you think you can help or are willing to learn, Get in touch! " HorizontalAlignment="Center" Margin="0,70,0,0" VerticalAlignment="Top" Width="871" Height="345"/>
+                    </Grid>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="TabWorkshopMaker" Header="WorkshopMaker">
+                <Grid>
+                    <Label Content="Name" HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Region" HorizontalAlignment="Left" Margin="10,82,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Version" HorizontalAlignment="Left" Margin="10,113,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Emulator" HorizontalAlignment="Left" Margin="10,149,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Loading Mode" HorizontalAlignment="Left" Margin="10,185,0,0" VerticalAlignment="Top"/>
+                    <Button x:Name="ButtonSetWorkshopInputFolder" Content="Input Folder" HorizontalAlignment="Left" Margin="10,231,0,0" VerticalAlignment="Top" Width="100" Click="ButtonSetWorkshopInputFolder_Click"/>
+                    <Label Content="Platform" HorizontalAlignment="Left" Margin="10,45,0,0" VerticalAlignment="Top"/>
+
+                    <TextBox x:Name="TextBoxGameName" HorizontalAlignment="Left" Margin="150,10,0,0" VerticalAlignment="Top" Width="301"/>
+                    <ComboBox x:Name="ComboBoxGameRegion" HorizontalAlignment="Left" Margin="150,84,0,0" VerticalAlignment="Top" Width="301">
+                        <ComboBoxItem Content="USA / NTSC-U"/>
+                        <ComboBoxItem Content="EUR / PAL"/>
+                        <ComboBoxItem Content="JAP / NTSC-J"/>
+                    </ComboBox>
+                    <TextBox x:Name="TextboxGameVersion" HorizontalAlignment="Left" Margin="150,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="301" Text="1.0"/>
+                    <ComboBox x:Name="ComboBoxGameEmulator" HorizontalAlignment="Left" Margin="150,152,0,0" VerticalAlignment="Top" Width="301">
+                        <ComboBoxItem Content="None"/>
+                        <Separator/>
+                        <ComboBoxItem>
+                            <TextBlock Text="NES: MESEN" Foreground="Lime" />
+                        </ComboBoxItem>
+                        <ComboBoxItem>
+                            <TextBlock Text="NES: FCEUX" Foreground="Yellow" />
+                        </ComboBoxItem>
+                        <ComboBoxItem>
+                            <TextBlock Text="NES: puNES" Foreground="Yellow" />
+                        </ComboBoxItem>
+                        <ComboBoxItem>
+                            <TextBlock Text="NES: NEStopia UE" Foreground="Yellow" />
+                        </ComboBoxItem>
+                        <ComboBoxItem>
+                            <TextBlock Text="NES: NEStopia" Foreground="#FFF51E1E" />
+                        </ComboBoxItem>
+                        <ComboBoxItem>
+                            <TextBlock Text="NES: NESticle" Foreground="#FFF51E1E" />
+                        </ComboBoxItem>
+                        <Separator/>
+                        <ComboBoxItem>
+                            <TextBlock Text="SNES: MESEN" Foreground="Lime" />
+                        </ComboBoxItem>
+                        <ComboBoxItem>
+                            <TextBlock Text="SNES: bsnes" Foreground="Yellow" />
+                        </ComboBoxItem>
+                        <ComboBoxItem>
+                            <TextBlock Text="SNES: Snes9x" Foreground="Yellow" />
+                        </ComboBoxItem>
+                        <ComboBoxItem>
+                            <TextBlock Text="SNES: ZSNES" Foreground="#FFF51E1E" />
+                        </ComboBoxItem>
+                        <Separator/>
+                        <ComboBoxItem>
+                            <TextBlock Text="N64: Project64" Foreground="DarkOrange" />
+                        </ComboBoxItem>
+                        <ComboBoxItem>
+                            <TextBlock Text="N64: Mupen64Plus" Foreground="DarkOrange" />
+                        </ComboBoxItem>
+                        <Separator/>
+                        <ComboBoxItem>
+                            <TextBlock Text="GC: Dolphin" Foreground="Lime" />
+                        </ComboBoxItem>
+                        <Separator/>
+                        <ComboBoxItem>
+                            <TextBlock Text="Wii: Dolphin" Foreground="Lime" />
+                        </ComboBoxItem>
+                        <Separator/>
+                        <ComboBoxItem>
+                            <TextBlock Text="Wii U: Cemu" Foreground="Lime" />
+                        </ComboBoxItem>
+                        <Separator/>
+                        <ComboBoxItem>
+                            <TextBlock Text="GBA: Visual Boy Advance M" Foreground="Lime" />
+                        </ComboBoxItem>
+                        <ComboBoxItem>
+                            <TextBlock Text="GBA: mGBA" Foreground="Yellow" />
+                        </ComboBoxItem>
+                        <ComboBoxItem>
+                            <TextBlock Text="GBA: Visual Boy Advance" Foreground="#FFF51E1E" />
+                        </ComboBoxItem>
+                        <ComboBoxItem>
+                            <TextBlock Text="GBA: Visual Boy Advance MWX" Foreground="#FFF51E1E" />
+                        </ComboBoxItem>
+                        <ComboBoxItem>
+                            <TextBlock Text="GBA: NO$CASH" Foreground="#FFF51E1E" />
+                        </ComboBoxItem>
+                        <ComboBoxItem>
+                            <TextBlock Text="GBA: Visual Boy Advance" Foreground="#FFF51E1E" />
+                        </ComboBoxItem>
+                        <Separator/>
+                        <ComboBoxItem>
+                            <TextBlock Text="NDS: MelonDS" Foreground="Lime" />
+                        </ComboBoxItem>
+                        <ComboBoxItem>
+                            <TextBlock Text="NDS: DeSmuMe" Foreground="Yellow" />
+                        </ComboBoxItem>
+                        <ComboBoxItem>
+                            <TextBlock Text="NDS: NO$GBA" Foreground="Yellow" />
+                        </ComboBoxItem>
+                        <Separator/>
+                        <ComboBoxItem>
+                            <TextBlock Text="3DS: Citra" Foreground="Lime" />
+                        </ComboBoxItem>
+                        <ComboBoxItem>
+                            <TextBlock Text="3DS: DeSmuMe" Foreground="Yellow" />
+                        </ComboBoxItem>
+                        <Separator/>
+                        <ComboBoxItem>
+                            <TextBlock Text="Switch: Yuzu" Foreground="Lime" />
+                        </ComboBoxItem>
+                        <ComboBoxItem>
+                            <TextBlock Text="Switch: Ryujinx" Foreground="Yellow" />
+                        </ComboBoxItem>
+                        <Separator/>
+                        <ComboBoxItem>
+                            <TextBlock Text="PS1: ePSC3" Foreground="DarkOrange" />
+                        </ComboBoxItem>
+                        <ComboBoxItem>
+                            <TextBlock Text="PS1: PCSX-Reloaded" Foreground="DarkOrange" />
+                        </ComboBoxItem>
+                        <Separator/>
+                        <ComboBoxItem>
+                            <TextBlock Text="PS2: PCSX2" Foreground="Lime" />
+                        </ComboBoxItem>
+                        <Separator/>
+                        <ComboBoxItem>
+                            <TextBlock Text="PS3: RPCS3" Foreground="Lime" />
+                        </ComboBoxItem>
+                        <Separator/>
+                        <ComboBoxItem>
+                            <TextBlock Text="PSP: PPSSPP" Foreground="Yellow" />
+                        </ComboBoxItem>
+                        <Separator/>
+                        <ComboBoxItem>
+                            <TextBlock Text="VITA: Vita3K" Foreground="DarkOrange" />
+                        </ComboBoxItem>
+                        <Separator/>
+                        <ComboBoxItem Content="ARCADE: MAME"/>
+                        <Separator/>
+                        <ComboBoxItem Content="Other: Unique"/>
+                    </ComboBox>
+                    <ComboBox x:Name="ComboBoxLoadingMode" HorizontalAlignment="Left" Margin="150,188,0,0" VerticalAlignment="Top" Width="301" IsEnabled="False">
+                        <ComboBoxItem Content="Auto" IsSelected="True" />
+                        <!--<ComboBoxItem Content="Semi-Auto"/>
+                        <ComboBoxItem Content="Manual"/>-->
+                    </ComboBox>
+                    <TextBox x:Name="WorkshopTextboxExampleInputFolder" HorizontalAlignment="Left" Margin="150,233,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="301" IsEnabled="False"/>
+                    <ComboBox x:Name="ComboBoxGamePlatform" HorizontalAlignment="Left" Margin="150,45,0,0" VerticalAlignment="Top" Width="301">
+                        <ComboBoxItem Content="PC"/>
+                        <Separator/>
+                        <ComboBoxItem Content="NES / Famicom"/>
+                        <ComboBoxItem Content="SNES / Super Famicom"/>
+                        <ComboBoxItem Content="N64"/>
+                        <ComboBoxItem Content="Gamecube"/>
+                        <ComboBoxItem Content="Wii"/>
+                        <ComboBoxItem Content="Wii U"/>
+                        <ComboBoxItem Content="GB"/>
+                        <ComboBoxItem Content="GBC"/>
+                        <ComboBoxItem Content="GBA"/>
+                        <ComboBoxItem Content="DS"/>
+                        <ComboBoxItem Content="3DS"/>
+                        <ComboBoxItem Content="Switch"/>
+                        <Separator/>
+                        <ComboBoxItem Content="PS1"/>
+                        <ComboBoxItem Content="PS2"/>
+                        <ComboBoxItem Content="PS3"/>
+                        <ComboBoxItem Content="PS4"/>
+                        <ComboBoxItem Content="PS5"/>
+                        <ComboBoxItem Content="PSP"/>
+                        <ComboBoxItem Content="Vita"/>
+                        <Separator/>
+                        <ComboBoxItem Content="Other"/>
+                    </ComboBox>
+                    <Button x:Name="ButtonCreateNewWorkshop" Content="Create New Workshop" HorizontalAlignment="Left" Margin="36,370,0,0" VerticalAlignment="Top" Height="35" Width="168" Click="ButtonCreateNewWorkshop_Click" />
+                    <Button x:Name="ButtonCancel" Content="Cancel" HorizontalAlignment="Left" Margin="277,370,0,0" VerticalAlignment="Top" Height="35" Width="174" Click="ButtonCancel_Click"/>
+
+
+
+
+                    <Label Content="Later on: Show all platform specific tools." HorizontalAlignment="Left" Margin="457,41,0,0" VerticalAlignment="Top"/>
+                    <Label Content="The name of the workshop, should also be the name of the game." HorizontalAlignment="Left" Margin="456,5,0,0" VerticalAlignment="Top"/>
+                    <Label Content="USA = America, EUR = Europe, JAP = Japan." HorizontalAlignment="Left" Margin="456,78,0,0" VerticalAlignment="Top"/>
+                    <Label Content="General best is auto selected, but change if compatability issues." HorizontalAlignment="Left" Margin="456,149,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Later: Restrict visable emulators by platform" HorizontalAlignment="Left" Margin="502,364,0,0" VerticalAlignment="Top"/>
+                    <Label Content="A Future feature, different modes will reduce lag for massive projects." HorizontalAlignment="Left" Margin="456,188,0,0" VerticalAlignment="Top"/>
+
+                    <Label Content="The intended root folder of all files related to this game." HorizontalAlignment="Left" Margin="459,228,0,0" VerticalAlignment="Top"/>
+                    <Label Content="The input folder, if a console game, should be the source of all extracted game files. If a PC native game, maybe the game folder.&#xD;&#xA;When a user sets up a project for this workshop, they will be notified if the folder they select as the Input Directory&#xD;&#xA;is the same folder name or a different name from this workshop's intended input folder name. &#xD;&#xA;Users are NOT prevented from having a &quot;wrong&quot; folder name, but they ARE notified if it's the same or different from intended." HorizontalAlignment="Left" Margin="10,264,0,0" VerticalAlignment="Top"/>
+
+                    <Label Content="Patch number, Expansion Name, or current date. Use best judgement." HorizontalAlignment="Left" Margin="451,114,0,0" VerticalAlignment="Top"/>
+
+                </Grid>
+            </TabItem>
+
+            <TabItem x:Name="PatchNotes" Header="Patch Notes">
+                <Grid>
+                    <TextBox x:Name="TextBoxWorkshopReadMe"  TextWrapping="Wrap" Text="(coming later)&#xD;&#xA;This will be where a creator can put patchnotes for a workshop.&#xD;&#xA;&#xD;&#xA;Patchnotes will be used to help people who update crystal editor&#xD;&#xA;easily understand what new features have been added to an editor.&#xD;&#xA;It could also be used as a way to talk about upcoming features,&#xD;&#xA;the same way as announcements for new games happen." />
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+        <Label Content="Editors in this Workshop" HorizontalAlignment="Left" Margin="1405,496,0,0" VerticalAlignment="Top" />
+
+        <Label x:Name="WorkshopInfoDocuments" Content="Documents:" HorizontalAlignment="Left" Margin="1405,336,0,0" VerticalAlignment="Top" />
+        <Rectangle HorizontalAlignment="Left" Height="1" Margin="1405,364,0,0" Stroke="Black" VerticalAlignment="Top" Width="183"/>
+
+        <Label x:Name="WorkshopInfoTools" Content="Tools:" HorizontalAlignment="Left" Margin="1405,368,0,0" VerticalAlignment="Top" />
+        <Rectangle HorizontalAlignment="Left" Height="1" Margin="1405,396,0,0" Stroke="Black" VerticalAlignment="Top" Width="183"/>
+
+        <Label x:Name="WorkshopInfoRegion" Content="Region:" HorizontalAlignment="Left" Margin="1405,402,0,0" VerticalAlignment="Top" />
+        <Rectangle HorizontalAlignment="Left" Height="1" Margin="1405,430,0,0" Stroke="Black" VerticalAlignment="Top" Width="183"/>
+
+        <Label x:Name="WorkshopInfoGameVersion" Content="Version:" HorizontalAlignment="Left" Margin="1405,433,0,0" VerticalAlignment="Top"/>
+        <Rectangle HorizontalAlignment="Left" Height="1" Margin="1405,459,0,0" Stroke="Black" VerticalAlignment="Top" Width="183"/>
+
+        <Label x:Name="WorkshopInfoEmulator" Content="Emulator:" HorizontalAlignment="Left" Margin="1405,463,0,0" VerticalAlignment="Top"/>
+        <Rectangle HorizontalAlignment="Left" Height="1" Margin="1405,490,0,0" Stroke="Black" VerticalAlignment="Top" Width="183"/>
+
+
+        <ScrollBar HorizontalAlignment="Left" Margin="1230,82,0,0" VerticalAlignment="Top"/>
+
+        <Label Content="Label" HorizontalAlignment="Left" Margin="1831,585,0,0" VerticalAlignment="Top"/>
+
+
+
+
+
+
+
+
+
+        <Button x:Name="ButtonBetaTest" Content="Beta Test Enviroment" HorizontalAlignment="Left" Margin="1413,735,0,0" VerticalAlignment="Top" Width="181" Click="ButtonBetaTest_Click"/>
+        <TreeView x:Name="EditorsTree" Margin="1407,527,0,0" Height="197" VerticalAlignment="Top" HorizontalAlignment="Left" Width="187"/>
+
+        <Grid x:Name="ToolSetupScreen" Margin="0,49,0,0" Visibility="Collapsed">
+            <DockPanel x:Name="ToolDockPanel">
+                
+            </DockPanel>
+
+        </Grid>
+    </Grid>
+
+</Window>

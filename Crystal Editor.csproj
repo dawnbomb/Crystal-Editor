@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <ServerGarbageCollection>true</ServerGarbageCollection>
+	  <ConcurrentGarbageCollection>true</ConcurrentGarbageCollection>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <RootNamespace>Crystal_Editor</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Art\ProjectIcon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Workshop\Tutorial New Workshop Get Base Address Part 2.png" />
+    <None Remove="Workshop\Tutorial New Workshop Get Base Address Part 3.png" />
+    <None Remove="Workshop\Tutorial New Workshop Get Base Address.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Art\ProjectIcon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ookii.Dialogs.Wpf" Version="5.0.1" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="8.0.0-preview.2.23128.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Tutorial\NewFolder\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Workshop\Tutorial New Workshop Get Base Address Part 2.png" />
+    <Resource Include="Workshop\Tutorial New Workshop Get Base Address Part 3.png" />
+    <Resource Include="Workshop\Tutorial New Workshop Get Base Address.png" />
+  </ItemGroup>
+
+  
+
+</Project>

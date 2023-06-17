@@ -1,0 +1,54 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:properties="clr-namespace:Crystal_Editor.Properties">
+
+
+    <Style TargetType="{x:Type Border}" >
+        <Style.Triggers>
+            <!--Light Mode-->
+            <DataTrigger Binding="{Binding Source={x:Static properties:Settings.Default}, Path=ColorTheme}" Value="Light">                
+                <Setter Property="Background" Value="{StaticResource ResourceKey= DarkMode_Red}"/>
+                <Setter Property="BorderBrush" Value="{StaticResource ResourceKey= Dark}"/>
+            </DataTrigger>
+
+            <!--Dark Mode-->
+            <DataTrigger Binding="{Binding Source={x:Static properties:Settings.Default}, Path=ColorTheme}" Value="Dark">
+                <Setter Property="Background" Value="{StaticResource ResourceKey= DarkMode_Panel}"/>
+                <Setter Property="BorderBrush" Value="{StaticResource ResourceKey= DarkMode_Border}"/>               
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+    
+    <Style TargetType="{x:Type Border}" x:Key="EntryDisabled" >
+        <Style.Triggers>
+            <!--Light Mode-->
+            <DataTrigger Binding="{Binding Source={x:Static properties:Settings.Default}, Path=ColorTheme}" Value="Light">
+                <Setter Property="Background" Value="{StaticResource ResourceKey= LightMode_Red}"/>
+                <Setter Property="BorderBrush" Value="{StaticResource ResourceKey= Dark}"/>
+            </DataTrigger>
+
+            <!--Dark Mode-->
+            <DataTrigger Binding="{Binding Source={x:Static properties:Settings.Default}, Path=ColorTheme}" Value="Dark">
+                <Setter Property="Background" Value="{StaticResource ResourceKey= DarkMode_Red}"/>
+                <Setter Property="BorderBrush" Value="{StaticResource ResourceKey= DarkMode_RedBorder}"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style TargetType="{x:Type Border}" x:Key="EntryAutoDisabled" >
+        <Style.Triggers>
+            <!--Light Mode-->
+            <DataTrigger Binding="{Binding Source={x:Static properties:Settings.Default}, Path=ColorTheme}" Value="Light">
+                <Setter Property="Background" Value="{StaticResource ResourceKey= LightMode_Red}"/>
+                <Setter Property="BorderBrush" Value="{StaticResource ResourceKey= Dark}"/>
+            </DataTrigger>
+
+            <!--Dark Mode-->
+            <DataTrigger Binding="{Binding Source={x:Static properties:Settings.Default}, Path=ColorTheme}" Value="Dark">
+                <Setter Property="Background" Value="{StaticResource ResourceKey= DarkMode_AutoDisable}"/>
+                <Setter Property="BorderBrush" Value="{StaticResource ResourceKey= DarkMode_AutoDisableBorder}"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+    
+</ResourceDictionary>

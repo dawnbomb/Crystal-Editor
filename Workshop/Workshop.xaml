@@ -1,0 +1,678 @@
+﻿<Window x:Class="Crystal_Editor.Workshop"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"        
+        xmlns:local="clr-namespace:Crystal_Editor"
+        mc:Ignorable="d"
+        Title="Crystal Editor    Version: Etrian HD Demo 1" Height="840" Width="1680">
+
+
+
+
+
+    <Grid x:Name="GridBack">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="37"/>
+            <RowDefinition Height="90"/>
+            <RowDefinition/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="9"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="573"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Row="2"/>
+        <Grid  Grid.ColumnSpan="3" Background="#FF1D1E23" Grid.RowSpan="1">
+            <Button Content="Dummy Button" HorizontalAlignment="Left" Width="118" Click="Button_Click" Margin="1148,8,0,4" Style="{DynamicResource ButtonError}"/>
+            <Button Content="Modding Wiki" Style="{DynamicResource ButtonError}" HorizontalAlignment="Left" Margin="1511,6,0,0" VerticalAlignment="Top" Click="Button_Click_2" Height="28" Width="130"/>
+            <ComboBox x:Name="ComboBoxDevMode" HorizontalAlignment="Left" Margin="1271,9,0,0" VerticalAlignment="Top" Width="151" DropDownClosed="ComboBoxDevMode_DropDownClosed">
+                <ComboBoxItem Content="User Mode"/>
+                <ComboBoxItem Content="Developer Mode"/>
+            </ComboBox>
+            <Button x:Name="HUDButtonDiscord" Content="Discord" HorizontalAlignment="Left" Margin="1432,6,0,0" VerticalAlignment="Top"  Width="74" Height="28" Click="HUDButtonDiscord_Click" Background="#FF500188"  />
+
+            <Menu Margin="0,8,0,0" HorizontalAlignment="Left"  VerticalAlignment="Top"   >
+                <MenuItem x:Name="WorkshopMenu" Header=" Workshop" FontSize="16"  >
+                    <MenuItem Header=" Save Everything" Click="MenuSaveAll"  />
+                    <MenuItem Header=" Tools and Events" Click="MenuWorkshopToolsList"   />
+                    <Separator Style="{DynamicResource KeySeperator}"/>
+                    <MenuItem Header=" Save Editors" Click="MenuSaveEditors"  />
+                    <MenuItem Header=" Save Game Data" Click="MenuSaveGameData" />
+                    <MenuItem Header=" Save Workshop Documents" Click="MenuSaveDocuments"  />
+                    <MenuItem Header=" Save Project Documents" Click="MenuSaveProjectDocuments"  />
+                    <MenuItem Header=" Save Common Events" Click="MenuSaveEvents"  />
+                    <Separator Style="{DynamicResource KeySeperator}"/>
+                    <MenuItem Header=" Create New Editor (Disabled in this demo)" Click="CreateANewEditor" />
+                    <MenuItem Header=" Add a new file to this workshop." Click="AddNewWorkshopFile" />
+                    <Separator Style="{DynamicResource KeySeperator}"/>
+                    <MenuItem Header=" Export this Editor to Google Sheets (Hex)" Click="ExportToSheetsHex" />
+                    <MenuItem Header=" Export this Editor to Google Sheets (Decimal)" Click="ExportToSheetsDec" />
+                </MenuItem>
+                <local:SharedMenus x:Name="MenusForToolsAndEvents" />              
+                <MenuItem Header=" Common Events" FontSize="16" x:Name="MenuCommonEvents">
+                    <MenuItem Header=" Setup Common Events " Click="OpenEventMenu"  />
+                </MenuItem>
+                <MenuItem Header=" Tools" FontSize="16" >
+                    <MenuItem Header=" Notepad++"  Click="MenuNPlusPlus"/>
+                    <Separator Style="{DynamicResource KeySeperator}"/>
+                    <MenuItem Header=" Hex Editor: HxD" Click="MenuHxD"/>
+                    <MenuItem Header=" Hex Editor: 010" Click="Menu010"/>
+                    <Separator Style="{DynamicResource KeySeperator}"/>
+                    <MenuItem Header=" IPS Patch: FLIPS" Click="MenuFLIPS"/>
+                    <MenuItem Header=" BPS Patch: FLIPS" Click="MenuFLIPS"/>
+                    <MenuItem Header=" UPS Patch: Upset" Click="MenuUpset"/>
+                    <MenuItem Header=" Delta Patch: DeltaPatcher" Click="MenuDeltaPatcher"/>
+                    <Separator Style="{DynamicResource KeySeperator}"/>                    
+                    <MenuItem Header=" Add New Tool" Foreground="#FF2C2C"/>
+                    <MenuItem Header=" Add New Tool (Link)" Foreground="#FF2C2C"/>
+                    <MenuItem Header=" Add New Tool (Local)" Foreground="#FF2C2C"/>
+
+                </MenuItem>
+                <MenuItem Header=" NDS Tools" FontSize="16" >
+                    <MenuItem Header=" MelonDS" Click="OpenMelonDS"/>
+                    <Separator Style="{DynamicResource KeySeperator}" />
+                    <MenuItem Header=" DS Buff" Click="ToolDSBuff" />
+                    <MenuItem Header=" Tinke" Click="ToolTinke" />
+                    <MenuItem Header=" NDS Factory" Foreground="#FF2C2C"/>
+                    <Separator Style="{DynamicResource KeySeperator}" />
+                    <MenuItem Header=" Unpack DS Rom  " Click="DSNitroUnpack"/>
+                    <MenuItem Header=" Repack DS Rom  " Click="DSNitroPack"/>
+                </MenuItem>
+                <MenuItem Header=" Shortcuts" FontSize="16" >
+                    <MenuItem Header=" Open Input Folder" Click="OpenInputFolder"/>
+                    <MenuItem Header=" Open Output Folder" Click="OpenOutputFolder"/>
+                    <MenuItem Header=" Open Workshop Folder" Click="OpenWorkshopFolder"/>
+                    <MenuItem Header=" Open Downloads Folder" Click="OpenDownloadsFolder"/>
+                </MenuItem>
+                <MenuItem Header=" Extras" FontSize="16" >
+                    <MenuItem Header=" Settings" Foreground="#FF2C2C"/>
+                    <MenuItem Header=" Report a Bug, or Request a Feature" Foreground="#FF2C2C"/>
+                    <MenuItem Header=" File a Complaint" Foreground="#FF2C2C"/>
+                    <MenuItem Header=" Publish a Workshop or Editor Checklist" Foreground="#FF2C2C"/>
+                    <MenuItem Header=" Help" Foreground="#FF2C2C"/>
+                    <MenuItem Header=" About" Foreground="#FF2C2C"/>
+                </MenuItem>
+            </Menu>
+            <Button x:Name="ButtonHome" Content="Home" VerticalAlignment="Center" Height="29" Click="ButtonHome_Click" Margin="940,0,0,0" HorizontalAlignment="Left" Width="81"/>
+            <Button Content="Debug 1080P " HorizontalAlignment="Left" Margin="1026,0,0,0" VerticalAlignment="Center" Click="SetWindow1080P"/>
+
+        </Grid>
+        <ScrollViewer x:Name="EditorBarScrollViewer" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="1" Background="#FF1B272D" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Disabled" PreviewMouseWheel="EditorBarMouseWheel">
+            <DockPanel x:Name="EditorBar" Background="{x:Null}" LastChildFill="False" >
+
+            </DockPanel>
+        </ScrollViewer>
+
+        <Grid Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" Margin="0,2,0,0" >
+            <TextBox x:Name="PropertiesEditorReadGameDataFrom" HorizontalAlignment="Left" Margin="227,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="623"  IsEnabled="False"/>
+            <Label Content="This editor is reading from:    " HorizontalAlignment="Left" Margin="10,6,0,0" VerticalAlignment="Top"/>
+            <TextBox HorizontalAlignment="Left" Margin="1126,0,0,0" TextWrapping="Wrap" Text="(In the future i'll make it so you can see the current output directory here)" VerticalAlignment="Center" Width="544" IsEnabled="False"/>
+            <Label Content="Output Directory:" HorizontalAlignment="Left" Margin="978,3,0,0" VerticalAlignment="Top"/>
+        </Grid>
+        <Grid x:Name="DocumentGrid"  Grid.Column="2" Background="#FF1C210F" Grid.Row="2" >
+            <TabControl x:Name="TabSet">
+                <TabItem Header="Workshop Documents" Height="22" VerticalAlignment="Top" Margin="0,0,1,0">
+                    <Grid>
+                        <Button x:Name="ButtonNewDocument" Content="New Document" HorizontalAlignment="Left" Margin="0,8,0,0" VerticalAlignment="Top" Width="190"  Click="ButtonNewDocument_Click" Height="23" />
+                        <TextBox x:Name="DocumentNameBox" HorizontalAlignment="Center" Margin="0,8,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" />
+                        <TextBox x:Name="DocumentTextBox"  HorizontalAlignment="Left" TextWrapping="Wrap" Text="You can select notes by clicking them on the left." Width="367" Margin="190,38,0,0" AcceptsReturn="True"/>
+                        <Button x:Name="ButtonDeleteDocument" Content="Delete" HorizontalAlignment="Left" Margin="494,8,0,0" VerticalAlignment="Top" Width="63"  Click="ButtonDeleteDocument_Click" />
+                        <TreeView x:Name="DocumentsTree" Margin="0,38,0,0" PreviewMouseMove="DocumentTreePreviewMouseMove" HorizontalAlignment="Left" Width="190"/>
+                        <Button Content="Save Name" HorizontalAlignment="Left" Margin="381,7,0,0" VerticalAlignment="Top" Width="108" Click="SaveDocumentName"/>
+                    </Grid>
+                </TabItem>
+                <TabItem Header="Project Documents" Margin="0,0,1,0">
+                    <Grid>
+                        <TreeView x:Name="TreeProjectDocuments" Margin="0,38,382,0"/>
+                        <Button Content="New Document" HorizontalAlignment="Left" Margin="10,8,0,0" VerticalAlignment="Top" Width="179" Click="NewProjectDocument"/>
+                        <TextBox x:Name="ProjectDocumentTextBox" HorizontalAlignment="Left" Margin="189,38,0,0" TextWrapping="Wrap" Width="382" AcceptsReturn="True"/>
+                        <TextBox x:Name="ProjectDocumentNameBox" HorizontalAlignment="Left" Margin="194,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186"/>
+                        <Button Content="Save Name" HorizontalAlignment="Left" Margin="390,9,0,0" VerticalAlignment="Top" Width="98" Click="SaveProjectDocumentName"/>
+                        <Button Content="Delete" HorizontalAlignment="Left" Margin="493,10,0,0" VerticalAlignment="Top" Width="68" Click="DeleteProjectDocument"/>
+
+
+                    </Grid>
+                </TabItem>
+
+                <TabItem x:Name="Lists" Header="Lists" Margin="0,0,1,0">
+                    <Grid>
+                        <Rectangle HorizontalAlignment="Center" Height="2" Margin="0,28,0,0" Stroke="Gray" VerticalAlignment="Top" Width="600"/>
+                        <Button x:Name="ButtonListEditSave" Content="Edit" HorizontalAlignment="Left" Margin="0,3,0,0" VerticalAlignment="Top" Height="25" Width="76" Click="ButtonListEditSave_Click"/>
+
+                        <ScrollViewer x:Name="ListPanel" Margin="0,35,0,0" >
+
+                            <Grid>
+                                <ListBox x:Name="EntryListBox" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="5,0,0,0" BorderThickness="0" SelectionChanged="EntryListBox_SelectionChanged" Background="#FF242527" Foreground="#FFE6E3E3">
+
+                                </ListBox>
+                            </Grid>
+                        </ScrollViewer>
+                        <Label Content="Linked to: Nothing" HorizontalAlignment="Left" Margin="80,0,0,0" VerticalAlignment="Top"/>
+
+                    </Grid>
+                </TabItem>
+
+                <TabItem Header="Settings" Margin="0,0,1,0">
+                    <Grid>
+                        <Button Content="Patreon" HorizontalAlignment="Left" Margin="496,112,0,0" VerticalAlignment="Top" Style="{DynamicResource ButtonError}" Width="70" Height="28"/>
+                        <Button Content="Website" HorizontalAlignment="Left" Margin="496,160,0,0" VerticalAlignment="Top" Style="{DynamicResource ButtonError}" Width="74" Height="28"/>
+                        <ComboBox x:Name="ColorModeComboBox" HorizontalAlignment="Left" Margin="428,28,0,0" VerticalAlignment="Top" Width="120" DropDownClosed="ColorModeComboBox_DropDownClosed">
+                            <ComboBoxItem Content="Light Mode"/>
+                            <ComboBoxItem Content="Dark Mode"/>
+                            <ComboBoxItem Content="Thing"/>
+                        </ComboBox>
+                        <ComboBox x:Name="ComboBoxCollectionPrefix" HorizontalAlignment="Left" Margin="17,34,0,0" VerticalAlignment="Top" Width="176" DropDownClosed="ComboBoxCollectionPrefix_DropDownClosed">
+                            <ComboBoxItem Content="Show Collection Prefix"/>
+                            <ComboBoxItem Content="Hide Collection Prefix"/>
+                        </ComboBox>
+                        <TextBox x:Name="DebugBox" HorizontalAlignment="Left" Margin="10,64,0,0" TextWrapping="Wrap" Text="DebugBox1" VerticalAlignment="Top" Width="234" Height="248"/>
+                        <TextBox x:Name="DebugBox2" HorizontalAlignment="Left" Margin="254,126,0,0" TextWrapping="Wrap" Text="DebugBox2" VerticalAlignment="Top" Width="234" Height="186"/>
+                        <TextBox x:Name="DebugBox3" HorizontalAlignment="Left" Margin="10,317,0,0" TextWrapping="Wrap" Text="DebugBox3" VerticalAlignment="Top" Width="234" Height="252"/>
+                        <TextBox x:Name="DebugBox4" HorizontalAlignment="Left" Margin="254,317,0,0" TextWrapping="Wrap" Text="DebugBox4" VerticalAlignment="Top" Width="234" Height="252"/>
+                        <ComboBox x:Name="ComboBoxEntryPrefixes" HorizontalAlignment="Left" Margin="224,575,0,0" VerticalAlignment="Top" Width="219" DropDownClosed="ComboBoxEntryPrefixes_DropDownClosed">
+                            <ComboBoxItem Content="None"/>
+                            <ComboBoxItem Content="Row Offset - Decimal Starting at 0"/>
+                            <ComboBoxItem Content="Row Offset - Decimal Starting at 1"/>
+                            <ComboBoxItem Content="Row Offset - Hex Starting at 0x00"/>
+                            <ComboBoxItem Content="Row Offset - Hex Starting at 0x01"/>
+                            <ComboBoxItem Content="Byte Address - Decimal Starting at 0"/>
+                            <ComboBoxItem Content="Byte Address - Hex Starting at 0x00"/>
+                        </ComboBox>
+                        <Label Content="Entry Prefixes" HorizontalAlignment="Left" Margin="88,569,0,0" VerticalAlignment="Top"/>
+                        <Label Content="*Add option for Dec or Hex prefix" HorizontalAlignment="Left" Margin="29,8,0,0" VerticalAlignment="Top"/>
+                        <Label Content="This is mostly debugging stuff." HorizontalAlignment="Left" Margin="263,64,0,0" VerticalAlignment="Top"/>
+                    </Grid>
+                </TabItem>
+                <TabItem Header="Properties" Margin="0,0,1,0">
+                    <Grid>
+                        <Grid>
+                            <Grid x:Name="EditorProperties" >
+                                <Label Content="Editor Properties" HorizontalAlignment="Left" Margin="207,2,0,0" VerticalAlignment="Top"/>
+                                <Button x:Name="PropertiesEditorButtonDeleteEditor" Content="Delete Editor" HorizontalAlignment="Left" Margin="377,5,0,0" VerticalAlignment="Top" Height="26" Width="174" Click="PropertiesEditorButtonDeleteEditor_Click"/>
+                                <TextBox x:Name="PropertiesTextboxEditorName" HorizontalAlignment="Left" Margin="143,40,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="214"/>
+                                <Label Content="Editor Name" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top"/>
+                                <Button x:Name="PropertiesEditorButtonRenameEditor" Content="Rename Editor" HorizontalAlignment="Left" Margin="384,39,0,0" VerticalAlignment="Top" Width="162" Click="PropertiesEditorButtonRenameEditor_Click"/>
+                                <Button Content="Open Extra Table Screen" HorizontalAlignment="Center" Margin="0,454,0,0" VerticalAlignment="Top" Width="218" Click="ButtonAddExtraTable" Height="28"/>
+                                <Label Content="An Extra Table is for things like&#xA;text descriptions related to items.&#xD;&#xA;For example: Spell Descriptions, Text for attack ranges, etc." HorizontalAlignment="Left" Margin="60,486,0,0" VerticalAlignment="Top"/>
+                                <Grid Margin="22,152,0,0" Background="#FF363638" Height="94" VerticalAlignment="Top" HorizontalAlignment="Left" Width="545">
+                                    <Label Content="Data Table" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="205,0,0,0"/>
+                                    <Label Content="Main Table Start Byte" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="3,0,0,0"/>
+                                    <Label Content="Main Table Row Size" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="3,63,0,0"/>
+                                    <TextBox x:Name="PropertiesEditorTableStart" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Byte in Decimal" VerticalAlignment="Top" Width="122" Margin="186,39,0,0"/>
+                                    <TextBox x:Name="PropertiesEditorTableWidth" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="Width (Decimal)" VerticalAlignment="Top" Width="122" IsEnabled="False" Margin="186,67,0,0"/>
+                                    <Button x:Name="PropertiesEditorButtonChangeTableStart" Content="Change Start Byte" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="151" Click="PropertiesEditorButtonChangeTableStart_Click" Margin="316,37,0,0"/>
+                                    <Label Content="(No Button, Not yet supported)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="308,62,0,0"/>
+                                </Grid>
+                                <Grid Margin="16,251,4,0" Background="#FF3A3A3E" Height="198" VerticalAlignment="Top">
+                                    <Label Content="Name Table" HorizontalAlignment="Left" Margin="197,-3,0,0" VerticalAlignment="Top"/>
+                                    <Label  Content="Character Set" HorizontalAlignment="Left" Margin="10,24,0,0" VerticalAlignment="Top"/>
+                                    <Label Content="Start Byte" HorizontalAlignment="Left" Margin="10,55,0,0" VerticalAlignment="Top"/>
+                                    <TextBox x:Name="PropertiesEditorNameTableStartByte" HorizontalAlignment="Left" Margin="196,59,0,0" TextWrapping="Wrap" Text="Name Start Byte" VerticalAlignment="Top" Width="123"/>
+                                    <Button x:Name="PropertiesEditorButtonChangeNameSubTableStartByte"  Content="Change Start Byte" HorizontalAlignment="Left" Margin="348,59,0,0" VerticalAlignment="Top" Width="143" Click="PropertiesEditorButtonChangeNameSubTableStartByte_Click"/>
+                                    <Label Content="Row Size" HorizontalAlignment="Left" Margin="10,116,0,0" VerticalAlignment="Top"/>
+                                    <TextBox x:Name="PropertiesEditorNameTableRowSize" HorizontalAlignment="Left" Margin="198,115,0,0" TextWrapping="Wrap" Text="Row Size" VerticalAlignment="Top" Width="122"/>
+                                    <Button x:Name="ButtonChangeNameTableRowSize" Content="Change Row Size" HorizontalAlignment="Left" Margin="348,115,0,0" VerticalAlignment="Top"  Width="143"  Click="ChangeNameTableSize"/>
+                                    <Label Content="Text Size" HorizontalAlignment="Left" Margin="10,86,0,0" VerticalAlignment="Top"/>
+                                    <TextBox x:Name="PropertiesEditorNameTableTextSize" HorizontalAlignment="Left" Margin="198,86,0,0" TextWrapping="Wrap" Text="Text Size" VerticalAlignment="Top" Width="123"/>
+                                    <Label Content="Notify if attached to data table" HorizontalAlignment="Left" Margin="314,-3,0,0" VerticalAlignment="Top"/>
+                                    <Label Content="Name Count" HorizontalAlignment="Left" Margin="10,144,0,0" VerticalAlignment="Top"/>
+                                    <TextBox x:Name="PropertiesEditorNameCount" HorizontalAlignment="Left" Margin="198,144,0,0" TextWrapping="Wrap" Text="Item Count" VerticalAlignment="Top" Width="120"/>
+                                    <Button x:Name="PropertiesEditorButtonChangeNameCount" Content="Change Item Count*" HorizontalAlignment="Left" Margin="348,142,0,0" VerticalAlignment="Top" Width="167"  Click="PropertiesEditorButtonChangeNameCount_Click"/>
+                                    <Label Content="*Change item count will crash if you increase it beyond the end of the file." HorizontalAlignment="Center" Margin="0,167,0,0" VerticalAlignment="Top"/>
+                                    <ComboBox x:Name="PropertiesEditorNameTableCharacterSetDropdown" HorizontalAlignment="Left" Margin="188,28,0,0" VerticalAlignment="Top" Width="142" DropDownClosed="EditorCharacterSetDropdownClose">
+                                        <ComboBoxItem Content="ASCII+ANSI"/>
+                                        <ComboBoxItem Content="Shift-JIS"/>
+                                    </ComboBox>
+                                    <Button Content="Change Text Size" HorizontalAlignment="Left" Margin="348,89,0,0" VerticalAlignment="Top" Width="143" Click="ChangeNameTableTextSize"/>
+
+                                </Grid>
+                                <Button Content="Change Editor Graphic" HorizontalAlignment="Left" Margin="159,565,0,0" VerticalAlignment="Top" Width="176" Click="ShowEditorGraphicScreen" Background="#FF5B0808"/>
+
+
+
+                            </Grid>
+                            <Grid x:Name="PageProperties" Visibility="Collapsed" >
+                                <Button x:Name="PagePropertiesButtonNewRow" Content="Create New Row" HorizontalAlignment="Left" Margin="164,28,0,0" VerticalAlignment="Top" Width="196" Click="PagePropertiesButtonNewRow_Click"/>
+                                <Label Content="New row appears at bottom of the page" HorizontalAlignment="Left" Margin="115,58,0,0" VerticalAlignment="Top"/>
+
+                            </Grid>
+                            <Grid x:Name="RowProperties"  Visibility="Collapsed">
+                                <TextBox x:Name="PropertiesRowNameBox" HorizontalAlignment="Center" Margin="0,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="370"/>
+                                <Label Content="Row Name" HorizontalAlignment="Left" Margin="10,108,0,0" VerticalAlignment="Top"/>
+                                <Button x:Name="SaveRow" Content="Save" HorizontalAlignment="Left" Margin="286,24,0,0" VerticalAlignment="Top" Width="58" Click="SaveRow_Click"/>
+                                <Label Content="Row Properties" HorizontalAlignment="Left" Margin="157,18,0,0" VerticalAlignment="Top"/>
+                                <Button x:Name="RowMoveUp" Content="Move Up" HorizontalAlignment="Left" Margin="220,155,0,0" VerticalAlignment="Top" Width="90"  Click="RowMoveUp_Click"/>
+                                <Button x:Name="RowMoveDown" Content="Move Down" HorizontalAlignment="Left" Margin="220,192,0,0" VerticalAlignment="Top" Width="91"  Click="RowMoveDown_Click"/>
+                                <Button x:Name="RowNewColumn" Content="Create New Column" HorizontalAlignment="Left" Margin="335,173,0,0" VerticalAlignment="Top"  Width="154" Click="RowNewColumn_Click" Background="#FF4E2E06"/>
+                                <Button x:Name="PropertiesDeleteRow" Content="Delete Row" HorizontalAlignment="Left" Margin="53,326,0,0" VerticalAlignment="Top"  Width="102" Click="PropertiesDeleteRow_Click"/>
+                            </Grid>
+                            <Grid x:Name="ColumnProperties" Visibility="Collapsed">
+                                <TextBox x:Name="PropertiesColumnNameBox" HorizontalAlignment="Left" Margin="133,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175"/>
+                                <Label Content="Column Name" HorizontalAlignment="Left" Margin="10,108,0,0" VerticalAlignment="Top"/>
+                                <Button x:Name="SaveColumn" Content="Save" HorizontalAlignment="Left" Margin="297,24,0,0" VerticalAlignment="Top" Width="59" Click="SaveColumn_Click"/>
+                                <Label Content="Column Properties" HorizontalAlignment="Left" Margin="157,18,0,0" VerticalAlignment="Top"/>
+                                <Button x:Name="PropertiesColumnDelete" Content="Delete Column" HorizontalAlignment="Left" Margin="356,176,0,0" VerticalAlignment="Top" Height="27" Width="126" Click="PropertiesColumnDelete_Click" Background="#FF483201"/>
+
+                            </Grid>
+                            <Grid x:Name="EntryProperties"  >
+
+                                <TextBox x:Name="PropertiesNameBox" HorizontalAlignment="Left" Margin="100,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="209"/>
+                                <Label Content="Entry Name" HorizontalAlignment="Left" Margin="1,14,0,0" VerticalAlignment="Top"/>
+                                <Label Content="Entry Properties" HorizontalAlignment="Left" Margin="439,12,0,0" VerticalAlignment="Top"/>
+                                <Button x:Name="SaveEntry" Content="Save" HorizontalAlignment="Left" Margin="489,42,0,0" VerticalAlignment="Top" Width="72" Click="SaveEntry_Click"/>
+                                <ComboBox x:Name="PropertiesEntryType" HorizontalAlignment="Left" Margin="100,48,0,0" VerticalAlignment="Top" Width="130" DropDownClosed="PropertiesEntryType_DropDownClosed">
+                                    <ComboBoxItem Content="NumberBox"/>
+                                    <ComboBoxItem Content="CheckBox"/>
+                                    <ComboBoxItem Content="BitFlag"/>
+                                    <ComboBoxItem Content="DropDown"/>
+                                    <ComboBoxItem Content="List"/>
+                                </ComboBox>
+                                <Label Content="Entry Type" HorizontalAlignment="Left" Margin="0,46,0,0" VerticalAlignment="Top"/>
+                                <ComboBox x:Name="PropertiesEntryLabelShow" HorizontalAlignment="Left" Margin="314,16,0,0" VerticalAlignment="Top" Width="120" DropDownClosed="PropertiesEntryLabelShow_DropDownClosed">
+                                    <ComboBoxItem Content="Show Name"/>
+                                    <ComboBoxItem Content="Hide Name"/>
+                                </ComboBox>
+                                <Label Content="Little Endian (00 on right) &#xA;Examples: 1400    2B00&#xA;&#xA;Big Endian (00 of left)&#xA;Examples: 0014    002B&#xA;&#xA;Note: Say what consoles&#xA;frequently uses what endian&#xD;&#xA;(Most are big?)" HorizontalAlignment="Left" Margin="362,104,0,0" VerticalAlignment="Top"/>
+                                <ComboBox x:Name="PropertiesEntryByteSizeComboBox" HorizontalAlignment="Left" Margin="100,77,0,0" VerticalAlignment="Top" Width="130" DropDownClosed="PropertiesEntryByteSizeComboBox_DropDownClosed">
+                                    <ComboBoxItem Content="1 Byte"/>
+                                    <ComboBoxItem Content="2 Bytes Little Endian"/>
+                                    <ComboBoxItem Content="4 Bytes Little Endian"/>
+                                    <ComboBoxItem Content="2 Bytes Big Endian"/>
+                                    <ComboBoxItem Content="4 Bytes Big Endian"/>
+                                </ComboBox>
+                                <Label Content="Byte Size" HorizontalAlignment="Left" Margin="1,73,0,0" VerticalAlignment="Top"/>
+
+
+                                <TabControl Margin="1,300,-1,0" Height="322" VerticalAlignment="Top">
+                                    <TabItem Header="NumberBox">
+                                        <Grid>
+                                            <Label Content="Numberbox Sign" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" Foreground="Red"/>
+                                            <ComboBox x:Name="PropertiesEntryNumberBoxSign" HorizontalAlignment="Left" VerticalAlignment="Top" Width="193" DropDownClosed="PropertiesEntryNumberBoxSign_DropDownClosed" Margin="144,16,0,0" BorderBrush="Black">
+                                                <ComboBoxItem Content="Positive Only"/>
+                                                <ComboBoxItem Content="Positive and Negative"/>
+                                            </ComboBox>
+                                            <Label Content="You can apply a math formula, to mod the selected value of EVERY item.&#xD;&#xA;This feature makes it easy to quickly make simple mods for games :)&#xA;Examples: 50% MP Costs, 200% enemy HP, 0% Buy Prices, etc." HorizontalAlignment="Left" Margin="0,44,0,0" VerticalAlignment="Top"/>
+                                            <TextBox x:Name="FormulaTextBox" HorizontalAlignment="Left" Margin="144,144,0,0" TextWrapping="Wrap" Text="100%" VerticalAlignment="Top" Width="106"/>
+                                            <Button Content="Apply mod to all items" HorizontalAlignment="Left" Margin="389,171,0,0" VerticalAlignment="Top" Width="175" Click="ApplyFormulaToEntryAcrossAllItems"/>
+                                            <Label Content="`Multiply` Must always end in %. Examples: 50%  120%  300%  70%" HorizontalAlignment="Left" Margin="10,200,0,0" VerticalAlignment="Top"/>
+                                            <ComboBox x:Name="FormulaComboBox" HorizontalAlignment="Left" Margin="10,144,0,0" VerticalAlignment="Top" Width="120">
+                                                <ComboBoxItem Content="Multiply" IsSelected="True"/>
+                                                <ComboBoxItem Content="Add" Foreground="#FF440F0F"/>
+                                                <ComboBoxItem Content="Subtract" Foreground="#FF2B0909"/>
+                                            </ComboBox>
+                                            <TextBox x:Name="FormulaMinTextBox" HorizontalAlignment="Left" Margin="256,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="71" />
+                                            <TextBox x:Name="FormulaMaxTextBox" HorizontalAlignment="Left" Margin="334,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="82" />
+                                            <TextBox x:Name="FormulaDoNotModTextBox" HorizontalAlignment="Left" Margin="157,176,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="93"/>
+                                            <Label Content="MIN" HorizontalAlignment="Left" Margin="267,108,0,0" VerticalAlignment="Top"/>
+                                            <Label Content="MAX" HorizontalAlignment="Left" Margin="349,108,0,0" VerticalAlignment="Top"/>
+                                            <Label Content="Cannot be Undone!" HorizontalAlignment="Left" Margin="418,139,0,0" VerticalAlignment="Top" Foreground="#FFFDA200"/>
+                                            <Label Content="(Disabled for now)" HorizontalAlignment="Left" Margin="349,10,0,0" VerticalAlignment="Top"/>
+                                            <Label Content="True MIN is always 0&#xA;True MAX Is based on the Byte Size&#xD;&#xA;Result rounds to nearest number." HorizontalAlignment="Left" Margin="10,222,0,0" VerticalAlignment="Top"/>
+                                            <Label Content="No support for negative numbers yet.&#xD;&#xA;Do not try, bad shit will probably happen." HorizontalAlignment="Left" Margin="267,243,0,0" VerticalAlignment="Top"/>
+                                            <Label Content="Don't mod the last" HorizontalAlignment="Left" Margin="10,172,0,0" VerticalAlignment="Top"/>
+                                            <Label Content=" items in the list." HorizontalAlignment="Left" Margin="259,169,0,0" VerticalAlignment="Top"/>
+
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="CheckBox">
+                                        <Grid>
+                                            <Label Content="Checkbox" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="27,49,0,0"/>
+                                            <TextBox x:Name="PropertiesEntryCheckText" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="100" Margin="132,57,0,0"/>
+                                            <TextBox x:Name="PropertiesEntryUncheckText" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="100" Margin="237,57,0,0"/>
+                                            <Label Content="Check Text" HorizontalAlignment="Left" Margin="139,26,0,0" VerticalAlignment="Top"/>
+                                            <Label Content="Uncheck Text" HorizontalAlignment="Left" Margin="237,27,0,0" VerticalAlignment="Top"/>
+                                            <Label Content="Later support for change the &#xD;&#xA;Check/Uncheck value will be added" HorizontalAlignment="Left" Margin="132,106,0,0" VerticalAlignment="Top"/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Bitflag">
+                                        <Grid>
+                                            <Label Content="Checked Text" HorizontalAlignment="Left" Margin="150,4,0,0" VerticalAlignment="Top"/>
+                                            <Label Content="Unchecked Text" HorizontalAlignment="Left" Margin="253,7,0,0" VerticalAlignment="Top"/>
+
+                                            <TextBox x:Name="PropertiesEntryBitFlag1Name" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Margin="10,40,0,0"/>
+                                            <TextBox x:Name="PropertiesEntryBitFlag1CheckText" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="100" Margin="152,40,0,0"/>
+                                            <TextBox x:Name="PropertiesEntryBitFlag1UncheckText" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="100" Margin="262,40,0,0"/>
+                                            <TextBox x:Name="PropertiesEntryBitFlag2Name" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Margin="10,68,0,0"/>
+                                            <TextBox x:Name="PropertiesEntryBitFlag2CheckText" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="100" Margin="152,68,0,0"/>
+                                            <TextBox x:Name="PropertiesEntryBitFlag2UncheckText" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="100" Margin="262,68,0,0"/>
+                                            <TextBox x:Name="PropertiesEntryBitFlag3Name" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Margin="10,97,0,0"/>
+                                            <TextBox x:Name="PropertiesEntryBitFlag3CheckText" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="100" Margin="153,97,0,0"/>
+                                            <TextBox x:Name="PropertiesEntryBitFlag3UncheckText" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="100" Margin="262,97,0,0"/>
+                                            <TextBox x:Name="PropertiesEntryBitFlag4Name" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Margin="10,125,0,0"/>
+                                            <TextBox x:Name="PropertiesEntryBitFlag4CheckText" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="100" Margin="153,125,0,0"/>
+                                            <TextBox x:Name="PropertiesEntryBitFlag4UncheckText" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="100" Margin="262,125,0,0"/>
+                                            <TextBox x:Name="PropertiesEntryBitFlag5Name" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Margin="10,152,0,0"/>
+                                            <TextBox x:Name="PropertiesEntryBitFlag5CheckText" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="100" Margin="153,152,0,0"/>
+                                            <TextBox x:Name="PropertiesEntryBitFlag5UncheckText" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="100" Margin="262,152,0,0"/>
+                                            <TextBox x:Name="PropertiesEntryBitFlag6Name" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Margin="10,180,0,0"/>
+                                            <TextBox x:Name="PropertiesEntryBitFlag6CheckText" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="100" Margin="152,180,0,0"/>
+                                            <TextBox x:Name="PropertiesEntryBitFlag6UncheckText" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="100" Margin="262,180,0,0"/>
+                                            <TextBox x:Name="PropertiesEntryBitFlag7Name" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Margin="10,209,0,0"/>
+                                            <TextBox x:Name="PropertiesEntryBitFlag7CheckText" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="100" Margin="153,209,0,0"/>
+                                            <TextBox x:Name="PropertiesEntryBitFlag7UncheckText" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="100" Margin="262,209,0,0"/>
+                                            <TextBox x:Name="PropertiesEntryBitFlag8Name" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Margin="10,237,0,0"/>
+                                            <TextBox x:Name="PropertiesEntryBitFlag8CheckText" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="100" Margin="153,237,0,0"/>
+                                            <TextBox x:Name="PropertiesEntryBitFlag8UncheckText" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="100" Margin="262,237,0,0"/>
+                                            <Label Content="This dropdown menu&#xD;&#xA;Does nothing for now" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="385,160,0,0"/>
+                                            <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="164" Margin="376,218,0,0">
+                                                <ComboBoxItem Content="✔ / ☐"/>
+                                                <ComboBoxItem Content="Yes / No"/>
+                                                <ComboBoxItem Content="On / Off"/>
+                                                <ComboBoxItem Content="Enabled / Disabled"/>
+                                                <ComboBoxItem Content="Custom"/>
+                                            </ComboBox>
+                                            <Label Content="Later support for &#xD;&#xA;changing the &#xA;Check/Uncheck &#xD;&#xA;value will be added" HorizontalAlignment="Left" Margin="394,34,0,0" VerticalAlignment="Top"/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Dropdown">
+                                        <Grid >
+                                            <Label Content="Dropdowns are not yet supported, however&#xD;&#xA;you can use lists for the exact same result.&#xD;&#xA;They just take a bit more user effort.&#xD;&#xA;&#xD;&#xA;Later, i may make the method to edit&#xD;&#xA;dropdown options be the exact same&#xD;&#xA;function as they are to edit lists.&#xD;&#xA;&#xD;&#xA;My current thoughts are to actually&#xD;&#xA;merge them into one type, that decides&#xD;&#xA;if it's a dropdown or open a list menu&#xD;&#xA;depending on if more then 40 options&#xD;&#xA;exist or not." HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top"/>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="List">
+                                        <Grid >
+                                            <Label Content="Currently, lists do not support importing names from &#xD;&#xA;a file, but in the future i may add support for this.&#xD;&#xA;I consider it lower priority over other features on the&#xD;&#xA;to do list. &#xD;&#xA;&#xD;&#xA;I probably should add support for this, as&#xD;&#xA;you can change a items name in a item editor&#xD;&#xA;already, but it won't reflect back here. In the&#xD;&#xA;future, i will give an option for names to just&#xD;&#xA;directly hook to the names from other editors. &#xD;&#xA;Nifty! :D" HorizontalAlignment="Left" Margin="104,10,0,0" VerticalAlignment="Top"/>
+                                        </Grid>
+                                    </TabItem>
+
+                                </TabControl>
+
+
+
+
+
+                                <ComboBox x:Name="PropertiesEntrySaveState" HorizontalAlignment="Left" Margin="403,74,0,0" VerticalAlignment="Top" Width="158" DropDownClosed="PropertiesEntrySaveState_DropDownClosed">
+                                    <ComboBoxItem Content="Saving Enabled"/>
+                                    <ComboBoxItem Content="Saving Disabled"/>
+                                </ComboBox>
+                                <Label Content="Can the entry save?" HorizontalAlignment="Left" Margin="251,67,0,0" VerticalAlignment="Top"/>
+
+
+                                <Grid Margin="9,109,0,0" Height="186" VerticalAlignment="Top" HorizontalAlignment="Left" Width="353">
+                                    <Label Content="1 Byte" HorizontalAlignment="Left" Margin="4,43,0,0" VerticalAlignment="Top"/>
+                                    <Label Content="2 Byte Big" HorizontalAlignment="Left" Margin="4,123,0,0" VerticalAlignment="Top"/>
+                                    <Label Content="2 Byte Little" HorizontalAlignment="Left" Margin="4,67,0,0" VerticalAlignment="Top"/>
+                                    <Label Content="4 Byte Big" HorizontalAlignment="Left" Margin="4,151,0,0" VerticalAlignment="Top"/>
+                                    <Label Content="4 Byte Little" HorizontalAlignment="Left" Margin="4,96,0,0" VerticalAlignment="Top"/>
+                                    <TextBox x:Name="PropertiesEntry1Byte" HorizontalAlignment="Left" Margin="94,43,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                                    <TextBox x:Name="PropertiesEntry2ByteB" HorizontalAlignment="Left" Margin="94,127,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                                    <TextBox x:Name="PropertiesEntry2ByteL" HorizontalAlignment="Left" Margin="94,71,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                                    <TextBox x:Name="PropertiesEntry4ByteB" HorizontalAlignment="Left" Margin="94,155,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                                    <TextBox x:Name="PropertiesEntry4ByteL" HorizontalAlignment="Left" Margin="94,100,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                                    <TextBox x:Name="PropertiesEntryHex1Byte" HorizontalAlignment="Left" Margin="224,43,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                                    <TextBox x:Name="PropertiesEntryHex2ByteB" HorizontalAlignment="Left" Margin="224,127,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                                    <TextBox x:Name="PropertiesEntryHex2ByteL" HorizontalAlignment="Left" Margin="224,71,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                                    <TextBox x:Name="PropertiesEntryHex4ByteB" HorizontalAlignment="Left" Margin="224,155,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                                    <TextBox x:Name="PropertiesEntryHex4ByteL" HorizontalAlignment="Left" Margin="224,100,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                                    <Label Content="Decimal" HorizontalAlignment="Left" Margin="122,9,0,0" VerticalAlignment="Top"/>
+                                    <Label Content="Hex" HorizontalAlignment="Left" Margin="256,12,0,0" VerticalAlignment="Top"/>
+                                </Grid>
+
+                            </Grid>
+
+                        </Grid>
+                    </Grid>
+
+                </TabItem>
+                <TabItem Header="Home"/>
+                <TabItem Header="Cross Reference">
+                    <Grid >
+                        <DataGrid x:Name="EntryValueInsightDataGrid" Margin="10,32,10,21" AutoGenerateColumns="False"  HorizontalContentAlignment="Left">>
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header=" Entry Value " Binding="{Binding Number}" Width="Auto" IsReadOnly="True" />
+                                <DataGridTextColumn Header="Appears X Times" Binding="{Binding Count}" Width="Auto" IsReadOnly="True" />
+                                <DataGridTextColumn Header="Item ID's with this value" Binding="{Binding RowIndicesAsString}" Width="Auto" IsReadOnly="True"  />
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <Label Content="For now this only works if the editor's item names are directly from a file." HorizontalAlignment="Left" Margin="10,1,0,0" VerticalAlignment="Top"/>
+                    </Grid>
+                </TabItem>
+            </TabControl>
+        </Grid>
+        <Grid x:Name="MidGrid"  Grid.Column="1" Grid.Row="2" Background="#FF150303" >
+            <DockPanel x:Name="DockPanelHome">
+                <Grid x:Name="GridHome"  >
+                    <TreeView x:Name="TreeViewWorkshopFiles" SelectedItemChanged="FileTreeItemChanged" Margin="10,115,0,231" HorizontalAlignment="Left" Width="257"/>
+                    <Label Content="Workshop Files" HorizontalAlignment="Left" Margin="78,84,0,0" VerticalAlignment="Top"/>
+                    <Rectangle Margin="272,199,0,0" Stroke="Black" HorizontalAlignment="Left" Width="800" Height="433" VerticalAlignment="Top"/>
+                    <Label Content="Links for Noteworthy Patches and Mods, Modding Resources, and Useful Forum Links" HorizontalAlignment="Left" Margin="268,163,0,0" VerticalAlignment="Top"/>
+                    <Button Content="Links" Style="{DynamicResource ButtonError}" HorizontalAlignment="Left" Margin="290,128,0,0" VerticalAlignment="Top" Height="28" Width="108"/>
+                    <Button Content="Patch Notes" Style="{DynamicResource ButtonError}" HorizontalAlignment="Left" Margin="691,135,0,0" VerticalAlignment="Top" Height="28" Width="144"/>
+                    <Image x:Name="ImageLibraryBanner"  HorizontalAlignment="Left" Height="94" VerticalAlignment="Top" Width="445"/>
+                    <TextBox x:Name="FileNicknameBox" HorizontalAlignment="Left" Margin="10,591,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="262"/>
+                    <Button x:Name="Part2ButtonChangeFileNickName" Content="Change Nickname" HorizontalAlignment="Left" Margin="10,619,0,0" VerticalAlignment="Top" Width="262" Click="Part2ButtonChangeFileNickName_Click"/>
+                </Grid>
+            </DockPanel>
+            <Grid x:Name="CreateEditorPartDataTable" Grid.Column="1" Grid.Row="1"  >
+                <TextBox x:Name="NewEditorNamebox" HorizontalAlignment="Left" Margin="505,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="121" Text="Arcana"/>
+                <Label Content="Editor Name" HorizontalAlignment="Left" Margin="399,6,0,0" VerticalAlignment="Top"/>
+                <Label Content="Step 2: Name this editor. &#xD;&#xA;(Try not to use the word &quot;editor&quot;)" HorizontalAlignment="Left" Margin="642,10,0,0" VerticalAlignment="Top"/>
+                <Label Content="Base Address" HorizontalAlignment="Left" Margin="397,43,0,0" VerticalAlignment="Top"/>
+                <Label Content="Table Size" HorizontalAlignment="Left" Margin="400,70,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="TextBoxBaseAddress" HorizontalAlignment="Left" Margin="506,44,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120"/>
+                <TextBox x:Name="TextBoxRowSize" HorizontalAlignment="Left" Margin="506,72,0,0" TextWrapping="Wrap" Text="5" VerticalAlignment="Top" Width="120"/>
+                <TreeView x:Name="FileTreeDataTable" Margin="10,101,0,12" SelectedItemChanged="FileTreeItemChanged" HorizontalAlignment="Left" Width="338"/>
+                <Label Content="Step 1: Select the file to make an editor with.&#xD;&#xA;Tip: Before files can be selected, they must be &#xD;&#xA;part of the workshop. From the top left menu &#xD;&#xA;Workshop -&gt; Add a new file to this workshop" HorizontalAlignment="Left" Margin="10,1,0,0" VerticalAlignment="Top"/>
+                <Button x:Name="CreateEditorPart2ButtonNext" Content="When ready, Click here!" HorizontalAlignment="Left" Margin="372,566,0,0" VerticalAlignment="Top" Height="52" Width="254" Click="CreateEditorPart2ButtonNext_Click" FontSize="22"/>
+                <Label Content="If you get confused, &#xA;reference the Wiki!" HorizontalAlignment="Left" Margin="908,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Foreground="#FFEA5D5D"/>
+
+                <Label Content="In the future, i will add a hex viewer so users can get this info&#xD;&#xA;without needing an outside hex editor. " HorizontalAlignment="Left" Margin="658,602,0,0" VerticalAlignment="Top" Foreground="#FFFFF0AA"/>
+                <Label Content="Step 3: Fill in the Base Address.  (The first byte of the table)&#xD;&#xA;To find the base address in 010 editor,  (1) highlight the &#xD;&#xA;start byte of the table, then (2) you can see it at the bottom &#xD;&#xA;right.   Note: all numbers in this program are DECIMAL &#xD;&#xA;NUMBERS ONLY, NOT hex numbers. So the correct Base Address in this example is 128, not 80h.&#xD;&#xA;&#xD;&#xA;PS: If you make a mistake,  &#xD;&#xA;you can change the &#xD;&#xA;base address later &#xD;&#xA;WITHOUT any problems!" HorizontalAlignment="Left" Margin="353,108,0,0" VerticalAlignment="Top"/>
+                <Image HorizontalAlignment="Left" Height="140" Margin="782,60,0,0" VerticalAlignment="Top" Width="304" Source="/Workshop/Tutorial New Workshop Get Base Address.png"/>
+                <Image HorizontalAlignment="Left" Height="127" Margin="547,222,0,0" VerticalAlignment="Top" Width="549" Source="/Workshop/Tutorial New Workshop Get Base Address Part 2.png"/>
+                <Label Content="Step 4: Finally, you need the table size. &#xD;&#xA;This is how wide 1 row of the table is.&#xD;&#xA;You can highlight 1 full row of the table like&#xD;&#xA;in this example, and the row size will be&#xD;&#xA;shown at the bottom left.&#xD;&#xA;Again, Decimals only, so in this example&#xD;&#xA;the correct number is 120, not 78h" HorizontalAlignment="Left" Margin="353,370,0,0" VerticalAlignment="Top"/>
+                <Image HorizontalAlignment="Left" Height="256" Margin="672,345,0,0" VerticalAlignment="Top" Width="412" Source="/Workshop/Tutorial New Workshop Get Base Address Part 3.png"/>
+            </Grid>
+
+
+            <Grid x:Name="CreateEditorPartNameTable" Grid.Column="1" Grid.Row="1" Visibility="Collapsed">
+                <Label Content="Next up, the data your editing needs a list of names.&#xD;&#xA;Don't worry, it's not complicated. &#xA;For example, a weapon editor needs the weapon names,&#xA;an enemy editor needs enemy names, &#xA;a spell editor needs the names of the spells in the game, etc.&#xD;&#xA;They are used to tell people what each this is, like &#xD;&#xA;&quot;This is the flamberge&quot; or &quot;This is the enemy named Goomba&quot;&#xA;&#xD;&#xA;You can either get your names directly from the game files,&#xD;&#xA;or you can use your own name list.&#xD;&#xA;&#xA;If you get your names from the actual game file, any changes a user&#xA;makes to them will be saved back to the file.&#xA;&#xA;Alternatively, you can input / paste your own list of names not&#xA;from a file. This is good if the origonal names are in a &#xA;variable width table, as this program doesn't yet support that.&#xA;&#xA;If you choose to get them from files directly, tutorials &#xA;exist to help you understand what information you need &#xA;and both how and where to get it. Don't worry!&#xD;&#xA;&#xD;&#xA;When possible, editors want to always get names directly from game files.&#xD;&#xA;&#xD;&#xA;When your ready, pick an option from the top of this screen." HorizontalAlignment="Left" Margin="306,56,0,0" VerticalAlignment="Top"/>
+                <ComboBox x:Name="CreateEditorPartNameTableComboBoxNamesFrom" HorizontalAlignment="Left" Margin="344,13,0,0" VerticalAlignment="Top" Width="416" Height="27" DropDownClosed="CreateEditorPartNameTableComboBoxNamesFrom_DropDownClosed">
+                    <ComboBoxItem Content="Pick One" IsSelected="True"></ComboBoxItem>
+                    <ComboBoxItem Content="Get name list directly from a game file"></ComboBoxItem>
+                    <ComboBoxItem Content="Input my own name list"></ComboBoxItem>
+                </ComboBox>
+                <Button x:Name="CreateEditorPart3ButtonPrevious" Content="Previous" HorizontalAlignment="Left" Margin="765,7,0,0" VerticalAlignment="Top" Height="33" Width="148" Click="CreateEditorPart3ButtonPrevious_Click"/>
+                <Button x:Name="CreateEditorPart3ButtonNext" Content="Next" HorizontalAlignment="Left" Margin="918,7,0,0" VerticalAlignment="Top" Height="33" Width="158" Click="CreateEditorPart3ButtonNext_Click"/>
+
+
+                <Grid x:Name="GridNamesFromUser" Margin="0,60,0,0" Background="#FF42362A" Height="588" VerticalAlignment="Top" HorizontalAlignment="Left" Width="1088" Visibility="Collapsed" >
+                    <TextBox x:Name="NameList2" HorizontalAlignment="Left" Margin="10,0,0,0" Width="434" AcceptsReturn="True" Text="Iron Sword&#xD;&#xA;Iron Axe&#xD;&#xA;Iron Lance&#xD;&#xA;Steel Bow&#xD;&#xA;ElFire Tome" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Height="564" VerticalAlignment="Center"/>
+                    <Label Content="Wherever you get your names from, copy and paste them here." HorizontalAlignment="Left" Margin="564,31,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Note to self, offer tips and advice on N++ macros to get name lists" HorizontalAlignment="Left" Margin="523,452,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Talk about variable width name tables" HorizontalAlignment="Left" Margin="688,169,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Note: an empty text line still creates an item.&#xD;&#xA;The created items name is just blank." HorizontalAlignment="Left" Margin="602,319,0,0" VerticalAlignment="Top"/>
+
+                </Grid>
+
+
+                <Grid x:Name="GridNamesFromFile" Margin="0,55,0,0" Background="#FF111137" Height="599" VerticalAlignment="Top" HorizontalAlignment="Left" Width="1104" >
+                    <Label Content="Select a file to get names from" HorizontalAlignment="Left" Margin="28,10,0,0" VerticalAlignment="Top"/>
+                    <TreeView x:Name="PartNameTableTreeviewFiles" Margin="19,41,0,0" SelectedItemChanged="PartNameTableTreeviewFiles_SelectedItemChanged" Height="547" VerticalAlignment="Top" HorizontalAlignment="Left" Width="244"/>
+                    <Grid x:Name="PartNameTableSubTableGrid" Margin="283,10,0,0" Background="#FF404417" Height="52" VerticalAlignment="Top" HorizontalAlignment="Left" Width="811">
+                        <Label Content="Character (Text / Font) Encoding&#xA;            (AKA Character Set)" HorizontalAlignment="Left" Margin="0,-6,0,0" VerticalAlignment="Top"/>
+                        <ComboBox x:Name="NewEditorComboBoxCharacterEncoding" HorizontalAlignment="Left" Margin="264,0,0,0" VerticalAlignment="Center" Width="132" Height="28">
+                            <ComboBoxItem Content="ASCII+ANSI" IsSelected="True"/>
+                            <ComboBoxItem Content="Shift-JIS" />
+                        </ComboBox>
+                        <Label Content="Note: Ascii+Ansi is English, Shift-JIS is Japanese" HorizontalAlignment="Left" Margin="449,6,0,0" VerticalAlignment="Top"/>
+
+                    </Grid>
+                    <Grid x:Name="NameTableSetupGrid" Margin="283,252,0,0" Background="#FF22421D" Height="336" VerticalAlignment="Top" HorizontalAlignment="Left" Width="811" >
+                        <Label Content="Name Table Start Byte" HorizontalAlignment="Left" Margin="36,5,0,0" VerticalAlignment="Top"/>
+                        <TextBox x:Name="NameTextboxNameTableStart" HorizontalAlignment="Left" Margin="237,7,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="56" Text="0"/>
+                        <Label Content="Name Table Text Size" HorizontalAlignment="Left" Margin="36,96,0,0" VerticalAlignment="Top"/>
+                        <TextBox x:Name="NewNameTableTextSize" HorizontalAlignment="Left" Margin="237,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="56"/>
+                        <Label Content="The Main-Table start byte is where the table of information starts.&#xA;The Sub-Table Assumes the Main-Table start byte is the new 0th byte.&#xA;Knowing this, the Sub-Table start byte, is the first byte in a row that&#xA;contains a english letter. The Length is how many letter spaces &#xA;(aka bytes) are available as max name size." HorizontalAlignment="Left" Margin="10,189,0,0" VerticalAlignment="Top"/>
+                        <TextBox x:Name="NameTextboxSubTableItemCount" HorizontalAlignment="Left" Margin="237,128,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="56"/>
+                        <TextBox x:Name="NewNameTableRowSize" HorizontalAlignment="Left" Margin="237,35,0,0" TextWrapping="Wrap" Text="21" VerticalAlignment="Top" Width="56"/>
+                        <Label Content="Name Full Row Size" HorizontalAlignment="Left" Margin="36,31,0,0" VerticalAlignment="Top"/>
+                        <Label Content="Row Count / Name Count" HorizontalAlignment="Left" Margin="36,124,0,0" VerticalAlignment="Top"/>
+                        <Label Content="As in, how many bytes are in 1 row of this table?" HorizontalAlignment="Left" Margin="298,31,0,0" VerticalAlignment="Top"/>
+                        <Label Content="As in, what is the base address of this table? (In Decimal)" HorizontalAlignment="Left" Margin="298,3,0,0" VerticalAlignment="Top"/>
+                        <Label Content="Main table size currently cant be &#xA;changed later, so don't fuck it up!&#xA;Everything else can be changed later." HorizontalAlignment="Left" Margin="382,90,0,0" VerticalAlignment="Top"/>
+                        <Label Content="IF YOUR CONFUSED, CHECK THE WIKI" HorizontalAlignment="Left" Margin="375,295,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFDE8181"/>
+                    </Grid>
+                    <Grid x:Name="GridIsSameTable" Margin="283,67,0,0" Background="#FF164E40" Height="180" VerticalAlignment="Top" HorizontalAlignment="Left" Width="811">
+                        <ComboBox x:Name="PartNameTableComboBoxMainOrSub" HorizontalAlignment="Left" Margin="368,140,0,0" VerticalAlignment="Top" Width="253" DropDownClosed="PartNameTableComboBoxMainOrSub_DropDownClosed" Height="30">
+                            <ComboBoxItem Content="Yes, they are in the same table"/>
+                            <ComboBoxItem Content="No, they are in seperate tables"/>
+                        </ComboBox>
+                        <Label Content="You are currently selecting the same file the data table was in.&#xA;Other then both the data table and the name table being in the&#xA;same file, Is the Name Table your after, INSIDE that SAME &#xA;data table you set in the previous screen?&#xA;If it is, editor setup will do a few things automatically.&#xA;If your confused, reference the Wiki." HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                    </Grid>
+
+
+
+                </Grid>
+
+            </Grid>
+            <Grid x:Name="CreateEditorPartReview" Grid.Column="1" Grid.Row="1" Visibility="Collapsed" >
+                <Button x:Name="CreateEditorPart5ButtonPrevious" Content="Previous" HorizontalAlignment="Left" Margin="319,471,0,0" VerticalAlignment="Top" Height="49" Width="133" Click="CreateEditorPart5ButtonPrevious_Click"/>
+                <Button x:Name="CreateNewEditor" Content="Create New Editor! :D&#xD;&#xA;(Disabled in this demo)" HorizontalAlignment="Left" Margin="597,471,0,0" VerticalAlignment="Top" Height="49" Width="275" Click="CreateNewEditor_Click"/>
+                <Label Content="In the future this part will let you review everything and make sure you didn't make any mistakes&#xA;It will be added later.&#xD;&#xA;&#xD;&#xA;If you have any ideas as to what else could go here, feel free to let me know on discord.&#xD;&#xA;&#xD;&#xA;Once you click create new editor, you won't be able to go back anymore,&#xD;&#xA;but you could always just delete the editor and remake it.&#xD;&#xA;&#xD;&#xA;Elements like what file the data table or name table is in, and the size of the main table&#xD;&#xA;cannot currently be changed later. However, other details like the main table start byte,&#xD;&#xA;sub table info, how many names / items there are, can all be changed later&#xD;&#xA;in the current version of the program.&#xD;&#xA;&#xD;&#xA;In future versions of the program, i hope to add support for changing from manual item list&#xD;&#xA;to an item list from file even after an editor is created, among other things." HorizontalAlignment="Left" Margin="297,34,0,0" VerticalAlignment="Top"/>
+                <Grid Margin="31,28,0,0" Background="#FF39393C" HorizontalAlignment="Left" Width="199" Height="342" VerticalAlignment="Top">
+                    <Label Content="Editor Type" HorizontalAlignment="Left" Margin="40,0,0,0" VerticalAlignment="Top"/>
+
+                    <DockPanel LastChildFill="False" Margin="10,31,0,0" HorizontalAlignment="Left" Width="179" Height="300" VerticalAlignment="Top">
+                        <RadioButton Content="Other,  Unknown, or Unique" HorizontalAlignment="Left" DockPanel.Dock="Top" VerticalAlignment="Top" GroupName="NewEditorType" Margin="0,0,0,15"/>
+
+                        <RadioButton Content="Characters" HorizontalAlignment="Left" DockPanel.Dock="Top" VerticalAlignment="Top" GroupName="NewEditorType" BorderBrush="{x:Null}" />
+                        <RadioButton Content="Enemys" HorizontalAlignment="Left"  DockPanel.Dock="Top" VerticalAlignment="Top" GroupName="NewEditorType"/>
+                        <RadioButton Content="Equipment" HorizontalAlignment="Left" DockPanel.Dock="Top" VerticalAlignment="Top" GroupName="NewEditorType"/>
+                        <RadioButton Content="Items" HorizontalAlignment="Left" DockPanel.Dock="Top" VerticalAlignment="Top" GroupName="NewEditorType"/>
+
+                    </DockPanel>
+                </Grid>
+
+            </Grid>
+
+            <Grid x:Name="GridNewExtraTable" Visibility="Collapsed"  >
+                <Label Content="This is where you can add additional tables of text to an editor.&#xA;Most Extra Tables are usually just descriptions for things, such as&#xA;Spells, Skills, Weapons, Classes, Enemys, Items, etc.&#xD;&#xA;If an item has text related to it, you probably want an extra table for it." HorizontalAlignment="Left" Margin="375,150,0,0" VerticalAlignment="Top"/>
+                <Grid Margin="375,276,0,0" Background="#FF1A1A37" HorizontalAlignment="Left" Width="416" Height="161" VerticalAlignment="Top">
+                    <Label Content="Extra Table Start Byte" HorizontalAlignment="Left" Margin="12,10,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Extra Table Text Size" HorizontalAlignment="Left" Margin="12,41,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Extra Full Row Size" HorizontalAlignment="Left" Margin="12,72,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="ExtraTableStartByteTextbox" HorizontalAlignment="Left" Margin="177,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="Extra Start"/>
+                    <TextBox x:Name="ExtraTableTextSizeTextbox" HorizontalAlignment="Left" Margin="177,45,0,0" TextWrapping="Wrap" Text="Extra Size" VerticalAlignment="Top" Width="120"/>
+                    <TextBox x:Name="ExtraTableFullRowTextbox" HorizontalAlignment="Left" Margin="177,76,0,0" TextWrapping="Wrap" Text="Full Row Size" VerticalAlignment="Top" Width="120"/>
+                    <ComboBox x:Name="ExtraTableCharacterSet" HorizontalAlignment="Left" Margin="234,114,0,0" VerticalAlignment="Top" Width="147">
+                        <ComboBoxItem Content="ASCII+ANSI" IsSelected="True"/>
+                        <ComboBoxItem Content="Shift-JIS"/>
+                    </ComboBox>
+                    <Label Content="Character Set / Text Encoding" HorizontalAlignment="Left" Margin="12,108,0,0" VerticalAlignment="Top"/>
+                </Grid>
+                <Button Content="Save Extra Table" HorizontalAlignment="Left" Margin="619,499,0,0" VerticalAlignment="Top" Height="37" Width="172" Click="CreateNewExtraTable"/>
+                <Button Content="Cancel" HorizontalAlignment="Left" Margin="375,500,0,0" VerticalAlignment="Top" Height="36" Width="153" Click="ExtraTableCancel"/>
+                <Label Content="If your confused,&#xD;&#xA;check the wiki!" HorizontalAlignment="Left" Margin="824,313,0,0" VerticalAlignment="Top" Foreground="#FFEA3434"/>
+                <Grid Margin="162,36,0,0" Background="#FF333114" HorizontalAlignment="Left" Width="171" Height="593" VerticalAlignment="Top">
+                    <TreeView x:Name="FileTreeExtraTable" Margin="6,0,10,0"/>
+                </Grid>
+                <Label Content="After saving all your extra tables,&#xD;&#xA;save everything and re-open the workshop.&#xD;&#xA;Not having to do this will be added later :(" HorizontalAlignment="Left" Margin="452,541,0,0" VerticalAlignment="Top"/>
+                <TreeView x:Name="TreeExtraTables" Margin="10,36,0,28" HorizontalAlignment="Left" Width="147" SelectedItemChanged="TreeExtraTables_SelectedItemChanged"/>
+                <Button Content="New Extra Table" HorizontalAlignment="Left" Margin="10,6,0,0" VerticalAlignment="Top" Width="147" Click="ButtonNewExtraTable"/>
+                <Grid Margin="375,60,115,538" Background="#FF2A1E38">
+                    <Label Content="Extra Table Name" HorizontalAlignment="Left" Margin="10,7,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="ExtraTableNameTextbox" HorizontalAlignment="Left" Margin="157,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="147"/>
+                    <Button Content="Delete This Extra Table" HorizontalAlignment="Left" Margin="360,7,0,0" VerticalAlignment="Top" Height="31" Width="204"/>
+                    <Label Content="Example: Descriptions" HorizontalAlignment="Left" Margin="147,30,0,0" VerticalAlignment="Top"/>
+                </Grid>
+                <Label Content="An Extra table is treated near-identical to the Name Table of a file." HorizontalAlignment="Left" Margin="373,10,0,0" VerticalAlignment="Top"/>
+
+            </Grid>
+
+
+            <Grid x:Name="EventScreen" Visibility="Collapsed">
+
+                <Grid Margin="10,40,0,0" Background="#FF3B3B40" HorizontalAlignment="Left" Width="205" Height="607" VerticalAlignment="Top">
+                    <TreeView x:Name="EventTree" SelectedItemChanged="EventTree_SelectedItemChanged" />
+                </Grid>
+                <Grid Margin="227,10,0,0" Background="#FF2C2C44" Height="54" VerticalAlignment="Top" HorizontalAlignment="Left" Width="861">
+                    <Button Content="Rename Event" HorizontalAlignment="Left" Margin="364,17,0,0" VerticalAlignment="Top" Width="160" Height="23" Click="ButtonRenameEvent" Background="#FF6B1313"/>
+                    <Label Content="Event Name" HorizontalAlignment="Left" Margin="10,13,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="TextboxEventName" HorizontalAlignment="Left" Margin="125,17,0,0" TextWrapping="Wrap" Text="Event Name" VerticalAlignment="Top" Width="219"/>
+                    <Button Content="Create New Step" HorizontalAlignment="Left" Margin="706,0,0,0" VerticalAlignment="Center" Height="34" Width="145" Click="ButtonNewStep"/>
+                </Grid>
+                <ScrollViewer Margin="227,118,0,0" Background="#FF1E3546" Height="529" VerticalAlignment="Top" HorizontalAlignment="Left" Width="861">
+                    <DockPanel x:Name="DockPanelEventSteps" Width="777" LastChildFill="False">
+
+                    </DockPanel>
+                </ScrollViewer>
+                <Button Content="New Event" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="100" Click="ButtonNewEvent" />
+                <Button Content="Delete Event" HorizontalAlignment="Left" Margin="115,10,0,0" VerticalAlignment="Top" Width="100" Click="ButtonDeleteEvent"/>
+                <ComboBox x:Name="ComboBoxCommonEventType" HorizontalAlignment="Left" Margin="772,24,0,0" VerticalAlignment="Top" Width="150" DropDownClosed="ComboBoxCommonEventType_DropDownClosed">
+                    <ComboBoxItem Content="Project Event" IsSelected="True"/>
+                    <ComboBoxItem Content="Workshop Event"/>
+                </ComboBox>
+
+            </Grid>
+
+
+            <Grid x:Name="EditorGraphicsWindow" Visibility="Collapsed">
+                <Label Content="Select a graphic for this editor." HorizontalAlignment="Left" Margin="339,10,0,0" VerticalAlignment="Top"/>
+                <ScrollViewer Margin="10,55,130,74">
+                    <Grid Background="#FF312617" />
+                </ScrollViewer>
+
+            </Grid>
+
+            <Grid x:Name="EditorListTableWindow" Visibility="Collapsed">
+                <Label Content="List Table Setup" HorizontalAlignment="Left" Margin="37,10,0,0" VerticalAlignment="Top"/>
+                <Grid x:Name="GridListFromTable" Background="#FF1C445A" Margin="10,55,439,130">
+                    <Label Content="Start" HorizontalAlignment="Left" Margin="51,57,0,0" VerticalAlignment="Top"/>
+                    <TextBox HorizontalAlignment="Left" Margin="114,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Label Content="Text Size" HorizontalAlignment="Left" Margin="51,93,0,0" VerticalAlignment="Top"/>
+                    <TextBox HorizontalAlignment="Left" Margin="137,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Label Content="Row Size" HorizontalAlignment="Left" Margin="51,129,0,0" VerticalAlignment="Top"/>
+                    <TextBox HorizontalAlignment="Left" Margin="139,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Label Content="First Name ID" HorizontalAlignment="Left" Margin="51,165,0,0" VerticalAlignment="Top"/>
+                    <TextBox HorizontalAlignment="Left" Margin="167,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Label Content="Name Count" HorizontalAlignment="Left" Margin="51,201,0,0" VerticalAlignment="Top"/>
+                    <TextBox HorizontalAlignment="Left" Margin="172,211,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Label Content="Character Set" HorizontalAlignment="Left" Margin="51,236,0,0" VerticalAlignment="Top"/>
+                    <ComboBox HorizontalAlignment="Left" Margin="174,239,0,0" VerticalAlignment="Top" Width="150">
+                        <ComboBoxItem Content="ASCII+ANSI" />
+                        <ComboBoxItem Content="Shift-JIS" IsSelected="True"/>
+                    </ComboBox>
+
+                </Grid>
+
+                <ScrollViewer x:Name="ListPanelEdit" Margin="10,55,523,10" Visibility="Collapsed">
+                    <Grid>
+                        <TextBox x:Name="ItemsNumBox" HorizontalAlignment="Left" Margin="4,0,0,0" TextWrapping="Wrap" Text="0&#xD;&#xA;1&#xD;&#xA;2&#xD;&#xA;3&#xD;&#xA;4&#xD;&#xA;5&#xD;&#xA;6&#xD;&#xA;7" VerticalAlignment="Top" Width="50" IsEnabled="False" FontSize="15" />
+                        <TextBox x:Name="ItemsEditBox"  HorizontalAlignment="Left" Margin="55,0,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="491" FontSize="15"/>
+                    </Grid>
+                </ScrollViewer>
+                <ComboBox x:Name="ComboBoxListType" HorizontalAlignment="Left" Margin="199,13,0,0" VerticalAlignment="Top" Width="140" DropDownClosed="ComboBoxListTypeClosed">
+                    <ComboBoxItem Content="Link to Editor" Foreground="#FFCE0000"/>
+                    <ComboBoxItem Content="Link to File" Foreground="#FFC70000"/>
+                    <ComboBoxItem Content="Link to Nothing"/>
+                </ComboBox>
+                <Button Content="Save List" HorizontalAlignment="Left" Margin="475,8,0,0" VerticalAlignment="Top" Height="30" Width="100" Click="SaveList"/>
+                <Button Content="Cancel" HorizontalAlignment="Left" Margin="614,8,0,0" VerticalAlignment="Top" Height="28" Width="86" Click="CancelListEdit"/>
+
+            </Grid>
+
+
+            <Grid x:Name="GridWorkshopToolsList" >
+                <Label Content="Here you can select which tools appear inside this workshops menu.&#xD;&#xA; TIP: Events can always use tools, even if their not selected." HorizontalAlignment="Left" Margin="232,10,0,0" VerticalAlignment="Top"/>
+                
+                <Button Content="Save Tools List" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="53" Width="177" Click="ButtonSaveWorkshopTools"/>
+                <Button Content="Read More" HorizontalAlignment="Left" Margin="930,10,0,0" VerticalAlignment="Top" Style="{DynamicResource ButtonError}" Height="53" Width="158"/>
+                <TabControl Margin="10,68,0,0">
+                    <TabItem Header="Workshop Tools">
+                        <Grid >
+                            
+                            <DockPanel LastChildFill="False">
+                                <CheckBox Content="UABEAvalonia - Extracts files from Bundles, from games made with the Unity Engine." HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FFC3C3C3"/>
+                            </DockPanel>
+                        </Grid>
+                    </TabItem>                    
+                </TabControl>
+
+            </Grid>
+
+        </Grid>
+    </Grid>
+</Window>
