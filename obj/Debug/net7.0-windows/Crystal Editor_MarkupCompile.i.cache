@@ -1,0 +1,20 @@
+﻿Crystal Editor
+1.0.0.0
+
+winexe
+C#
+.cs
+G:\Data\Dev\Crystal-Editor\obj\Debug\net7.0-windows\
+Crystal_Editor
+none
+false
+TRACE;DEBUG;NET;NET7_0;NETCOREAPP
+G:\Data\Dev\Crystal-Editor\App.xaml
+261312164440
+11711446757
+38763001657
+208790586757
+AddExtraTable.xaml;Game Library\GameLibrary.xaml;Menus\SharedMenus.xaml;Notification.xaml;Styles\BorderStyle.xaml;Styles\ButtonStyle.xaml;Styles\Colors\Colors.xaml;Styles\ComboBoxStyle.xaml;Styles\ContextMenuStyle.xaml;Styles\DataGridStyle.xaml;Styles\DockPanelStyle.xaml;Styles\GridStyle.xaml;Styles\LabelStyle.xaml;Styles\MenuStyle.xaml;Styles\RadioButtonStyle.xaml;Styles\RectangleStyle.xaml;Styles\RichTextboxStyle.xaml;Styles\ScrollViewerStyle.xaml;Styles\TabControlStyle.xaml;Styles\TextboxStyle.xaml;Styles\TitleBarStyle.xaml;Styles\TreeviewStyle.xaml;Tutorial\Tutorial.xaml;Workshop\Workshop.xaml;Z Garbage\MainWindow.xaml;Z Garbage\TestDummy.xaml;
+
+True
+

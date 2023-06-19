@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "mv0M6mpZioDbpf+vRDhqbQJi6VBLVD5agzCYljeHHFhk4M0NZ6SMlIo4e8UcQMpeHcenY/o4RBDtE0cnFt4SDg==",
+  "success": true,
+  "projectFilePath": "G:\\Data\\Dev\\Crystal-Editor\\Crystal Editor.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\phexyaa\\.nuget\\packages\\ookii.dialogs.wpf\\5.0.1\\ookii.dialogs.wpf.5.0.1.nupkg.sha512",
+    "C:\\Users\\phexyaa\\.nuget\\packages\\system.text.encoding.codepages\\8.0.0-preview.2.23128.3\\system.text.encoding.codepages.8.0.0-preview.2.23128.3.nupkg.sha512"
+  ],
+  "logs": []
+}

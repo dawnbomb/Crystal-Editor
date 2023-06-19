@@ -1,0 +1,12 @@
+G:\Data\Dev\Crystal-Editor\DataAccess\bin\Debug\net7.0\DataAccess.deps.json
+G:\Data\Dev\Crystal-Editor\DataAccess\bin\Debug\net7.0\DataAccess.dll
+G:\Data\Dev\Crystal-Editor\DataAccess\bin\Debug\net7.0\DataAccess.pdb
+G:\Data\Dev\Crystal-Editor\DataAccess\obj\Debug\net7.0\DataAccess.csproj.AssemblyReference.cache
+G:\Data\Dev\Crystal-Editor\DataAccess\obj\Debug\net7.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+G:\Data\Dev\Crystal-Editor\DataAccess\obj\Debug\net7.0\DataAccess.AssemblyInfoInputs.cache
+G:\Data\Dev\Crystal-Editor\DataAccess\obj\Debug\net7.0\DataAccess.AssemblyInfo.cs
+G:\Data\Dev\Crystal-Editor\DataAccess\obj\Debug\net7.0\DataAccess.csproj.CoreCompileInputs.cache
+G:\Data\Dev\Crystal-Editor\DataAccess\obj\Debug\net7.0\DataAccess.dll
+G:\Data\Dev\Crystal-Editor\DataAccess\obj\Debug\net7.0\refint\DataAccess.dll
+G:\Data\Dev\Crystal-Editor\DataAccess\obj\Debug\net7.0\DataAccess.pdb
+G:\Data\Dev\Crystal-Editor\DataAccess\obj\Debug\net7.0\ref\DataAccess.dll

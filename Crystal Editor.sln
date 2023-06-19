@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crystal Editor", "Crystal Editor.csproj", "{8DB6A47C-3768-439A-B0CB-963629FEA2C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Crystal Editor", "Editor\Crystal Editor.csproj", "{1DF4D697-2677-47AB-B70D-E43E7F20A254}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{C7C4D5D0-CC1D-4306-8D1A-34BD0EFD8B91}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8DB6A47C-3768-439A-B0CB-963629FEA2C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8DB6A47C-3768-439A-B0CB-963629FEA2C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8DB6A47C-3768-439A-B0CB-963629FEA2C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8DB6A47C-3768-439A-B0CB-963629FEA2C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DF4D697-2677-47AB-B70D-E43E7F20A254}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DF4D697-2677-47AB-B70D-E43E7F20A254}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DF4D697-2677-47AB-B70D-E43E7F20A254}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DF4D697-2677-47AB-B70D-E43E7F20A254}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7C4D5D0-CC1D-4306-8D1A-34BD0EFD8B91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7C4D5D0-CC1D-4306-8D1A-34BD0EFD8B91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7C4D5D0-CC1D-4306-8D1A-34BD0EFD8B91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7C4D5D0-CC1D-4306-8D1A-34BD0EFD8B91}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
