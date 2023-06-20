@@ -121,7 +121,7 @@ namespace Crystal_Editor
 
 
             
-            LoadDatabase LoadDatabase = new();
+            LoadDatabaseWithEditorInfo LoadDatabase = new();
             try 
             {
                 LoadDatabase.LoadWorkshopInfo(this, Database); //First we load workshop files into the database.
@@ -798,18 +798,13 @@ namespace Crystal_Editor
 
             
         }
-                
+         
+        
 
         private void CreateNewEditor_Click(object sender, RoutedEventArgs e)
         {
-            #if DEBUG
-            NewEditor NewEditor = new();
-            NewEditor.SetupNewEditor(this, Database);
-            #else
-            
-            #endif
-            
-            //LoadEditor.SetupNewEditor(this);
+            LoadDatabaseWithEditorInfo LoadDatabase = new();
+            LoadDatabase.SetupNewEditor(this, Database);  
 
         }
 

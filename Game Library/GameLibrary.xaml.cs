@@ -81,8 +81,8 @@ namespace Crystal_Editor
 
             string basepath = AppDomain.CurrentDomain.BaseDirectory;
 
-            #if DEBUG
-            ExePath = Path.GetFullPath(Path.Combine(basepath, @"..\..\..\..\Release")); //For visual studio debug mode / development.
+            #if DEBUG //The ExePath (Probably not a good name) is the folder location of the executable. It's used by other parts of the program to find files.
+            ExePath = Path.GetFullPath(Path.Combine(basepath, @"..\..\..\..\Release")); //I don't understand (and don't feel like spending the time) setting it up so release is the same as debug mode, so this is a temporary lazy fix.
             #else
             ExePath = basepath; //for published versions of the program to the public.
             #endif
